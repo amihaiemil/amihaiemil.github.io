@@ -10,6 +10,7 @@ twitter_username: amihaiemil
 github_username:  amihaiemil
 
 # Build settings
+timezone: Romania/Bucharest
 markdown: kramdown
 
 lsi: false
