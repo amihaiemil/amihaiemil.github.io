@@ -11,3 +11,11 @@ github_username:  amihaiemil
 
 # Build settings
 markdown: kramdown
+
+lsi: false
+safe: true
+source: amihaiemil
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
