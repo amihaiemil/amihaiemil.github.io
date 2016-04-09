@@ -14,7 +14,7 @@ markdown: kramdown
 
 lsi: false
 safe: true
-source: amihaiemil
+source: amihaiemil.github.io
 incremental: false
 highlighter: rouge
 gist:
