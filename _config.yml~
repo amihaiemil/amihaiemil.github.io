@@ -1,0 +1,13 @@
+# Site settings
+title: amihaiemil.com | Programming blog
+email: amihaiemil@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  This is a blog about programming. Posts will cover various topics,
+  and open source projects.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: amihaiemil
+github_username:  amihaiemil
+
+# Build settings
+markdown: kramdown
