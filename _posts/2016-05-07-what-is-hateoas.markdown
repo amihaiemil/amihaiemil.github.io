@@ -69,7 +69,7 @@ Having made these changes also, your 3rd page of results (with 10 results/page) 
 }
 {% endhighlight %}
 
-The response can now be navigated. However, I want to see the last page of results. Do I click 12 times on **nextPage**? Besides, almost all the sites on the web show links to at least the first 5-10 results pages pages. Let's add the array **pages** containing all the links of this search (we can assume the client will want to show at least the first 10 pages, so we spare him a worry).
+The response can now be navigated. However, I want to see the last page of results. Do I click 12 times on **nextPage**? Besides, almost all the sites on the web show links to at least the first 5-10 results pages. Let's add the array **pages** containing all the links of this search (we can assume the client will want to show at least the first 10 pages, so we spare him a worry).
 
 {% highlight json %}
 {
@@ -97,7 +97,7 @@ The response can now be navigated. However, I want to see the last page of resul
 
 Your JSON response is now both navigable and scalabale! The client can easily choose how many results are there on a page and has an instant and lightweight overview of the whole search.
 
-**Second problem**: status codes. This is also important. Don't use only ``200 OK`` or ``404 NOT FOUND``! Offer more meaning to your responses, help the clients "understand" everything better. It's all about **respecting the HTTP protocol**. If there are no results found, return an empty JSON, but set the status appropriately, to ``204 NO CONTENT``. If there are validation errors (say **index** is out of range), return ``412 PRECONDITION FAILED`` or ``422 UNPROCESSABLE ENTITY``. And the list can go on. You got the idea: respect the protocol, make the communication as easy as possible. A **bad** alternative would be to return a message, for instance:
+**Second problem**: status codes. This is also important. Don't use only ``200 OK`` and ``404 NOT FOUND``! Offer more meaning to your responses, help the clients "understand" everything better. It's all about **respecting the HTTP protocol**. If there are no results found, return an empty JSON, but set the status appropriately, to ``204 NO CONTENT``. If there are validation errors (say **index** is out of range), return ``412 PRECONDITION FAILED`` or ``422 UNPROCESSABLE ENTITY``. And the list can go on. You got the idea: respect the protocol, make the communication as easy as possible. A **bad** alternative would be to return a message, for instance:
 
 {% highlight json %}
 HTTP Status 200 OK
