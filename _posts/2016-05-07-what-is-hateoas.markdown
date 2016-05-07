@@ -3,6 +3,7 @@ layout: post
 title:  "What is HATEOAS?"
 date:   2016-05-07
 categories: rest
+comments: true
 ---
 
 This article assumes you have at least an intermediate knowledge about REST. If you don't, there are [many](https://www.google.ro/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=rest%20tutorial) tutorials that teach you how to implement a RESTful API. I learned REST from Bill Burke's [RESTful Java with JAX-RS 2.0](http://shop.oreilly.com/product/0636920028925.do), which I would recommend to any Java EE developer starting to learn this architecture. Also, Github's [API](https://api.github.com/) serves as agreat example.
