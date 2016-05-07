@@ -6,7 +6,7 @@ categories: rest
 comments: true
 ---
 
-This article assumes you have at least an intermediate knowledge about REST. If you don't, there are [many](https://www.google.ro/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=rest%20tutorial) tutorials that teach you how to implement a RESTful API. I learned REST from Bill Burke's [RESTful Java with JAX-RS 2.0](http://shop.oreilly.com/product/0636920028925.do), which I would recommend to any Java EE developer starting to learn this architecture. Also, Github's [API](https://api.github.com/) serves as agreat example.
+This article assumes you have at least an intermediate knowledge about REST. If you don't, there are [many](https://www.google.ro/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=rest%20tutorial) tutorials that teach you how to implement a RESTful API. I learned REST from Bill Burke's [RESTful Java with JAX-RS 2.0](http://cdn.oreillystatic.com/oreilly/booksamplers/9781449361341_sampler.pdf), which I would recommend to any Java EE developer starting to learn this architecture. Also, Github's [API](https://api.github.com/) serves as agreat example.
 
 In his book Burke also describes HATEOAS (hypermedia as the engine of application state). It is what's known as the 3rd level of REST [maturity](http://martinfowler.com/articles/richardsonMaturityModel.html). Basically, the idea is that you can implement web services as simple as possible by using a single HTTP method and nothing else, or you can make use of all the power that HTTP gives you (different methods, status codes, mime-types etc) to make your services truly RESTful. 
 
