@@ -26,7 +26,7 @@ Let's assume you have to design an endpoint for search which takes a **q** param
 {% endhighlight %}
 It does use HTTP, it returns a JSON structure, it's exposed for the world to consume, so we can call it a REST service, right? Yes, but it's far from its true potential. 
 
-**First problem**: no pagination. So for now, clients will call this endpoint and probably get a huge amount of results which they'll have to handle and paginate by themselves. Let's introduce parameters **index** and **nr**. This way, clients' work is already leveraged a lot: they'll call **/rest/search?q=test&index=0&nr=10** and get the first 10 results. To get the following 10, they'll add 10 to **index**. Nice, but there is still a misunderstanding: how many results are there? How long does **index** go? We also have to return the total number of results found, say **resultsFound**.
+**First problem**: no pagination. So for now, clients will call this endpoint and probably get a huge amount of results which they'll have to handle and paginate by themselves. Let's introduce parameters **index** and **nr**. This way, clients' work is leveraged: they'll call **/rest/search?q=test&index=0&nr=10** and get the first 10 results. To get the following 10, they'll add 10 to **index**. Nice, but there is still a misunderstanding: how many results are there? How long does **index** go? We also have to return the total number of results found, say **resultsFound**.
 Your JSON response now looks like this:
 
 {% highlight json %}
@@ -45,7 +45,7 @@ Your JSON response now looks like this:
 }
 {% endhighlight %}
 
-Now the client is not flooded with data and can do the maths to figure out the number of pages. HATEOAS enough? No - it's not yet **navigable** . 
+The client is not flooded with data anymore and it can do the maths to figure out the number of pages. HATEOAS enough? No - it's not yet **navigable** . 
 We can leverage the client's work even more if we add **previousPage** and **nextPage**. We have the **index** and **nr** from the client's call, we know the number of results, so we can build the links to the immediate pages. If we are on the first page, then **previousPage** will be empty (**-**) and if we are on the last page, **nextPage** will be empty. 
 
 Having made these changes also, your 3rd page of results (with 10 results/page) looks like this: 
@@ -96,7 +96,7 @@ The response can now be navigated. However, I want to see the last page of resul
 
 Your JSON response is now both navigable and scalabale! The client can easily choose how many results are there on a page and has an instant and lightweight overview of the whole search.
 
-**Second problem**: status codes. This is also important. Don't use only 200 ok or 404 NOT FOUND! Offer more meaning to your responses, help the clients "understand" everything better. Besides, it's all about **respecting the HTTP protocol**. If there are no results found, return an empty JSON, but set the status appropriately, to **204 NO CONTENT**. If there are validation errors (say **index** is out of range), return **412 PRECONDITION FAILED** or **422 UNPROCESSABLE ENTITY**. And the list can go on. You got the idea: respect the protocol, make the communication as easy as possible. An alternative to a propper status response would be to return a message, for instance:
+**Second problem**: status codes. This is also important. Don't use only ``200 OK`` or ``404 NOT FOUND``! Offer more meaning to your responses, help the clients "understand" everything better. It's all about **respecting the HTTP protocol**. If there are no results found, return an empty JSON, but set the status appropriately, to ``204 NO CONTENT``. If there are validation errors (say **index** is out of range), return ``412 PRECONDITION FAILED`` or ``422 UNPROCESSABLE ENTITY``. And the list can go on. You got the idea: respect the protocol, make the communication as easy as possible. A **bad** alternative would be to return a message, for instance:
 
 {% highlight json %}
 HTTP Status 200 OK
@@ -121,6 +121,5 @@ HTTP Status 204 NO CONTENT
 
 I hope you now have a better understanding of the HATEOAS principle. Your search endpoint is now much more usable in any context. Wheter it will be consumed by a Javascript client or by a Java/C#/Python/Whatever library, the communication will be smooth, and the client's code fluent and less bug-prompt. 
 
-You can also think of it (slightly) as an HTML page that's been stripped of its CSS. Look at the search response above. Doesn't it look like an HTML page that lost its styling? Now, think of how easy it will be for any JS client to work with it: simply make a call to the endpoint, get the JSON object and display the text and links. 
-  
+You can also think of it (slightly) as an HTML page that's been stripped of its CSS. Look at the search response above. Doesn't it look like an HTML page that lost its styling? Now, think how easy it will be for any JS client to work with it: simply make a call to the endpoint, get the JSON object and display the text and links. 
 
