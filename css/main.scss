@@ -47,7 +47,10 @@ $on-laptop:        800px;
     min-height: 400px;
     
 }
-
+.photo {
+      border-radius: 50%;
+      width: 80px;
+}
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
