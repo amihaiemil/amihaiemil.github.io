@@ -30,7 +30,7 @@ With the precision requirement in mind, I started thinking of a date as of a jso
 {% endhighlight %}
 and that's how I implemented a function 
 {% highlight javascript %}
-function getAget(birthdate) {
+function getAge(birthdate) {
       //...
 }
 {% endhighlight %}
