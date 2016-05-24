@@ -34,25 +34,24 @@ function getAget(birthdate) {
       //...
 }
 {% endhighlight %}
-which takes the ``birthdate`` json object (in the above format), calculates and returns the age as a json object of the same format. 
+which takes the ``birthdate`` date object, calculates and returns the age as a json object of the above format.
 
 After that they said "Ok, looks nice, but we forgot to mention the reference date is the first of next month, not the present date".
 Following this, I refactored the code and came up with ``function timePassed(date, refdate)`` from bellow. 
 
-I also ``function compareDates(date1, date2)`` which compares 2 json dates. I used it like this: 
+I also wrote ``function compareDates(date1, date2)`` which compares 2 json dates. I used it like this: 
 {% highlight javascript %}
     var age = timePassed(bday, firstOfNextMonth);
-
-		var seventyhalf = new Object();
-		seventyhalf.years = 70;
-		seventyhalf.monghts = 6;
-		seventyhalf.days = 0;
-		var diff = compareDates(age, seventyhalf);
-		if (diff==0 || diff == -1) {
-		    //...
-		} else {
-		   //...
-		}
+    var seventyhalf = new Object();
+    seventyhalf.years = 70;
+    seventyhalf.monghts = 6;
+    seventyhalf.days = 0;
+    var diff = compareDates(age, seventyhalf);
+    if (diff==0 || diff == -1) {
+	//...
+    } else {
+	//...
+    }
 {% endhighlight %}
 
 Bellow are the 3 functions: timePassed, compareDates and daysInMonth;
