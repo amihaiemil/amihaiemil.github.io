@@ -54,6 +54,6 @@ I also wrote ``function compareDates(date1, date2)`` which compares 2 json dates
     }
 {% endhighlight %}
 
-Bellow are the 3 functions: timePassed, compareDates and daysInMonth;
-
+Bellow are the 3 functions: timePassed, compareDates and daysInMonth.
+I used Windows' Calculator (View -> Date calculation) to test this and found no issues so far. Let me know if you find any bugs and I will correct them. 
 <script src="https://gist.github.com/amihaiemil/2fc5b7f30c3de9eb299ce74e0f62453d.js"></script>
