@@ -13,10 +13,10 @@ and might be useful to others as well.
 After substracting the 2 years and months from the given dates (resulting in something like a 5 line js function), they told me "No, it has to be day-specific, 
 also taking into account leap years!".
 
-As it turns out, 70.5 actually meant 70 years, 6 months and 0 days. 70 years, 6 months and 1 day was already too old. 
+As it turned out, 70.5 actually meant 70 years, 6 months and 0 days. 70 years, 6 months and 1 day was already too old. 
 Luckily, javascript's ``Date`` can tell how many days are in a month (with regards to leap years and 30/31 days). 
 {% highlight javascript %}
-nww Date(year, month, 0).getDate();
+new Date(year, month, 0).getDate();
 {% endhighlight %}
 So ``new Date(2016, 2, 0).getDate();`` outputs 29, while ``new Date(2015, 2, 0).getDate();`` outputs 28.
 
