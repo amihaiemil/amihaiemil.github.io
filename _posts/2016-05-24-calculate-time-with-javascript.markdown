@@ -4,6 +4,7 @@ title:  "Calculate time using javascript"
 date:   2016-05-24
 categories: javascript
 comments: true
+preview: Useful javascript code.
 ---
 
 I recently had a task that sounded like this: "If the user is younger than 70.5 this logic should happen, else that logic". 
