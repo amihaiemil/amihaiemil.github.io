@@ -4,6 +4,7 @@ title:  "Project Eva"
 date:   2016-04-20
 categories: Projects
 comments: true
+preview: A simple AI framework which you can use to solve complicated problems.
 ---
 
 ### Intro
