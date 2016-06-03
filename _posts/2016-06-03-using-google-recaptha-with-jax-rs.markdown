@@ -73,8 +73,8 @@ only use the user's captcha response. As the documentation states, you can, opti
         }
         public boolean isRobot() throws IOException {
             CloseableHttpClient httpClient = HttpClientBuilder.create().build();
-		        HttpPost postRequest = new HttpPost(GOOGLE_API_ENDPOINT);
-		        List<NameValuePair> postParameters = new ArrayList<NameValuePair>();
+	    HttpPost postRequest = new HttpPost(GOOGLE_API_ENDPOINT);
+	    List<NameValuePair> postParameters = new ArrayList<NameValuePair>();
 	    postParameters.add(new BasicNameValuePair("secret", GOOGLE_SECRET_KEY));
 	    postParameters.add(new BasicNameValuePair("response", this.userResponse));
 	    postRequest.setEntity(new UrlEncodedFormEntity(postParameters));
