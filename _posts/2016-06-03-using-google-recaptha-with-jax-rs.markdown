@@ -56,7 +56,7 @@ field (+ getters and setters):
     private String recaptchaResponse;
 {% endhighlight %}
 
-**Note:** I always add ``@DefaultValue("")`` when dealing with strings, to avoid null values in case the parameter isn't supplied. 
+**Note:** I always add ``@DefaultValue("")`` when dealing with strings, to avoid **null** values in case the parameter isn't supplied. 
 
 Let's add the class ``GoogleRecaptchaCheck`` which will encapsulate the call to Google's web service. I'm going to keep it simple here and
 only use the user's captcha response. As the documentation states, you can, optionally, send the user's IP as well.
@@ -75,26 +75,26 @@ only use the user's captcha response. As the documentation states, you can, opti
             CloseableHttpClient httpClient = HttpClientBuilder.create().build();
 		        HttpPost postRequest = new HttpPost(GOOGLE_API_ENDPOINT);
 		        List<NameValuePair> postParameters = new ArrayList<NameValuePair>();
-	          postParameters.add(new BasicNameValuePair("secret", GOOGLE_SECRET_KEY));
-	          postParameters.add(new BasicNameValuePair("response", this.userResponse));
-	          postRequest.setEntity(new UrlEncodedFormEntity(postParameters));
-	          try {
-		            CloseableHttpResponse response = httpClient.execute(postRequest);
+	    postParameters.add(new BasicNameValuePair("secret", GOOGLE_SECRET_KEY));
+	    postParameters.add(new BasicNameValuePair("response", this.userResponse));
+	    postRequest.setEntity(new UrlEncodedFormEntity(postParameters));
+	    try {
+	        CloseableHttpResponse response = httpClient.execute(postRequest);
                 if(response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
-			              InputStream body = response.getEntity().getContent();
-			              JsonObject json = Json.createReader(body).readObject();
-			              if(json.getBoolean("success")) {
-			                  return false;
-			              }
-			              return true;
-			          }
-			          //here you might want to log the error-codes element of the json response and/or the status code.
-			          return true;
-			      } finally {
-			          httpClient.close();
-			          response.close();
-			      }
-		    }
+		    InputStream body = response.getEntity().getContent();
+		    JsonObject json = Json.createReader(body).readObject();
+	            if(json.getBoolean("success")) {
+	                return false;
+	            }
+	            return true;
+	        }
+	        //here you might want to log the error-codes element of the json response and/or the status code.
+		return true;
+	    } finally {
+		httpClient.close();
+		response.close();
+	    }
+	}
     }
 {% endhighlight %}
 
