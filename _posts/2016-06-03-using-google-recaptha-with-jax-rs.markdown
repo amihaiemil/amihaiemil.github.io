@@ -8,7 +8,7 @@ preview: How to secure a form post with Google ReCaptcha 2
 ---
 
 Nowadays the simplest way to secure your formular against robots and automated tools is to add a captcha to it. 
-I found Google's [Recaptcha 2.0] (https://developers.google.com/recaptcha/intro) to be an elegant solution. It looks good and it's easy to 
+I found Google's <a title="Recaptcha developer guide" href="https://developers.google.com/recaptcha/intro">Recaptcha 2.0</a> to be an elegant solution. It looks good and it's easy to 
 implement. The general mechanism is thoroughly documented in the developer's guide so it makes no sense to just repeat it here. Instead I 
 want to show you how I would implement it together with a Java EE ``@POST`` method.
 
