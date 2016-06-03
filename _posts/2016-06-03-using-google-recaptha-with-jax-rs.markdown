@@ -12,6 +12,8 @@ I found Google's <a title="Recaptcha developer guide" href="https://developers.g
 implement. The general mechanism is thoroughly documented in the developer's guide so it makes no sense to just repeat it here. Instead I 
 want to show you how I would implement it together with a Java EE ``@POST`` method.
 
+<img alt="Google ReCaptcha 2.0" src="/images/recaptcha.PNG"/>
+
 Assume you have a contact form which has the following 3 fields: **name**, **email** and **message** . The class that maps the form
 looks like this: 
 
