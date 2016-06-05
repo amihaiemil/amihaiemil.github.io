@@ -80,8 +80,9 @@ only use the user's captcha response. As the documentation states, you can, opti
 	    postParameters.add(new BasicNameValuePair("secret", GOOGLE_SECRET_KEY));
 	    postParameters.add(new BasicNameValuePair("response", this.userResponse));
 	    postRequest.setEntity(new UrlEncodedFormEntity(postParameters));
+	    CloseableHttpResponse response = null;
 	    try {
-	        CloseableHttpResponse response = httpClient.execute(postRequest);
+	        response = httpClient.execute(postRequest);
                 if(response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
 		    InputStream body = response.getEntity().getContent();
 		    JsonObject json = Json.createReader(body).readObject();
@@ -93,8 +94,8 @@ only use the user's captcha response. As the documentation states, you can, opti
 	        //here you might want to log the error-codes element of the json response and/or the status code.
 		return true;
 	    } finally {
-		httpClient.close();
-		response.close();
+		IOUtils.closeQuietly(httpClient);
+		IOUtils.closeQuietly(response);
 	    }
 	}
     }
