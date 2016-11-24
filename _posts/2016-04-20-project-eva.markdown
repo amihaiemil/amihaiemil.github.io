@@ -59,10 +59,13 @@ for(int i=0;i<rep.getSize();i++) {
 
 {% endhighlight %}
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note that it is not mandatory to add any conditions, but it's recommended to specify at least the above condition **if you don't want a long execution time**. It is not guaranteed that the found solution will meet the specified Conditon (although ideally it should). The idea of the Condition is to make the algorithm fastter by stopping when it finds a satisfactory solution.
-The maximum number of iterations performed is number of generations x population size and a Condition cannot add iterations (i.e. iterate until a good solution is found) because there are big chances of creating an infinite or really really long run.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note that it is not mandatory to add any conditions, but it's recommended to specify at least the above condition **if you don't want a long execution time**. It is not guaranteed that the found solution will meet the specified Conditon (although ideally it should).
 
-In the above example, ``Solution.isAcceptable()`` only checks if the total weight is in the following interval: **(0, backpackWeight]**. You can add more conditions to always get a solution with total weight, say, over 50%.
+The idea of the Condition is to make the algorithm faster by stopping it when it finds a satisfactory solution.
+
+The maximum number of iterations performed is number of generations times population size and a Condition cannot add iterations (i.e. iterate until a good solution is found) because there are big chances of creating an infinite or really really long run.
+
+In this backpack example, ``Solution.isAcceptable()`` only checks if the total weight is in the following interval: **(0, backpackWeight]**. You could add more conditions to always get a solution with total weight, say, over 50%.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Tip** Use ``com.amihaiemil.eva.Conditions`` to specify more conditions, like this: 
 
@@ -84,6 +87,7 @@ Eva eva = new SimpleEvolutionaryAlgorithm()
                 .with(conditions);
 
 ...
-
 {% endhighlight %}
 
+If you specify more conditions you minimize the chances of the algorithm skipping
+a really good solution.
