@@ -21,12 +21,12 @@ new Date(year, month, 0).getDate();
 {% endhighlight %}
 So ``new Date(2016, 2, 0).getDate();`` outputs 29, while ``new Date(2015, 2, 0).getDate();`` outputs 28.
 
-With the precision requirement in mind, I started thinking of a date as of a json object of format: 
+With the precision requirement in mind, I started thinking of an age as of a json object of format: 
 {% highlight json %}
 {
-    "years":2016,
-    "months":05,
-    "days":24
+    "years":70,
+    "months":6,
+    "days":0
 }
 {% endhighlight %}
 and that's how I implemented a function 
