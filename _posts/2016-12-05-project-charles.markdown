@@ -13,17 +13,23 @@ of a page (i.e. Ajax; content that is loaded on the page via javascript)
 
 Having these requirements, I came up with Charles (if you wonder about the name, well, I have no explanation for it; it's just a name I like).
 
-1) Simple in design and use: all you have to do is instantiate a [WebCrawl](https://github.com/opencharles/charles/blob/master/src/main/java/com/amihaiemil/charles/WebCrawl.java) and
-call method ``crawl()``. When instantiating the WebCrawl, you have to give it an implementation of [Repository](https://github.com/opencharles/charles/blob/master/src/main/java/com/amihaiemil/charles/Repository.java) - what
-do you want to happen with the crawled ``WebPage``s? Where should they go? This is your part of the deal, you will have to implement this interface, since I cannot know what everyone wants to do with the crawled content.
+**1) Simple in design and use:** all you have to do is instantiate a [WebCrawl](https://github.com/opencharles/charles/blob/master/src/main/java/com/amihaiemil/charles/WebCrawl.java) and
+call method ``crawl()``.
+
+When instantiating the WebCrawl, you have to give it an implementation of [Repository](https://github.com/opencharles/charles/blob/master/src/main/java/com/amihaiemil/charles/Repository.java) - what
+do you want to happen with the crawled ``WebPage``s? This is your part of the deal, you will have to implement this interface, since I cannot know what everyone wants to do with the crawled content.
+
 Until you figure out your own Repository implementation, and just to get you playing with this lib (or unit test code), you can use [InMemoryRepository](https://github.com/opencharles/charles/blob/master/src/main/java/com/amihaiemil/charles/InMemoryRepository.java)
-or [JsonFilesRepository] (https://github.com/opencharles/charles/blob/master/src/main/java/com/amihaiemil/charles/JsonFilesRepository.java)
+or [JsonFilesRepository](https://github.com/opencharles/charles/blob/master/src/main/java/com/amihaiemil/charles/JsonFilesRepository.java)
 
 <b>E.g.</b>
 {% highlight java %}
 WebDriver driver = ...; //Selenium WebDriver
 Repository repo = ...; //Awesome repository implementation here. Maybe send the pages to a DB, or to an ElasticSearch instance up in AWS? You decide.
-WebCrawl graph = new GraphCrawl("http://www.amihaiemil.com", this.driver, new IgnoredPatterns(), repo);
+String indexPage = "http://www.amihaiemil.com/index.html";
+WebCrawl graph = new GraphCrawl(
+    indexPage, driver, new IgnoredPatterns(), repo
+);
 graph.crawl();
 {% endhighlight %}
 
@@ -34,8 +40,8 @@ For now, 2 implementations of [SitemapXmlCrawl](https://github.com/opencharles/c
 [GraphCrawl](https://github.com/opencharles/charles/blob/master/src/main/java/com/amihaiemil/charles/GraphCrawl.java). There are also some decorators provided, to help you retry the crawl in case of a 
 RuntimeException (which happen every now and then with Selenium... some miscomunication with the browser, too slowly loading content etc)
 
-2) Rendering of dynamic content. For this purpose exactly, the lib is implemented using [Selenium WebDriver API] (http://www.seleniumhq.org/projects/webdriver/). You can pass to a
-WebCrawl any implementation of WebDriver: FirefoxDriver, ChromeDriver etc. Personally, I use [PhantomJSDriver](https://github.com/detro/ghostdriver) both in other and integration tests, in order
+**2) Rendering of dynamic content:** For this purpose exactly, the lib is implemented using [Selenium WebDriver API](http://www.seleniumhq.org/projects/webdriver/). You can pass to a
+WebCrawl **any implementation of WebDriver**: FirefoxDriver, ChromeDriver etc. I use [PhantomJSDriver](https://github.com/detro/ghostdriver) in integration tests and in other projects, in order
 to avoid having to open a browser.
 
 Check the [README.md](https://github.com/opencharles/charles/blob/master/README.md) for the maven dependency and info on how to contribute.
