@@ -34,7 +34,7 @@ graph.crawl();
 {% endhighlight %}
 
 Above is a simple example of how your crawling code should look when using this lib. Please, take a little time to study the [unit tests](https://github.com/opencharles/charles/tree/master/src/test/java/com/amihaiemil/charles)
-and completely understand all the clases involved.
+and completely understand all the classes involved.
 
 For now, 2 implementations of [SitemapXmlCrawl](https://github.com/opencharles/charles/blob/master/src/main/java/com/amihaiemil/charles/SitemapXmlCrawl.java) and
 [GraphCrawl](https://github.com/opencharles/charles/blob/master/src/main/java/com/amihaiemil/charles/GraphCrawl.java). There are also some decorators provided, to help you retry the crawl in case of a 
@@ -43,6 +43,10 @@ RuntimeException (which happen every now and then with Selenium... some miscomun
 **2) Rendering of dynamic content:** For this purpose exactly, the lib is implemented using [Selenium WebDriver API](http://www.seleniumhq.org/projects/webdriver/). You can pass to a
 WebCrawl **any implementation of WebDriver**: FirefoxDriver, ChromeDriver etc. I use [PhantomJSDriver](https://github.com/detro/ghostdriver) in integration tests and in other projects, in order
 to avoid having to open a browser.
+
+So what data is fetched from a webpage? The answer is, simply put, all the text content and other info such as url, title and name. Look in the [WebPage](https://github.com/opencharles/charles/blob/master/src/main/java/com/amihaiemil/charles/WebPage.java)
+interface for more details. It also tries to fetch the page category (method ``getCategory()``), which should be the value of a hidden field with id ``pagectg`` - this is quite off topic, but it's something I figured
+it would be nice to have, if you want to categorize your pages.
 
 Check the [README.md](https://github.com/opencharles/charles/blob/master/README.md) for the maven dependency and info on how to contribute.
 If you find any bugs or have any questions about this project, please, open an issue [here](https://github.com/opencharles/charles/issues/new).
