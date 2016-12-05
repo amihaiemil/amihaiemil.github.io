@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "Project Charles"
-date:   2016-05-24
+date:   2016-12-05
 categories: web
 comments: true
 preview: A simple and smart Java webcrawler.
 ---
 
-This library came to my mind while designing other project of mine which I will hopefully be able to launch soon.
+This library came to my mind while designing another project of mine which I will hopefully be able to launch soon.
 I needed a **simple-to-use** webcrawling library which, most importantly, had to be able to **render dynamic content**
 of a page (i.e. Ajax; content that is loaded on the page via javascript)
 
