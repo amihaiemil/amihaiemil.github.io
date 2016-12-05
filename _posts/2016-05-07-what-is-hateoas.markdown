@@ -98,7 +98,7 @@ The response can now be navigated. However, I want to see the last page of resul
 
 Your JSON response is now both navigable and scalabale! The client can easily choose how many results are there on a page and has an instant and lightweight overview of the whole search.
 
-**Second problem**: status codes. This is also important. Don't use only ``200 OK`` and ``404 NOT FOUND``! Offer more meaning to your responses, help the clients "understand" everything better. It's all about **respecting the HTTP protocol**. If there are no results found, return an empty response but set the status appropriately, to ``204 NO CONTENT``. If there are validation errors (say **index** is out of range), return ``412 PRECONDITION FAILED`` or ``422 UNPROCESSABLE ENTITY``. And the list can go on. You got the idea: respect the protocol, make the communication as easy as possible. A **bad** alternative would be to return a message, for instance:
+**Second problem**: status codes. This is also important. Don't use only ``200 OK`` and ``404 NOT FOUND``! Offer more meaning to your responses, help the clients "understand" everything better. It's all about **respecting the HTTP protocol**. If there are no results found, return an empty response but set the status appropriately, to ``204 NO CONTENT``. If there are validation errors (say **index** is out of range), return ``412 PRECONDITION FAILED`` or ``422 UNPROCESSABLE ENTITY``. And the list can go on. You got the idea: respect the protocol, make the communication as easy as possible. A **not so good** alternative would be to return a message, for instance:
 
 {% highlight json %}
 HTTP Status 200 OK
@@ -115,5 +115,7 @@ HTTP Status 204 NO CONTENT
 
 I hope you now have a better understanding of the HATEOAS principle. Your search endpoint is now much more usable in any context. Wheter it will be consumed by a Javascript client or by a Java/C#/Python/Whatever library, the communication will be smooth, and the client's code fluent and less bug-prompt. 
 
-You can also think of it (slightly) as an HTML page that's been stripped of its CSS. Look at the search response above. Doesn't it look like an HTML page that lost its styling? Now, think how easy it will be for any JS client to work with it: simply make a call to the endpoint, get the JSON object and display the text and links. 
+I also think of it (slightly) as of an HTML page that's been stripped of its CSS. Look again at the search response above. Now, think how easy it will be for any JS client to work with it: simply make a call to the endpoint, get the JSON object and display the text and links. 
+
+To summarize, make sure your API is navigable - there shouldn't be any isolated endpoints (starting from the index endpoint, you should be able to reach all of them by clicking through served links) and make sure you respect the protocol by using the right statuses, headers etc when they are needed. Again, I found Github's API to be a very good illustrator of the HATEOAS principle.
 
