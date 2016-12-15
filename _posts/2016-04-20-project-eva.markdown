@@ -2,7 +2,7 @@
 layout: post
 title:  "Project Eva"
 date:   2016-04-20
-tags: projects <a href="https://www.github.com/amihaiemil/eva" target="_blank">github</a> ai
+tags: projects github ai
 author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
 comments: true
 preview: A simple AI framework which you can use to solve complicated problems.
