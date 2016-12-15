@@ -3,6 +3,7 @@ layout: post
 title:  "Using Google Recaptcha 2 with JAX-RS"
 date:   2016-06-03
 categories: rest
+author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
 comments: true
 preview: How to secure a form post with Google ReCaptcha 2
 ---
