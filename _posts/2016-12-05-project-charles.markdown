@@ -2,7 +2,7 @@
 layout: post
 title:  "Project Charles"
 date:   2016-12-05
-tags: projects github web
+tags: projects <a href="https://www.github.com/opencharles/charles" target="_blank>github</a> web
 author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
 comments: true
 preview: A simple and smart Java webcrawler.
