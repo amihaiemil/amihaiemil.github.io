@@ -5,10 +5,11 @@ layout: postlayout
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d %Y" }}{% if page.author %}, by {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {{ page.author }}{% endif %} •
     {% for tag in page.tags %}
       <span class="post-meta">{{ tag }}</span>
     {% endfor %}
+    </p>
   </header>
 
   <article class="post-content">
