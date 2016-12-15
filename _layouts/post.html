@@ -5,10 +5,8 @@ layout: postlayout
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %}, by {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-    {% for tag in {{ page.tags | split:- }} %}
-    <span class="highlight nt">{{tag}} </span>
-    {% endfor %}
+    <p class="post-meta">{{ page.date | date: "%b %-d %Y" }}{% if page.author %}, by {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <span class="nt">{{ page.tags }}</span>
   </header>
 
   <article class="post-content">
