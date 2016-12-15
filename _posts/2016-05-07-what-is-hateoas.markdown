@@ -2,7 +2,7 @@
 layout: post
 title:  "What is HATEOAS?"
 date:   2016-05-07
-categories: rest
+tags: rest design
 author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
 comments: true
 preview: Basically, the idea is that you can implement web services as simple as possible by using a single HTTP method and nothing else, or you can make use of all the power that HTTP gives you (different methods, status codes, mime-types etc) to make your services truly RESTful.
