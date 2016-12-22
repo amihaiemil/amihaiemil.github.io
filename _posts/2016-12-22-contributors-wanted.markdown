@@ -31,14 +31,14 @@ understood that also at least one unit test is expected.
 * Small tasks: 30min to 1h estimation. If the task is too big or defined in a very abstract manner, outline the
 solution and puzzle the rest of the job out.
 
-Key technologies: java, but also others are welcomed. e.g. I myself would like to have a chance
+Key technologies: **java**, but also others are welcomed. **e.g.** I myself would like to have a chance
 to learn Ruby, so if you have an idea of a cool Ruby library, we could work on it together, and you would
 play the archtiect role.
 
 This chance is for every developer that has at least a medium knowledge of OOP and wants to learn something
-and exercise their knowledge outside college the 9-to-5 office routine.
+and exercise their knowledge **outside college or the 9-to-5 office routine**.
 
-Please note that at the moment I do not earn any money from this so we're not
+**Please note** that at the moment I do not earn any money from this so we're not
 talking about any payments, at least for the foreseable future.
 
 So, if you're interested in enriching your knowledge and CV drop me a line, we'll talk.
