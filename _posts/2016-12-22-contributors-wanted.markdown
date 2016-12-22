@@ -24,7 +24,7 @@ There is already [one](http://jyaml.sourceforge.net/) but it's old and not maint
 Here are some details about the workflow:
 
 * [PDD](http://www.yegor256.com/2009/03/04/pdd.html) should always be used
-* DevOps routines, including merging of PRs is done by [rultor](rultor.com)
+* DevOps routines, including merging of PRs are done by [rultor](rultor.com)
 * Puzzles in the code are turned into Github Issues and eventually closed by [0pdd](http://www.0pdd.com/)
 * Nothing is to be left without a unit test. e.g. If you have a task asking you to implement a method it is
 understood that also at least one unit test is expected.
