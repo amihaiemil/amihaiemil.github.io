@@ -41,4 +41,4 @@ and exercise their knowledge **outside college or the 9-to-5 office routine**.
 **Please note** that at the moment I do not earn any money from this so we're not
 talking about any payments, at least for the foreseable future.
 
-So, if you're interested in enriching your knowledge and CV, drop me a line; we'll talk.
+So, if you're interested in enriching your knowledge and CV, drop me a line and we'll talk.
