@@ -1,9 +1,32 @@
 <header class="site-header">
 
   <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
+    <div class="face">
+      <img src="https://avatars.githubusercontent.com/u/6305156?v=3" alt="me" class="centered photo">
+      <ul class="centered horizontal-list">
+        <li>
+          <a target="_blank" title="Follow me on Github" href="https://www.github.com/amihaiemil">
+            <i class="fa fa-github fa-lg" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" title="Follow me on Twitter" href="https://www.twitter.com/amihaiemil">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" title="Check out my profile on AngelList" href="https://angel.co/mihai-andronache">
+            <i class="fa fa-angellist" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a title="Feel free to drop me a line" href="mailto:{{ site.email }}">
+            <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- <a class="site-title" href="{{ site.baseurl }}/">amihaiemil's programming blog</a> -->
     <nav class="site-nav">
       <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
@@ -14,14 +37,10 @@
       </a>
 
       <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
+        <a class="page-link" href="/">Home</a>
+        <a class="page-link" href="/aboutme/about.html">About me</a>
       </div>
     </nav>
-
   </div>
 
 </header>

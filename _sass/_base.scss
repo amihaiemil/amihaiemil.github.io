@@ -147,8 +147,28 @@ pre {
         padding-left: 0;
     }
 }
+.face {
+  padding-top:10px;
+}
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.face ul.horizontal-list{
+    margin-left: 42.5%;
+    margin-right: 40%;
+}
 
-
+ul.horizontal-list {
+	list-style: none;
+	padding-top: 20px;
+}
+ul.horizontal-list li {
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline;
+}
 
 /**
  * Wrapper
