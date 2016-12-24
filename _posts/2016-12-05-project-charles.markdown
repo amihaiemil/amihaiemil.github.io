@@ -46,8 +46,7 @@ WebCrawl **any implementation of WebDriver**: FirefoxDriver, ChromeDriver etc. I
 to avoid having to open a browser.
 
 So what data is fetched from a webpage? The answer is, simply put, all the text content and other info such as url, title and name. Look in the [WebPage](https://github.com/opencharles/charles/blob/master/src/main/java/com/amihaiemil/charles/WebPage.java)
-interface for more details. It also tries to fetch the page category (method ``getCategory()``), which should be the value of a hidden field with id ``pagectg`` - this is quite off topic, but it's something I figured
-it would be nice to have, if you want to categorize your pages.
+interface for more details. With the next bigger release it will be possible to extend the crawl somehow and specify other, more specific things, to be fetched.
 
 Check the [README.md](https://github.com/opencharles/charles/blob/master/README.md) for the maven dependency and info on how to contribute.
 If you find any bugs or have any questions about this project please, open an issue [here](https://github.com/opencharles/charles/issues/new).
