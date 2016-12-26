@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Project Eva"
+title:  Project Eva
+buttons: <a class="github-button" href="https://github.com/amihaiemil/eva" data-icon="octicon-star" data-count-href="/amihaiemil/eva/stargazers" data-count-api="/repos/amihaiemil/eva#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star amihaiemil/eva on GitHub">Star</a> <a class="github-button" href="https://github.com/amihaiemil/eva/fork" data-icon="octicon-repo-forked" data-count-href="/amihaiemil/eva/network" data-count-api="/repos/amihaiemil/eva#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork amihaiemil/eva on GitHub">Fork</a>
 date:   2016-04-20
 tags: projects github ai
 author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
@@ -15,7 +16,7 @@ preview: A simple AI framework which you can use to solve complicated problems.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Take the backpack's problem for instance: you have a backpack which can hold 10 units of weight and 5 objects of weights: 2, 2, 3, 4 and 5. How do you fill the backpack best? A method is to order the objects decreasingly and keep adding them until you cannot add another one. You then have 5, 4, 3, 2 and 2. Take the first two and you filled the backpack 9/10, but really you could have filled it 10/10 by taking 5, 3 and 2. Of course, the problem becomes much more complicated when you have thousands of objects.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eva is an simple framework which you can use to get a satisfying solution for this kind of problems. It's intended to be usable by everyone, unlike other frameworks which require solid knowledge in the field of [genetic algorithms](https://en.wikipedia.org/wiki/Genetic_algorithm).
- 
+
 See more details about how it works on the project's [site](http://eva.amihaiemil.com).
 
 ### Example
@@ -30,14 +31,14 @@ One solution for this input would be
 
 0 1 0 1 0 1 0 0 0 0
 
-So we take the objects with weights: 31, 42 and 27 to fill the backpack. 
+So we take the objects with weights: 31, 42 and 27 to fill the backpack.
 
 ### The code
 {% highlight java %}
 //long, because the api requires so.
 long[] weights = new long[] {12, 31, 16, 42, 41, 27, 63, 76, 67, 46}
 
-//Generator of random solutions 
+//Generator of random solutions
 BinaryArraySolutionsGenerator generator = new BinaryArraySolutionsGenerator(weights.length) ;
 //Fitness evaluator (how is a solution evaluated? How do you calculate how good ("fit") it is?
 FitnessForBackpackEvaluator evaluator = new FitnessForBackpackEvaluator(weights);
@@ -68,7 +69,7 @@ The maximum number of iterations performed is number of generations times popula
 
 In this backpack example, ``Solution.isAcceptable()`` only checks if the total weight is in the following interval: **(0, backpackWeight]**. You could add more conditions to always get a solution with total weight, say, over 50%.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Tip** Use ``com.amihaiemil.eva.Conditions`` to specify more conditions, like this: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Tip** Use ``com.amihaiemil.eva.Conditions`` to specify more conditions, like this:
 
 {% highlight java %}
 ...

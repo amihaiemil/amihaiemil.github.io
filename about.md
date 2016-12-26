@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-header: About me
+header: About me <a class="github-button" href="https://github.com/amihaiemil" data-count-href="/amihaiemil/followers" data-count-api="/users/amihaiemil#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @amihaiemil on GitHub">Follow @amihaiemil</a>
 permalink: /aboutme/about.html
 ---
 My name is Mihai Andronache and I am a Java developer. I have a Bachelor's degree in CS from [BBU](http://www.cs.ubbcluj.ro/en/), Cluj-Napoca.
