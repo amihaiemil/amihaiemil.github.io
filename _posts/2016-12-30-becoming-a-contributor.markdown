@@ -50,6 +50,6 @@ Also, keep in mind that the **master branch is read-only**. You should solve the
 
 **Every PR will be reviewed by a code reviewer** and you will probably
 be asked to make adjustments to your solution. At first, it will be
-only me but in time, if we manage to build a solid team, others will have this role as well.
+only me, but in time, if we manage to build a solid team, others will have this role as well.
 
 Sounds interesting? Got any questions? Just ask, I'll be happy to answer.
