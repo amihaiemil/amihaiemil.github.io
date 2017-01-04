@@ -46,7 +46,9 @@ see it in action, but here are some firsthand tips:
   we will never choose that over the power of JAXB for instance, but in most cases we will
   not need to use such frameworks.
 
-Also, keep in mind that **every PR will be reviewed by a code reviewer** and you will probably
+Also, keep in mind that the **master branch is read-only**. You should solve the ticket you are assigned on **a separate branch named after the ticket number** (e.g. ticket number 123 should be solved on a branch named 123).
+
+**Every PR will be reviewed by a code reviewer** and you will probably
 be asked to make adjustments to your solution. At first, it will be
 only me but in time, if we manage to build a solid team, others will have this role as well.
 
