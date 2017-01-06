@@ -39,6 +39,6 @@ This chance is for every developer that has at least a medium knowledge of OOP a
 and exercise their knowledge **outside college or the 9-to-5 office routine**.
 
 **Please note** that at the moment I do not earn any money from this so we're not
-talking about any payments, at least at the beginning.
+talking about any payments.
 
 So, if you're interested in enriching your knowledge and CV, drop me a line and we'll talk.
