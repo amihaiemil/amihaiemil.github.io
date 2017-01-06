@@ -18,7 +18,7 @@ It is important to note that 99% of our chatting should take place inside Github
 # Size of tasks and workload
 In the previous post I also mentioned [PDD](http://www.yegor256.com/2009/03/04/pdd.html). **This concept will stand at the core of our collaboration**, because it allows for small tasks (**30min to 1h estimation**) that should find their place easily in most people's schedule.
 
-I expect a contributor to **spend under 8h/week** writing code for these projects and in no case should someone be stressed about this. It should be something rather relaxing from which everyone should learn new stuff.
+I expect a contributor to **spend under 6h/week** writing code for these projects and in no case should someone be stressed about this. It should be something rather relaxing from which everyone should learn new stuff.
 
 As you can read in the [article](http://www.yegor256.com/2009/03/04/pdd.html), PDD has a number of advantages that you should **keep in mind:**
 
