@@ -38,7 +38,7 @@ play the archtiect role.
 This chance is for every developer that has at least a medium knowledge of OOP and wants to learn something
 and exercise their knowledge **outside college or the 9-to-5 office routine**.
 
-**Please note** that at the moment I do not earn any money from this so we're not
+**Please note** that, at the moment, I do not earn any money from this, so we're not
 talking about any payments.
 
 So, if you're interested in enriching your knowledge and CV, drop me a line and we'll talk.
