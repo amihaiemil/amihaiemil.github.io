@@ -34,7 +34,7 @@ public void usernameIsDisplayed(){
 }
 {% endhighlight %}
 
-Why is it wrong? Well, imagine you have 1000 test written like this and someone comes and says one of the following:
+Why is it wrong? Well, imagine you have 1000 tests written like this and someone comes and says one of the following:
 
 * Let's test on different browsers. Also, how do we set it up on Travis CI? We don't
 have Firefox or other graphical browser on that server
