@@ -135,13 +135,15 @@ public void settingsPageIsDisplayed() {
 }
 {% endhighlight %}
 
-The code where the driver looks for the 'Settings' button and clicks it,
-you would find inside that ``settings()`` method's implementation.
+The code where the driver looks for the 'Settings' button and clicks it, 
+is inside that ``settings()`` method's implementation.
 
 Now that we have everything in place, we have both easy maintainability and
 control over the tests. Again, notice the reusability: you could pass this library
 to different people writing tests and be sure that all of them are using the same framework.
 
-To end this article, keep in mind that, because Selenium is such a complex and volatile tool, we
+To end this article, keep in mind that Selenium is a complex and volatile tool. Because of that, we
 must have a real, proper architecture behind our UI tests. If you simply start writing
 procedural code to fetch elements and make some assertions, then your tests will most likely end up always being skipped because nobody will have the nerves to fix and/or stabilize them.
+
+What do you think? Do you see other solutions?
