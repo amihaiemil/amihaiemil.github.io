@@ -125,7 +125,7 @@ public void settingsPageIsDisplayed() {
 That would be wrong, it would end up with the same issues that I described at the beginning.
 Instead, the test should look like this:
 
-```java
+{% highlight java %}
 @Test
 public void settingsPageIsDisplayed() {
   Github github = new SeleniumGithub("username", "password");
