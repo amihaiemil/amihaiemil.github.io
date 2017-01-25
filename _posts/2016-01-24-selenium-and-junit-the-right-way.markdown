@@ -22,7 +22,7 @@ Take [this](http://toolsqa.com/java/junit-framework/junit-test-selenium-webdrive
 
 The truth is, you need to have strong OOP knowledge in order to use Selenium properly. Simply put, if your tests "know" anything about Selenium or WebDriver, you are making a mistake. This is wrong:
 
-```java
+{% highlight java %}
 @Test
 public void usernameIsDisplayed(){
     WebDriver firefox = new FirefoxDriver();
@@ -32,7 +32,7 @@ public void usernameIsDisplayed(){
         .getText();
     assertTrue("amihaiemil".equals(username));
 }
-```
+{% endhighlight %}
 
 Why is it wrong? Well, imagine you have 1000 test written like this and someone comes and says one of the following:
 
@@ -55,14 +55,14 @@ in a set of interfaces and methods that wrap and hide the actual implementation.
 
 Done right, the test above should look something like this:
 
-```java
+{% highlight java %}
 @Test
 public void usernameIsDisplayed(){
     Github github = new SeleniumGithub();
     String username = github.user("amihaiemil").username();
     assertTrue("amihaiemil".equals(username));
 }
-```
+{% endhighlight %}
 
 First advantage that comes to mind is that everything is in one place. If tomorrow
 the UI guys decide that the username element shouldn't have the ``vcard-username``
@@ -81,7 +81,7 @@ Let's say you want to make sure that before checking anything related
 to the profile settings page, the test has gone through the login page and
 successfully authenticated the user. Here is how your abstraction would look like:
 
-```java
+{% highlight java %}
 public final class SeleniumGithub implements Github {
     private final WebDriver driver;
     private final String username;
@@ -106,7 +106,7 @@ public final class SeleniumGithub implements Github {
     }
     ...
 }
-```
+{% endhighlight %}
 
 The class above is a gist of what your design should look like. If you look closely, you'll notice it exposes only interfaces, not actual implementations. All the implementations (e.g. ``RtMainDashboardPage`` and ``RtUserProfilePage``) are **hidden** (package protected), except the entry class.
 
@@ -114,13 +114,13 @@ This not only provides encapsulation, it also gives us control. Since no class c
 
 In other words, you will never see something like this:
 
-```java
+{% highlight java %}
 @Test
 public void settingsPageIsDisplayed() {
   MainDashboardPage dashboard = new RtMainDashboardPage(new FirefoxDriver());
   //...
 }
-```
+{% endhighlight %}
 
 That would be wrong, it would end up with the same issues that I described at the beginning.
 Instead, the test should look like this:
@@ -133,7 +133,7 @@ public void settingsPageIsDisplayed() {
   SettingsPage settings = dashboard.settings();
   //...
 }
-```
+{% endhighlight %}
 
 The code where the driver looks for the 'Settings' button and clicks it,
 you would find inside that ``settings()`` method's implementation.
