@@ -11,8 +11,7 @@ preview: Are you writing Selenium tests with JUnit? If you are not
 
 There are many tutorials out there about how to use Selenium with JUnit to write automated tests for the UI. However, most (if not all of them), only show you how to play around with a ``WebDriver`` instance, fetch a webpage, call a ``findBy*`` method and make some assertions.
 
-Take [this](http://toolsqa.com/java/junit-framework/junit-test-selenium-webdriver/) article, for example - it's currently the first on Google if you type "selenium and junit". If you write your tests in that manner you will eventually end up in a lot of trouble. This post tries to explain why and offer a much
-better alternative.
+Take [this](http://toolsqa.com/java/junit-framework/junit-test-selenium-webdriver/) article, for example - it's currently the first on Google, when you search for "selenium and junit". If you write your tests in that manner you will eventually end up in a lot of trouble. This post tries to explain why and offer a much better alternative.
 
 <figure>
  <img src="/images/truce_hurts.png" alt="The Truce Hurts">
@@ -41,12 +40,14 @@ Why is it wrong? Well, imagine you have 1000 test written like this and someone 
 have Firefox or other graphical browser on that server
 * Something doesn't work right, some pages don't load
 fast enough and most of the tests fail. We should fix this
-* It is mandatory that in some test case
+* It is mandatory that, in some cases,
 a login is performed before doing any other action
 * Why are there so many different flows?
  All the unit tests should have a common framework.
 
-What is the answer to this? Surely it is none of the tricks that JUnit offers, things such as parameterized runners or setup/destroy methods.
+My point is that such tests are **unstable and unmaintainable**. For one, Selenium always tends to break because of some timing issues and other reasons that have nothing to do with your test code (still, you'll have to fix it somehow; worst case scenario, by using ``Thread.sleep()``). Second, you have 1000 tests all written differently, performing different flows and such. Lastly, your UI tests are 100%, coupled with Selenium - tomorrow you might decide to change the technology, why should you rewrite your tests?
+
+What is the answer to this? Surely, it is none of the tricks that JUnit offers - things such as parameterized runners or setup/destroy methods.
 
 The answer is **abstraction and encapsulation**. Before writing any actual tests, you should
 encapsulate the ``WebDriver`` instance in some objects. You should abstract your application
@@ -64,17 +65,17 @@ public void usernameIsDisplayed(){
 ```
 
 First advantage that comes to mind is that everything is in one place. If tomorrow
-the Github guys decide that the username element shouldn't have the ``vcard-username``
+the UI guys decide that the username element shouldn't have the ``vcard-username``
 class anymore, no problem, we have to change it in only one place, not in all our
 tests that happen to have something to do with that element.
 
-Also, if we stumble upon classical Selenium issues, like problems with page loading time,
-we have to fix them in one place as well. The used driver is not a problem either. If someone comes and says we should change it, we simply switch it from inside our abstraction.
+Also, if we stumble upon classic Selenium issues, like problems with page loading time,
+we fix them in one place as well. The used driver is not a problem either - if someone comes and says we should change it, we simply switch it from inside our abstraction. You might not even have to change code, it could all be driven by a system property, for instance.
 
 What about flow restrictions? Is it possible, with such a design, to make sure
 that all the tests perform all the mandatory steps? Of course it is: by using
-interfaces and access-modifiers wisely. By the way, these two are very powerful tools that
-many developers seem to not take seriously.
+interfaces and access modifiers wisely (these two are very powerful tools that
+many developers seem to not take seriously).
 
 Let's say you want to make sure that before checking anything related
 to the profile settings page, the test has gone through the login page and
@@ -107,15 +108,11 @@ public final class SeleniumGithub implements Github {
 }
 ```
 
-The class above is a gist of that your design should look like. If you look close
-enough you'll see it exposes only interfaces, not actual implementations. This is
-because we want to have control. We want to forbid some sitiuations, such as loading
-the settings page without logging in. On the other hand, you see that we allow
-loading a user's profile without login - because that's possible, you can see my Github
-profile without authentication.
+The class above is a gist of what your design should look like. If you look closely, you'll notice it exposes only interfaces, not actual implementations. All the implementations (e.g. ``RtMainDashboardPage`` and ``RtUserProfilePage``) are **hidden** (package protected), except the entry class.
 
-All the implementations (e.g. ``RtMainDashboardPage`` and ``RtUserProfilePage``)
-should be **hidden** (package protected), except the entry class. You should never see something like this:
+This not only provides encapsulation, it also gives us control. Since no class can be instantiated, other than the entry point, it means that we fully guide the client through the framework; we know exactly where he is at any given time and what actions have been performed in order to get him there.
+
+In other words, you will never see something like this:
 
 ```java
 @Test
@@ -138,13 +135,13 @@ public void settingsPageIsDisplayed() {
 }
 ```
 
-The code where the driver looks for the settings page button and clicks it,
+The code where the driver looks for the 'Settings' button and clicks it,
 you would find inside that ``settings()`` method's implementation.
 
 Now that we have everything in place, we have both easy maintainability and
-control over the tests. Also notice the reusability: you could pass this library
+control over the tests. Again, notice the reusability: you could pass this library
 to different people writing tests and be sure that all of them are using the same framework.
 
 To end this article, keep in mind that, because Selenium is such a complex and volatile tool, we
 need to have a real, proper architecture behind our UI tests. If you simply start writing
-procedural code to fetch a page and make some assertions, then your tests will most likely end up always being skipped because nobody will have the nerves to fix and/or stabilize them.
+procedural code to fetch elements and make some assertions, then your tests will most likely end up always being skipped because nobody will have the nerves to fix and/or stabilize them.
