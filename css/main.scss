@@ -42,15 +42,33 @@ $on-laptop:        800px;
     }
 }
 
-.page-content { 
+.page-content {
     background-color: #f2f2f2;
     min-height: 400px;
-    
+
 }
 .photo {
       border-radius: 50%;
       width: 80px;
 }
+
+figure {
+	position:relative;
+  margin:0;
+}
+figure img {
+	max-width:100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+figure figcaption {
+	font-size:.8em;
+	line-height:1em;
+	max-width:55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
