@@ -20,7 +20,7 @@ Take [this](http://toolsqa.com/java/junit-framework/junit-test-selenium-webdrive
  </figcaption>
 </figure>
 
-The truth is, you need to have strong OOP knowledge in order to use Selenium properly. Simply put, if your tests "know" anything about Selenium or WebDriver, you are making a mistake. This is wrong:
+The truth is, you must have strong OOP knowledge in order to use Selenium properly. Simply put, if your tests "know" anything about Selenium or WebDriver, you are making a mistake. This is wrong:
 
 {% highlight java %}
 @Test
@@ -143,5 +143,5 @@ control over the tests. Again, notice the reusability: you could pass this libra
 to different people writing tests and be sure that all of them are using the same framework.
 
 To end this article, keep in mind that, because Selenium is such a complex and volatile tool, we
-need to have a real, proper architecture behind our UI tests. If you simply start writing
+must have a real, proper architecture behind our UI tests. If you simply start writing
 procedural code to fetch elements and make some assertions, then your tests will most likely end up always being skipped because nobody will have the nerves to fix and/or stabilize them.
