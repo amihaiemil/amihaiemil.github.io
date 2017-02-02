@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
 #charles-search {
-    width: 300px;
+    width: 20%;
     font-family: 'Raleway', sans-serif;
     position: absolute;
 }
@@ -24,7 +24,6 @@
     position: relative;
     z-index: 100;
 }
-
 #charles-search-input-wrapper {
     position: relative;
 }
@@ -77,20 +76,24 @@
 ************************/
 
 #resultsPanel {
-    padding-top: 7px;
     border: solid #979797 1px;
     background-color: #FFF;
 
     position: relative;
-    top: -10px;
+    //top: 40%;
 
     -webkit-border-radius: 7px;
        -moz-border-radius: 7px;
             border-radius: 7px;
 }
 
+.search-result-text em {
+    font-weight: bold;
+}
+
 #resultsPanel .search-result {
-    padding: 22px 18px;
+    padding: 5% 5% 5% 5%;
+    overflow: hidden;
     border-top: solid #979797 1px;
 }
 #resultsPanel .search-result:first-child {
@@ -111,8 +114,8 @@
 
 #resultsPanel .search-result h3 {
     margin: 0;
-    padding-bottom: 16px;
-    font-size: 16px;
+    padding-bottom: 2%;
+    font-size: 100%;
     letter-spacing: 0.03em;
     color: #7EBCDB;
 }
