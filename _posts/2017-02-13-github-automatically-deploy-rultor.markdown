@@ -2,7 +2,7 @@
 layout: post
 title:  "Github: Automatically Deploy Files From One Repo to Another"
 date:   2017-02-13
-tags: junit selenium java
+tags: rultor github
 author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
 comments: true
 preview: A simple guide to help you with automatically moving files from one Repo
@@ -19,13 +19,13 @@ from one repo to another. This is something that I did recently, found it tricky
 and figured I'd write about it since it might help others as well.
 
 <figure>
- <img src="/images/cousin_muscles.png" alt="Cousin Muscles">
+ <img src="/images/cousin_muscles.PNG" alt="Cousin Muscles">
  <figcaption>
  Tom & Jerry - Jerry's Cousin, by  William Hanna and Joseph Barbera
  </figcaption>
 </figure>
 
-Here's the scenario: you have a repo where some javascript developers are building
+Here's a scenario: you have a repo where some javascript developers are building
 something awesome which ultimately be turned into a ``awesome.min.js`` file.
 Then, when you say ``@rultor deploy`` you want this file to be moved to a ``company.github.io`` repo,
 since this repo is a website hosted by [Github pages](https://pages.github.com/). Finally,
@@ -34,7 +34,7 @@ your clients, who have a link to the file, will always get the newest version, a
 Sounds easy and since you already have a ``deploy.sh`` file in de devs' repo, you
 add these lines to it:
 
-{% highlight bash %}
+```
 //...build instructions here...
 git clone git@github.com:company/company.github.io.git
 rm ./company.github.io/js/awesome.min.js
@@ -43,7 +43,7 @@ cd company.github.io
 git commit -am "deploy js build"
 git push
 cd ..
-{% endhighlight %}
+```
 
 This should work just fine, except the server doesn't trust Github's host, and
 you will see in rultor's logs something like this:
@@ -61,3 +61,43 @@ maybe answer "Yes" to all the prompts that could occur,
 or involve the actual credentials if you're going with HTTPS.
 None of the options are good and besides, if you're going with SSH, rultor
 will need write access to the ``company.github.io`` repo, in order to ``push`` the changes.
+
+The solution is Github's ``Contents`` API. Instead of using git, Rultor will ``PUT``
+the file using the [update](https://developer.github.com/v3/repos/contents/#update-a-file)
+endpoint, using ``cURL``.
+
+The steps are as follows:
+
+1. Get the API token
+2. Make a cURL ``GET`` to obtain the old file's SHA
+3. Encode the file to deploy using ``openssl``
+4. Make a cURL ``PUT`` with the message, the contents and the SHA
+
+The more important step is handling the API token - you don't want it visible to everyone, so before uploading it
+to Github, you encrypt it using the ``rultor`` command-line tool:
+
+```
+gem install rultor #install the tool
+rultor encrypt -p company/developmentRepo token.txt
+```
+
+Where ``company/developmentRepo`` is the full name of the repo where the the deployable is built.
+Then, inside ``.rultor.yml`` you have
+
+```
+...
+decrypt:
+  token.txt: "token.txt.asc"
+...
+```
+
+Getting the token in your script is the following line (rultor puts the resources under ``/home/r``)
+
+``TOKEN=$(cat /home/r/deployment.txt)``
+
+In this way, you do not have to deal with any prompts and rultor does not need write access to the destination
+repository, since it's using the API token of a user which has the necessary rights - also, that user will appear
+in the commit history unless otherwise specified in the PUT's body (see the API docs).
+
+See exactly how I did it all [here](https://github.com/opencharles/charles-search-box/blob/master/deploy.sh).
+If you have a better alternative or have a question, don't hesitate to let me know in the comments bellow!
