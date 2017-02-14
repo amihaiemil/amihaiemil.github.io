@@ -77,7 +77,11 @@ The steps are as follows:
 3. Encode the file to deploy using ``openssl``
 4. Make a cURL ``PUT`` with the message, the contents and the SHA
 
-The more important step is handling the API token - you don't want it visible to everyone, so before uploading it
+Let's examine the steps more closely:
+
+### 1. The API token
+
+You don't want the API token visible to everyone, so before uploading it
 to Github, you encrypt it using the ``rultor`` command-line tool:
 
 {% highlight bash %}
@@ -99,7 +103,40 @@ Getting the token in your script is the following line (rultor puts the resource
 
 ``TOKEN=$(cat /home/r/deployment.txt)``
 
+### 2. Getting the old file's SHA
+
+Here you just make a cURL get, but you need to parse the JSON object that the Github API
+returns - I used [jq](https://github.com/stedolan/jq) for that.
+
+``BUILD_SHA=$(curl 'https://api.github.com/repos/company/company.github.io/contents/js/awesome.min.js' | jq '.sha')``
+
+Now the variable ``BUILD_SHA`` will contain the required SHA. Needless to say, the first deployment will have to be
+done manually in order for this script to work.
+
 In this way, you do not have to deal with any prompts and rultor does not need write access to the destination repository, since it's using the API token of a user which has the necessary rights.
 
+### 3. Encoding the content using openssl
+
+The content of the deployed files has to be base64 encoded, as required by the Github API.
+
+``NEW_BUILD=$(openssl enc -base64 <<< $(cat src/build/awesome.min.js) | awk 'BEGIN{ORS="\\n";} {print}')``
+
+Note that I used awk here to remove newlines (otherwise the built JSON, for the github API is not well formatted).
+
+### 4. Make the cURL PUT request
+
+This is a 2-step process:
+ + first, dump the json body in a file (becuase of the base64 content, which might
+ be too large, cURL might complain if you specify it ar an argument directly)
+ + make the request
+
+```
+echo "{\"message\": \"deploy new build\", \"sha\": ${SHA_BUILD}, \"content\": \"${NEW_BUILD}\"}" > build.txt;
+curl -H "Authorization: token ${TOKEN}" -X PUT -d @build.txt https://api.github.com/repos/company/company.github.io/contents/js/awesome.min.js
+```
+
 See exactly how I did it all [here](https://github.com/opencharles/charles-search-box/blob/master/deploy.sh).
+
+This is it. You can follow these steps to avoid prompts and also to avoid giving rultor write access to the
+destination repository.
 If you have a better alternative or have a question, don't hesitate to comment bellow!
