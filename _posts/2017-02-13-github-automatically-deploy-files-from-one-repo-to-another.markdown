@@ -64,7 +64,7 @@ If you use HTTPS, you will be prompted for the username and password.
 You could, of course, find some way to automatically answer to the prompts. Maybe answer "Yes" to all the prompts that could occur,
 or, if you choose HTTPS, involve the credentials of someone with write access on
  that repo.
-None of the options are good, obviously.
+None of the options is good, obviously.
 
 The solution is Github's ``Contents`` API. Rultor will ``PUT``
 the file through the [update](https://developer.github.com/v3/repos/contents/#update-a-file)
@@ -81,7 +81,7 @@ Let's examine the steps more closely:
 
 ### 1. The API token
 
-You don't want the API token visible to everyone, so before uploading it
+You don't want the API token visible to everyone so, before uploading it
 to Github, you encrypt it using the ``rultor`` command-line tool:
 
 {% highlight bash %}
