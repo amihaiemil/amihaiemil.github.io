@@ -9,12 +9,12 @@ preview: A simple guide to help you with automatically moving files from one rep
  to another, using Rultor
 ---
 
-Due to its rich and well designed API, Github has a vast number of integrations. There is a lot of software out there that runs on top of Github. One such software is
-[Rultor](http://doc.rultor.com/). If you're not familiar with it, you can read more  in several articles written by its creator [here](http://www.yegor256.com/tag/rultor).
+Due to its rich and well designed API, Github has a vast number of integrations that run on top of it. [Rultor](http://doc.rultor.com/) is one of the many pieces of
+software that integrate with Github. If you're not familiar with it, you can read more  in several articles written by its creator [here](http://www.yegor256.com/tag/rultor).
 
 In this post I'm going to show you how to achieve one particular goal: moving files
-from one repo to another. This is something that I did recently, found it tricky
-and figured I'd write about it.
+from one repo to another with Rultor. This is something that I did recently and
+figured I'd write about it, since I found it rather tricky.
 
 <figure>
  <img src="/images/jerrys_cousin.png" alt="Jerry's Cousin">
@@ -25,8 +25,8 @@ and figured I'd write about it.
 
 Here's a scenario: you have a repo where some javascript developers are building
 something which will ultimately be turned into an ``awesome.min.js`` file.
-Then, when you say ``@rultor deploy`` you want this file to be moved to a ``company.github.io`` repo,
-because this repo is a website hosted by [Github pages](https://pages.github.com/). This way, your clients who have a link to the file, will always get the latest version of it.
+When you say ``"@rultor deploy"``, the file should be moved to the ``company.github.io`` repo, because that repo is a website hosted by [Github pages](https://pages.github.com/). This way, the HTML pages where the file is
+imported will always use the latest version of it.
 
 Sounds easy, so you write a ``deploy.sh`` file for rultor to run on a ``deploy`` command:
 
@@ -43,28 +43,28 @@ cd ..
 
 Inside ``.rultor.yml`` you have:
 
-```
+{% highlight yaml %}
 deploy:
   script: |-
     chmod +x ./deploy.sh
     ./deploy.sh
-```
+{% endhighlight %}
 
 This should work just fine, except the server doesn't trust Github's host, and
 you will see in rultor's logs something like this:
 
-```
-The authenticity of host 'github.com (192.30.252.1)' can't be established.
+{% highlight bash %}
+The authenticity of host 'github.com (192.30.252.1)' cannot be established.
 RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
 Are you sure you want to continue connecting (yes/no)?
-```
+{% endhighlight %}
 
 If you use HTTPS, you will be prompted for the username and password.
 
 You could, of course, find some way to automatically answer to the prompts. Maybe answer "Yes" to all the prompts that could occur,
-or involve the actual credentials if you're going with HTTPS.
-None of the options are good and besides, if you're using ``git``, rultor
-will need write access to the ``company.github.io`` repo, in order to ``push`` the changes.
+or, if you choose HTTPS, involve the credentials of someone with write access on
+ that repo.
+None of the options are good, obviously.
 
 The solution is Github's ``Contents`` API. Rultor will ``PUT``
 the file through the [update](https://developer.github.com/v3/repos/contents/#update-a-file)
@@ -94,21 +94,25 @@ the files if they are found in another repository.
 
 Then, inside ``.rultor.yml`` you have
 
-```
+{% highlight yaml %}
 decrypt:
   token.txt: "token.txt.asc"
-```
+{% endhighlight %}
 
 Getting the token in your script is the following line (rultor puts the resources under ``/home/r``)
 
-``TOKEN=$(cat /home/r/deployment.txt)``
+{% highlight bash %}
+TOKEN=$(cat /home/r/deployment.txt)
+{% endhighlight %}
 
 ### 2. Getting the old file's SHA
 
 Here you just make a cURL get, but you need to parse the JSON object that the Github API
 returns - I used [jq](https://github.com/stedolan/jq) for that.
 
-``BUILD_SHA=$(curl 'https://api.github.com/repos/company/company.github.io/contents/js/awesome.min.js' | jq '.sha')``
+{% highlight bash %}
+BUILD_SHA=$(curl 'https://api.github.com/repos/company/company.github.io/contents/js/awesome.min.js' | jq '.sha')
+{% endhighlight %}
 
 Now the variable ``BUILD_SHA`` will contain the required SHA. Needless to say, the first deployment will have to be
 done manually in order for this script to work.
@@ -117,7 +121,9 @@ done manually in order for this script to work.
 
 The content of the deployed files has to be base64 encoded, as required by the Github API.
 
-``NEW_BUILD=$(openssl enc -base64 <<< $(cat src/build/awesome.min.js) | awk 'BEGIN{ORS="\\n";} {print}')``
+{% highlight bash %}
+NEW_BUILD=$(openssl enc -base64 <<< $(cat src/build/awesome.min.js) | awk 'BEGIN{ORS="\\n";} {print}')
+{% endhighlight %}
 
 Note that I used awk here to remove newlines (otherwise the built JSON, for the github API is not well formatted).
 
@@ -141,6 +147,5 @@ curl \
 
 See exactly how I did it all [here](https://github.com/opencharles/charles-search-box/blob/master/deploy.sh).
 
-This is it. You can follow these steps to avoid prompts and also to avoid giving rultor write access to the
-destination repository.
-If you have a better alternative or have a question, don't hesitate to comment bellow!
+This is it. You can follow these steps to avoid blindly answering prompts, as well
+as involving actual user credentials. Any questions?
