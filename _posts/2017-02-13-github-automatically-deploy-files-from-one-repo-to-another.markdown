@@ -113,8 +113,6 @@ returns - I used [jq](https://github.com/stedolan/jq) for that.
 Now the variable ``BUILD_SHA`` will contain the required SHA. Needless to say, the first deployment will have to be
 done manually in order for this script to work.
 
-In this way, you do not have to deal with any prompts and rultor does not need write access to the destination repository, since it's using the API token of a user which has the necessary rights.
-
 ### 3. Encoding the content using openssl
 
 The content of the deployed files has to be base64 encoded, as required by the Github API.
@@ -130,10 +128,16 @@ This is a 2-step process:
  be too large, cURL might complain if you specify it ar an argument directly)
  + make the request
 
-```
-echo "{\"message\": \"deploy new build\", \"sha\": ${SHA_BUILD}, \"content\": \"${NEW_BUILD}\"}" > build.txt;
-curl -H "Authorization: token ${TOKEN}" -X PUT -d @build.txt https://api.github.com/repos/company/company.github.io/contents/js/awesome.min.js
-```
+{% highlight bash %}
+echo \
+  "{\"message\": \"deploy new build\", \"sha\": ${SHA_BUILD}, \"content\": \"${NEW_BUILD}\"}" > \
+  build.txt;
+
+curl \
+  -H "Authorization: token ${TOKEN}" \
+  -X PUT -d @build.txt \
+  https://api.github.com/repos/company/company.github.io/contents/js/awesome.min.js
+{% endhighlight %}
 
 See exactly how I did it all [here](https://github.com/opencharles/charles-search-box/blob/master/deploy.sh).
 
