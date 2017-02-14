@@ -1,3 +1,7 @@
+gems: [jekyll-paginate]
+paginate: 10
+paginate_path: "/page:num/"
+
 # Site settings
 title: amihaiemil.com | Programming blog
 email: amihaiemil@gmail.com
@@ -14,6 +18,8 @@ markdown: kramdown
 
 lsi: false
 safe: true
+whitelist:
+  - jekyll-paginate
 source: .
 incremental: false
 highlighter: rouge
