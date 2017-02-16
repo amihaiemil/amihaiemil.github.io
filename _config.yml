@@ -1,4 +1,6 @@
-gems: [jekyll-paginate]
+gems: 
+  - jekyll-paginate
+  - jekyll-feed
 paginate: 10
 paginate_path: "/page:num/"
 
@@ -20,6 +22,7 @@ lsi: false
 safe: true
 whitelist:
   - jekyll-paginate
+  - jekyll-feed
 source: .
 incremental: false
 highlighter: rouge
