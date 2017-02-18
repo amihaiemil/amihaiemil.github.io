@@ -9,9 +9,9 @@ preview: Are you writing Selenium tests with JUnit? If you are not
  a good OOP programmer, you're probably doing it wrong.
 ---
 
-There are many tutorials out there about how to use Selenium with JUnit to write automated tests for the UI. However, most (if not all of them), only show you how to play around with a ``WebDriver`` instance, fetch a webpage, call a ``findBy*`` method and make some assertions.
+There are many tutorials out there about how to use Selenium with JUnit to write automated tests for the UI. However, most (if not all of them) only show you how to play around with a ``WebDriver`` instance, fetch a web-page, call a ``findBy*`` method and make some assertions.
 
-Take [this](http://toolsqa.com/java/junit-framework/junit-test-selenium-webdriver/) article, for example - it's currently the first on Google, when you search for "selenium and junit". If you write your tests in that manner you will eventually end up in a lot of trouble. This post tries to explain why and offer a much better alternative.
+Take [this](http://toolsqa.com/java/junit-framework/junit-test-selenium-webdriver/) article, for example. It's currently the first on Google, when you search for "selenium and junit". If you write your tests in that manner you will eventually end up in a lot of trouble. This post tries to explain why and offer a much better alternative.
 
 <figure>
  <img src="/images/truce_hurts.png" alt="The Truce Hurts">
@@ -45,7 +45,7 @@ a login is performed before doing any other action
 * Why are there so many different flows?
  All the unit tests should have a common framework.
 
-My point is that such tests are **unstable and unmaintainable**. For one, Selenium always tends to break because of some timing issues and other reasons that have nothing to do with your test code (still, you'll have to fix it somehow; worst case scenario, by using ``Thread.sleep()``). Second, you have 1000 tests all written differently, performing different flows and such. Lastly, your UI tests are 100%, coupled with Selenium - tomorrow you might decide to change the technology, why should you rewrite your tests?
+My point is that such tests are **unstable and unmaintainable**. For one, Selenium always tends to break because of some timing issues and other reasons that have nothing to do with your test code (still, you'll have to fix it somehow; worst case scenario, by using ``Thread.sleep()``). Second, you have 1000 tests all written differently and performing different flows. Lastly, your UI tests are 100% coupled with Selenium - tomorrow you might decide to change the technology, why should you rewrite your tests?
 
 What is the answer to this? Surely, it is none of the tricks that JUnit offers - things such as parameterized runners or setup/destroy methods.
 
@@ -135,7 +135,7 @@ public void settingsPageIsDisplayed() {
 }
 {% endhighlight %}
 
-The code where the driver looks for the 'Settings' button and clicks it, 
+The code where the driver looks for the 'Settings' button and clicks it,
 is inside that ``settings()`` method's implementation.
 
 Now that we have everything in place, we have both easy maintainability and
