@@ -109,7 +109,7 @@ SearchResultsPage results = search.perform();
 You can find all those classes [here](https://github.com/opencharles/charles-rest/tree/master/src/main/java/com/amihaiemil/charles/aws/requests).
 
 Let me explain why I called them **"tunnel decorators"**. It's because the main method is
-``perform()``, but we do not touch its result - that's not what we decorate. Instead, before calling ``base.perform()``, we call ``base.request()`` to get the underlying ``com.amazonaws.Request``, which is the object that we want to decorate. I personally see this ``request()`` method as a **tunnel** beneath all those decorators.
+``perform()``, but we do not touch its result - that's not what we decorate. Instead, before calling ``base.perform()``, we call ``base.request()`` to get the underlying ``com.amazonaws.Request``, which is the object that we want to decorate. I personally see this ``request()`` method as a tunnel *beneath* all those decorators.
 
 Furthermore, ``AwsHttpRequest`` is an abstract class, not an interface, because method ``request()`` has to have the ``default`` access modifier. It should be visible only to
 these decorators, in their own package. Otherwise, there would be a "leak" in the tunnel, clients could do something like:
