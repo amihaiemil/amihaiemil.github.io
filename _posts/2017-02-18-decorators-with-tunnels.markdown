@@ -1,24 +1,24 @@
 ---
 layout: post
 title: "Tunnel Decorators"
-date: 2017-02-22
+date: 2017-02-18
 tags: java oop design
 author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
 comments: true
-preview: Using decorators to encapsulate the work with configurable objects.
+preview: Using decorators to encapsulate the work with a badly designed library.
 ---
 
 Sometimes, you are forced to use libraries written by other developers. Needless to say, these libraries often have annoying flaws such as:
 
  + bad encapsulation
  + poorly designed interfaces and classes
- + missing or poorly written (even idiotic) java-docs
+ + missing or poorly written (even idiotic) javadocs
 
 In other words, you have no idea how to [use](http://www.baeldung.com/design-a-user-friendly-java-library) them properly
 and if you somehow manage to get them running, there's a big risk that, gradually,
 your own code will turn into an unmaintainable pile of garbage.
 
-I was working recently with AWS and, to my surprise, [aws-java-sdk-code](https://github.com/aws/aws-sdk-java/tree/master/aws-java-sdk-core) is
+I was working recently with AWS and, to my surprise, [aws-java-sdk-core](https://github.com/aws/aws-sdk-java/tree/master/aws-java-sdk-core) is
 quite a mess. I solved the issue using a flavor of decorators.
 Read on.
 
@@ -40,15 +40,15 @@ HTTP request to an AWS web service. Do you like it? I don't:
 
     //Sign it...
     AWS4Signer signer = new AWS4Signer(); //?!?
-    signer.setRegionName(region.trim());
-    signer.setServiceName(this.base.request().getServiceName());
+    signer.setRegionName("...");
+    signer.setServiceName(request.getServiceName());
     signer.sign(request, new AwsCredentialsFromSystem());
 
     //Execute it and get the response...?!?
     Response<String> rsp = new AmazonHttpClient(new ClientConfiguration())
-        requestExecutionBuilder()
+        .requestExecutionBuilder()
         .executionContext(new ExecutionContext(true)) //?!?
-        .request(this.request)
+        .request(request)
         .errorResponseHandler(new SimpleAwsErrorHandler())
         .execute(new SimpleResponseHandler<String>());
 {% endhighlight %}
@@ -58,17 +58,17 @@ Marked with ``//?!?`` above is what's wrong with the API:
  + setters over setters
  + why is the ``Request`` parameterized?
  + lack of default ctors (why do you have to specify ``new ClientConfiguration()``?)
- + encapsulation flaws - why do you have to even see the class ``ExecutionContext``?
-   What is it and what does it do? Its java-doc reads the following:
-   ``For testing purposes.`` - not joking.
+ + encapsulation flaws (why do you have to even see the class ``ExecutionContext``?
+   What is it and what does it do? Its javadoc reads the following:
+   ``"For testing purposes."`` - I'm not joking)
 
-After I figured out the code above, at some point I woke up with quite a few
+After I figured out the code above, at some point, I woke up with quite a few
 methods in my code, which were all doing pretty much the same thing: building
-and executing different requests, where needed. The above mess was duplicated
+and executing different requests. The above mess was duplicated
 through-out my application. Time for refactoring!
 
 I wanted the different types of HTTP requests to be decoupled, composable and easy
-to unit test. I wrote the following abstract class:
+to unit test, so I wrote the following abstract class:
 
 {% highlight java %}
 public abstract class AwsHttpRequest<T> {
