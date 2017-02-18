@@ -56,6 +56,7 @@ HTTP request to an AWS web service. Do you like it? I don't:
 Marked with ``//?!?`` above is what's wrong with the API:
 
  + setters over setters
+ + why is the ``Request`` parameterized?
  + lack of default ctors (why do you have to specify ``new ClientConfiguration()``?)
  + encapsulation flaws - why do you have to even see the class ``ExecutionContext``?
    What is it and what does it do? Its java-doc reads the following:
