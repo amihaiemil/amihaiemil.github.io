@@ -15,4 +15,33 @@ layout: postlayout
   <article class="post-content">
     {{ content }}
   </article>
+  {% if page.shareable%}
+    <div class="share_buttons" style="vertical-align: top; line-height: 10px;">
+      <span
+          class="fb-share-button"
+          data-href="{{page.url}}"
+          data-layout="button_count"
+          data-size="small"
+          data-mobile-iframe="true">
+          <a
+            class="fb-xfbml-parse-ignore"
+            target="_blank"
+            href="https://www.facebook.com/sharer/sharer.php?u={{page.url}}&amp;src=sdkpreparse">
+            Share
+          </a>
+      </span>
+      <span class="twitter">
+          <a
+              class="twitter-share-button"
+              href="https://twitter.com/intent/tweet?text=An+interesting+article: ">
+              Tweet
+          </a>
+      </span>
+      <span class="linkedin">
+        <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+        <script type="IN/Share" data-url="{{page.url}}" data-counter="right"></script>
+      </span>
+    </div>
+  {% endif %}
+
 </div>
