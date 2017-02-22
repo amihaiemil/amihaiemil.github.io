@@ -6,6 +6,7 @@ date:   2016-04-20
 tags: projects github ai
 author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
 comments: true
+shareable: true
 preview: A simple AI framework which you can use to solve complicated problems.
 ---
 

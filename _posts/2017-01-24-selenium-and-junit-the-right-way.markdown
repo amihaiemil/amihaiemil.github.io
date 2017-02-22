@@ -5,6 +5,7 @@ date:   2017-01-24
 tags: junit selenium java
 author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
 comments: true
+shareable: true
 preview: Are you writing Selenium tests with JUnit? If you are not
  a good OOP programmer, you're probably doing it wrong.
 ---

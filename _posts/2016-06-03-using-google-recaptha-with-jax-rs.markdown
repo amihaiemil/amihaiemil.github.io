@@ -5,29 +5,30 @@ date:   2016-06-03
 tags: rest anti-spam
 author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
 comments: true
+shareable: true
 preview: How to secure a form post with Google ReCaptcha 2
 ---
 
-Nowadays the simplest way to secure your formular against robots and automated tools is to add a captcha to it. 
-I found Google's <a title="Recaptcha developer guide" href="https://developers.google.com/recaptcha/intro">Recaptcha 2.0</a> to be an elegant solution. It looks good and it's easy to 
-implement. The general mechanism is thoroughly documented in the developer's guide so it makes no sense to just repeat it here. Instead I 
+Nowadays the simplest way to secure your formular against robots and automated tools is to add a captcha to it.
+I found Google's <a title="Recaptcha developer guide" href="https://developers.google.com/recaptcha/intro">Recaptcha 2.0</a> to be an elegant solution. It looks good and it's easy to
+implement. The general mechanism is thoroughly documented in the developer's guide so it makes no sense to just repeat it here. Instead I
 want to show you how I would implement it together with a Java EE ``@POST`` method.
 
 <img alt="Google ReCaptcha 2.0" src="/images/recaptcha.PNG"/>
 
 Assume you have a contact form which has the following 3 fields: **name**, **email** and **message** . The class that maps the form
-looks like this: 
+looks like this:
 
 {% highlight java %}
 public class ContactForm {
     @FormParam("name")
     @DefaultValue("")
     private String name;
-    
+
     @FormParam("email")
     @DefaultValue("")
     private String email;
-    
+
     @FormParam("message")
     @DefaultValue("")
     private String message;
@@ -51,7 +52,7 @@ public class ContactResource {
 
 Now, when the user resolves the captcha, a hidden field is added in the html ``<form>`` element, with the name ``g-recaptcha-response`` .
 You can use this name to map the field on the ``ContactForm``, together with the other 3. The ``ContactForm`` class now has one more
-field (+ getters and setters): 
+field (+ getters and setters):
 
 {% highlight java %}
     @FormParam("g-recaptcha-response")
@@ -59,7 +60,7 @@ field (+ getters and setters):
     private String recaptchaResponse;
 {% endhighlight %}
 
-**Note:** I always add ``@DefaultValue("")`` when dealing with strings, to avoid **null** values in case the parameter isn't supplied. 
+**Note:** I always add ``@DefaultValue("")`` when dealing with strings, to avoid **null** values in case the parameter isn't supplied.
 
 Let's add the class ``GoogleRecaptchaCheck`` which will encapsulate the call to Google's web service. I'm going to keep it simple here and
 only use the user's captcha response. As the documentation states, you can, optionally, send the user's IP as well.
@@ -102,7 +103,7 @@ only use the user's captcha response. As the documentation states, you can, opti
     }
 {% endhighlight %}
 
-Your REST post method now looks like this: 
+Your REST post method now looks like this:
 
 {% highlight java %}
 @Path("/")
@@ -119,7 +120,7 @@ public class ContactResource {
                 return Response.ok().build();
             }
         } catch (IOException ex) {
-            //log exception maybe? 
+            //log exception maybe?
             return Response.serverError().build();
         }
     }

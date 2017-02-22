@@ -5,6 +5,7 @@ date:   2016-12-30
 tags: contributors java oop github
 author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
 comments: true
+shareable: true
 preview: How we should work together using PDD, plus other details
 ---
 

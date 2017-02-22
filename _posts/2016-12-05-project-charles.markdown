@@ -6,6 +6,7 @@ date:   2016-12-05
 tags: projects github web
 author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
 comments: true
+shareable: true
 preview: A simple and smart Java webcrawler.
 ---
 

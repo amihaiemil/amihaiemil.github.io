@@ -5,6 +5,7 @@ date:   2016-12-22
 tags: contributors java oop github
 author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
 comments: true
+shareable: true
 preview: A chance to practice pure oop while contributing to fun projects!
 ---
 

@@ -5,6 +5,7 @@ date: 2017-02-13
 tags: rultor github
 author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
 comments: true
+shareable: true
 preview: A simple guide to help you with automatically moving files from one repo
  to another, using Rultor
 ---

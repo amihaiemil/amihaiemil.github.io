@@ -5,6 +5,7 @@ date: 2017-02-18
 tags: java oop design
 author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
 comments: true
+shareable: true
 preview: Using decorators to encapsulate the work with a badly designed library.
 ---
 
