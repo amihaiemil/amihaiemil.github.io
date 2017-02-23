@@ -14,7 +14,7 @@ There are many tutorials out there about how to use Selenium with JUnit to write
 
 Take [this](http://toolsqa.com/java/junit-framework/junit-test-selenium-webdriver/) article, for example. It's currently the first on Google, when you search for "selenium and junit". If you write your tests in that manner you will eventually end up in a lot of trouble. This post tries to explain why and offer a much better alternative.
 
-<figure>
+<figure class="articleimg">
  <img src="/images/truce_hurts.png" alt="The Truce Hurts">
  <figcaption>
  Tom & Jerry - The Truce Hurts, by  William Hanna and Joseph Barbera

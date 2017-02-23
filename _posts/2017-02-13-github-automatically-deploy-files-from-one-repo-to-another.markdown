@@ -17,7 +17,7 @@ In this post I'm going to show you how to achieve one particular goal: moving fi
 from one repo to another with Rultor. This is something that I did recently and
 figured I'd write about it, since I found it rather tricky.
 
-<figure>
+<figure class="articleimg">
  <img src="/images/jerrys_cousin.png" alt="Jerry's Cousin">
  <figcaption>
  Tom & Jerry - Jerry's Cousin, by  William Hanna and Joseph Barbera
