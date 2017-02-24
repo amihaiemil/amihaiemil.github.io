@@ -23,7 +23,7 @@ I was working recently with AWS and, to my surprise, [aws-java-sdk-core](https:/
 quite a mess. I solved the issue using a flavor of decorators.
 Read on.
 
-<figure>
+<figure class="articleimg">
  <img src="/images/jerry_and_jumbo.png" alt="Jerry and Jumbo">
  <figcaption>
  Tom & Jerry - Jerry and Jumbo, by  William Hanna and Joseph Barbera

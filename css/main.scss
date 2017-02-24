@@ -52,21 +52,15 @@ $on-laptop:        800px;
       width: 80px;
 }
 
-figure {
-	position:relative;
-  margin:0;
+figure.articleimg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-figure img {
-	max-width:100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-figure figcaption {
+figure.articleimg figcaption {
 	font-size:.8em;
 	line-height:1em;
-	max-width:55%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
