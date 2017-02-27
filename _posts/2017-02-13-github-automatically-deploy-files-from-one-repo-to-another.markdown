@@ -63,8 +63,7 @@ Are you sure you want to continue connecting (yes/no)?
 If you use HTTPS, you will be prompted for the username and password.
 
 You could, of course, find some way to automatically answer to the prompts. Maybe answer "Yes" to all the prompts that could occur,
-or, if you choose HTTPS, involve the credentials of someone with write access on
- that repo.
+or, if you choose HTTPS, involve the credentials of someone with write access on that repo.
 None of the options is good, obviously.
 
 The solution is Github's ``Contents`` API. Rultor will ``PUT``
@@ -90,8 +89,7 @@ gem install rultor #install the tool
 rultor encrypt -p company/developmentRepo token.txt
 {% endhighlight %}
 
-Where ``company/developmentRepo`` is the full name of the repo where the the deployable is built. This is important, because it's how rultor knows not to decrypt
-the files if they are found in another repository.
+Where ``company/developmentRepo`` is the full name of the repo where the deployable is built. This is important, because it's how rultor knows not to decrypt the files if they are found in another repository.
 
 Then, inside ``.rultor.yml`` you have
 
@@ -126,13 +124,13 @@ The content of the deployed files has to be base64 encoded, as required by the G
 NEW_BUILD=$(openssl enc -base64 <<< $(cat src/build/awesome.min.js) | awk 'BEGIN{ORS="\\n";} {print}')
 {% endhighlight %}
 
-Note that I used awk here to remove newlines (otherwise the built JSON, for the github API is not well formatted).
+Note that I used awk here to remove newlines (otherwise the built JSON is not well formatted).
 
 ### 4. Make the cURL PUT request
 
 This is a 2-step process:
  + first, dump the json body in a file (becuase of the base64 content, which might
- be too large, cURL might complain if you specify it ar an argument directly)
+ be too large, cURL might complain if you specify it as an argument directly)
  + make the request
 
 {% highlight bash %}
