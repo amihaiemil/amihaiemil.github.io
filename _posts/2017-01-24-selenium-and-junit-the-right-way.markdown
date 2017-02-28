@@ -148,3 +148,5 @@ must have a real, proper architecture behind our UI tests. If you simply start w
 procedural code to fetch elements and make some assertions, then your tests will most likely end up always being skipped because nobody will have the nerves to fix and/or stabilize them.
 
 What do you think? Do you see other solutions?
+
+**P.S.** At some point after writing this article, someone asked for the code. [Here](https://github.com/amihaiemil/selenium-github-example) it is.
