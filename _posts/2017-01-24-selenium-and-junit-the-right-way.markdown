@@ -149,4 +149,4 @@ procedural code to fetch elements and make some assertions, then your tests will
 
 What do you think? Do you see other solutions?
 
-**P.S.** At some point after writing this article, someone asked for the code. [Here](https://github.com/amihaiemil/selenium-github-example) it is.
+**P.S.** At some point after I wrote this article, someone asked for the code. [Here](https://github.com/amihaiemil/selenium-github-example) it is.
