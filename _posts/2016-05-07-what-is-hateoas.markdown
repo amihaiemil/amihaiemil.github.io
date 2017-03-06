@@ -104,7 +104,7 @@ Your JSON response is now both navigable and scalabale! The client can easily ch
 
 **Second problem**: status codes. This is also important. Don't use only ``200 OK`` and ``404 NOT FOUND``! Offer more meaning to your responses, help the clients "understand" everything better. It's all about **respecting the HTTP protocol**. If there are no results found, return an empty response but set the status appropriately, to ``204 NO CONTENT``. If there are validation errors (say **index** is out of range), return ``412 PRECONDITION FAILED`` or ``422 UNPROCESSABLE ENTITY``. And the list can go on. You got the idea: respect the protocol, make the communication as easy as possible.
 
-Take the case when no results are found, for instance. A **not so good** option would be to return a message:
+Take the case when no results are found. A **not so good** option would be to return a message, for instance:
 
 {% highlight json %}
 HTTP Status 200 OK
