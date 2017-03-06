@@ -80,7 +80,7 @@ public interface Color {
 
   static class Fake implements Color {
     private String color;
-    public FakeEnv(String color) {
+    public Fake(String color) {
       this.color = color;
     }
     public String read() {
