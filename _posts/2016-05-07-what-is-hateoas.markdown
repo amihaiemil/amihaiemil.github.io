@@ -9,7 +9,7 @@ shareable: true
 preview: You can implement web services using a single HTTP method and nothing else, or you can make use of all the power that HTTP gives you (different methods, status codes, mime-types etc) to make your services truly RESTful.
 ---
 
-This article assumes you have at least an intermediate knowledge about REST. If you don't, there are [many](https://www.google.ro/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=rest%20tutorial) tutorials that teach you how to implement a RESTful API. I learned REST from Bill Burke's [RESTful Java with JAX-RS 2.0](http://cdn.oreillystatic.com/oreilly/booksamplers/9781449361341_sampler.pdf), which I would recommend to any Java EE developer starting to learn this architecture. Also, Github's [API](https://api.github.com/) serves as agreat example.
+This article assumes you have at least an intermediate knowledge about REST. If you don't, there are [many](https://www.google.ro/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=rest%20tutorial) tutorials that teach you how to implement a RESTful API. I learned REST from Bill Burke's [RESTful Java with JAX-RS 2.0](http://cdn.oreillystatic.com/oreilly/booksamplers/9781449361341_sampler.pdf), which I would recommend to any Java EE developer starting to learn this architecture. Also, Github's [API](https://api.github.com/) serves as a great example.
 
 In his book Burke also describes HATEOAS (hypermedia as the engine of application state). It is what's known as the 3rd level of REST [maturity](http://martinfowler.com/articles/richardsonMaturityModel.html). In fact, [according to](http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven) the paradigm's creator, an API is truly RESTful only if it follows the HATEOAS principle.
 
@@ -117,7 +117,7 @@ But this is neither HATEOAS nor true HTTP. A correct response would be:
 HTTP Status 204 NO CONTENT
 {% endhighlight %}
 
-I hope you now have a better understanding of the HATEOAS principle. Your search endpoint is now much more usable in any context. Wheter it will be consumed by a Javascript client or by a Java/C#/Python/Whatever library, the communication will be smooth, and the client's code fluent and less bug-prompt.
+I hope you now have a better understanding of the HATEOAS principle. Your search endpoint is now much more usable in any context. Wheter it will be consumed by a Javascript client or by a Java/C#/Python/Whatever library, the communication will be smooth, and the client's code fluent and less bug-prone.
 
 I also think of it (slightly) as of an HTML page that's been stripped of its CSS. Look again at the search response above. Now, think how easy it will be for any JS client to work with it: simply make a call to the endpoint, get the JSON object and display the text and links.
 
