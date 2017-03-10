@@ -16,7 +16,7 @@ HTML files, css stylesheets, javascript files, pdf files etc. All of these
 represent the front-end and should as decoupled from the backend as possible.
 
 Any changes to the UI should be done using a CMS (Content Management System)
-and should go live without the need for a deployment. This is needed especially
+and should go live without the need for a deployment. This is important especially
 in enterprise environments where there are strict rules and timelines
 regarding production releases.
 
