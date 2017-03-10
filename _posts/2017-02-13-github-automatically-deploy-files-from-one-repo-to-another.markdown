@@ -144,7 +144,7 @@ curl \
   https://api.github.com/repos/company/company.github.io/contents/js/awesome.min.js
 {% endhighlight %}
 
-See exactly how I did it all [here](https://github.com/opencharles/charles-search-box/blob/master/deploy.sh).
+See exactly how I did it all [here](https://github.com/opencharles/charles-search-box/blob/master/deploy.sh). Also, see it in action [here](https://github.com/opencharles/charles-search-box/pull/19#issuecomment-285387469).
 
 This is it. You can follow these steps to avoid blindly answering prompts, as well
 as involving actual user credentials. Any questions?
