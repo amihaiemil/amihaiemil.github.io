@@ -16,11 +16,11 @@ HTML files, css stylesheets, javascript files, pdf files etc. All of these
 represent the front-end and should as decoupled from the backend as possible.
 
 Any changes to the UI should be done using a CMS (Content Management System)
-and should go live without the need for a deployment. This is important especially
+and should go live without requiring a deployment. This is important especially
 in enterprise environments where there are strict rules and timelines
 regarding production releases.
 
-Of course, you might not care about this if you're a single developer who deploys
+Of course, you may not care about this if you're a single developer who deploys
 an app to [Amazon EC2](https://aws.amazon.com/ec2/) anytime, with a few clicks.
 
 <figure class="articleimg">
@@ -32,9 +32,9 @@ an app to [Amazon EC2](https://aws.amazon.com/ec2/) anytime, with a few clicks.
 
 Let's see how this decoupling can be achieved. How can an arbitrary CMS provide the content,
 dinamically, to some webapp? One possible solution lies with the OS: [symbolic links](https://en.wikipedia.org/wiki/Symbolic_link).
-You will need one or two such links, depending on where the content is exported.
+You will need one or two such links, it depends.
 
-First, you need a CMS which is able to export the content in a file system. All the work
+First, the CMS should be able to export the content in a file system. All the work
 done in the CMS takes the form of a folder which could go directly on the
 application server or somewhere else, as long as it is *on the same network*.
 
@@ -64,4 +64,4 @@ are rendered on the server, but it will require more implementation effort.
 For instance I once had this setup for a [JSF](https://en.wikipedia.org/wiki/JavaServer_Faces)
 app and all the server-side UI components had to be designed as custom XHTML tags.
 Someone would make the HTML page in the CMS, I would give them the tag ``<dynamic:element/>``
-and they would simply add it in the source wherever the component needed to appear.
+and they would simply add it in the source wherever the component had to appear.
