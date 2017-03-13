@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Always Use a CMS For The Client Side"
-date: 2017-03-10
+date: 2017-03-13
 tags: design webapps devops
 author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
 comments: true
