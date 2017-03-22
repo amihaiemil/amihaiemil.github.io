@@ -17,9 +17,7 @@ I described the big picture, how I expect us to be working together  but still, 
 It is important to note that 99% of our chatting should take place inside Github issues. No meetings, skype calls or long email threads - I consider them (and I think most people agree) a waste of time. Besides, it's easier and more practical to have all the information related to a ticket inside the ticket itself.
 
 # Size of tasks and workload
-In the previous post I also mentioned [PDD](http://www.yegor256.com/2009/03/04/pdd.html). **This concept will stand at the core of our collaboration**, because it allows for small tasks (**30min to 1h estimation**) that should find their place easily in most people's schedule.
-
-I expect a contributor to **spend under 6h/week** writing code for these projects and in no case should someone be stressed about this. It should be something rather relaxing from which everyone should learn new stuff.
+In the previous post I also mentioned [PDD](http://www.yegor256.com/2009/03/04/pdd.html). **This concept will stand at the core of our collaboration**, because it allows for small tasks (**30min to 1h estimation**) that should find their place easily in most people's schedule. I expect a contributor to **spend under 6h/week** writing code for these projects.
 
 As you can read in the [article](http://www.yegor256.com/2009/03/04/pdd.html), PDD has a number of advantages that you should **keep in mind:**
 
