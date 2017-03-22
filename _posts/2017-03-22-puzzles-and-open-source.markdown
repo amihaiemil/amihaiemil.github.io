@@ -61,8 +61,8 @@ And all is enabled by PDD and the fact that the project is open source. Give thi
   + finally, somwhere in-between, there's also some coding to be done
   + probably no proper CI, because Joe forgot to set up a Jenkins job for the project
 
-I hope the advantages are clear. Now, of course, this might not be so straightforward for
-a big enterprise project and besides, such a project could never be open-sourced.
+I hope the advantages are clear, even though I did not mention all of them directly.
+Now, of course, this might not be so straightforward for a big enterprise project and besides, such a project could never be open-sourced.
 But keep in mind that you can always pull out components which you could develop in this manner.
 If your team tells you otherwise, they clearly haven't given enough thought on the architecture.
 
