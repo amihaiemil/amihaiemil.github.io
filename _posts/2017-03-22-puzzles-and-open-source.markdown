@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Puzzles And Open Source"
+buttons: <a class="github-button" href="https://github.com/decorators-squad/camel" data-icon="octicon-star" data-count-href="/decorators-squad/camel/stargazers" data-count-api="/repos/decorators-squad/camel#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star decorators-squad/camel on GitHub">Star</a> <a class="github-button" href="https://github.com/decorators-squad/camel/fork" data-icon="octicon-repo-forked" data-count-href="/decorators-squad/camel/network" data-count-api="/repos/decorators-squad/camel#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork decorators-squad/camel on GitHub">Fork</a>
 date: 2017-03-22
 tags: pdd oop opensource
 author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
@@ -23,7 +24,7 @@ the first version.
 <figure class="articleimg">
  <img src="/images/tee_for_two.PNG" alt="Tee for Two">
  <figcaption>
- Tom & Jerry - Tee for Two, by  William Hanna and Joseph Barbera (from <a target="_blank" href="http://tomandjerrycaps.blogspot.co.at/2012/08/tee-for-two.html">here</a>)
+ Tom & Jerry - Tee for Two, by  William Hanna and Joseph Barbera (from [here](http://tomandjerrycaps.blogspot.co.at/2012/08/tee-for-two.html))
  </figcaption>
 </figure>
 
@@ -41,7 +42,7 @@ was the first one (all the previous issues were opened by me to track the scaffo
 How long did it take to release v. ``1.0.0``? The first commit ([c9b1a5e](https://github.com/decorators-squad/camel/commit/c9b1a5efcb476f9c24f0eb2350ffdfda5a13ec71))
 was done on ``28.12.2016`` and the first version reached Maven Central on ``20.03.2017``: 3 months.
 The actual time worked (man-hours spent) is ``41 x 30min = 20.5 hours``:  you see, there are [41 pull requests](https://github.com/decorators-squad/camel/pulls?utf8=%E2%9C%93&q=is%3Apr%20is%3Aclosed%20updated%3A%3C2017-03-20)
-before ``20.03.2017``, each representing a solved task (puzzle) with an average estimation of ``30min``.
+before ``20.03.2017``, each representing a solved task (puzzle) with average estimation of ``30min``.
 However, there are a few tasks with estimation of ``1 hour``, plus a few more commits done without a PR, so let's round that up to
 **25 hours**. And also, let's add **7 hours** (41 x 10min), time spent on code review.
 
@@ -58,7 +59,7 @@ And all is enabled by PDD and the fact that the project is open source. Give thi
   + there is time to be spent on making opaque estimations
   + there is time to be spent on sessions of training for new programmers because, in order to implement a method
   and a unit test, one must absolutely know every detail of the project
-  + finally, somewhere in-between, there's also some coding to be done
+  + finally, somwhere in-between, there's also some coding to be done
   + probably no proper CI, because Joe forgot to set up a Jenkins job for the project
   and now this stays in a feared backlog of tasks.
 
