@@ -23,7 +23,7 @@ the first version.
 <figure class="articleimg">
  <img src="/images/tee_for_two.PNG" alt="Tee for Two">
  <figcaption>
- Tom & Jerry - Tee for Two, by  William Hanna and Joseph Barbera (from [here](http://tomandjerrycaps.blogspot.co.at/2012/08/tee-for-two.html))
+ Tom & Jerry - Tee for Two, by  William Hanna and Joseph Barbera (from <a target="_blank" href="http://tomandjerrycaps.blogspot.co.at/2012/08/tee-for-two.html">here</a>)
  </figcaption>
 </figure>
 
