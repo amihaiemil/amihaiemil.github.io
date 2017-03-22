@@ -40,7 +40,7 @@ was the first one (all the previous issues were opened by me to track the scaffo
 
 How long did it take to release v. ``1.0.0``? The first commit ([c9b1a5e](https://github.com/decorators-squad/camel/commit/c9b1a5efcb476f9c24f0eb2350ffdfda5a13ec71))
 was done on ``28.12.2016`` and the first version reached Maven Central on ``20.03.2017`` -- 3 months.
-The actual time worked (man-hours spent) is ``41 x 30min = 20.5 hours``:  you see there are [41 pull requests](https://github.com/decorators-squad/camel/pulls?utf8=%E2%9C%93&q=is%3Apr%20is%3Aclosed%20updated%3A%3C2017-03-20)
+The actual time worked (man-hours spent) is ``41 x 30min = 20.5 hours``:  you see, there are [41 pull requests](https://github.com/decorators-squad/camel/pulls?utf8=%E2%9C%93&q=is%3Apr%20is%3Aclosed%20updated%3A%3C2017-03-20)
 before ``20.03.2017`` -- each PR represents a solved task (puzzle), and the average estimation for a puzzle is ``30min``.
 However, there are a few tasks with estimation of ``1 hour``, plus a few more commits done without a PR, so let's round that up to
 **25 hours**. And also, let's add **7 hours** (41 x 10min), time spent on code review.
@@ -61,9 +61,10 @@ And all is enabled by PDD and the fact that the project is open source. Give thi
   + finally, somwhere in-between, there's also some coding to be done
   + probably no proper CI, because Joe forgot to set up a Jenkins job for the project
 
-Now, of course, this might not be so straightforward for a big enterprise project and besides, such a project could
-never be open-sourced. But keep in mind that you can always pull out components which you could develop in this manner. If your team
-tells you otherwise, they clearly haven't given enough thought on the architecture.
+I hope the advantages are clear. Now, of course, this might not be so straightforward for
+a big enterprise project and besides, such a project could never be open-sourced.
+But keep in mind that you can always pull out components which you could develop in this manner.
+If your team tells you otherwise, they clearly haven't given enough thought on the architecture.
 
-So, I urge you to think about applying this methodology. I truly believe this should be the next step if we want
+So, I urge you to consider applying this methodology. I truly believe this should be the next step if we want
 to stop wasting our time and start delivering more quality software.
