@@ -69,4 +69,4 @@ But keep in mind that you can always pull out components which you could develop
 If your team tells you otherwise, they clearly haven't given enough thought on the architecture.
 
 So, I urge you to consider applying this methodology. I truly believe this should be the next step if we want
-to stop wasting our time and start delivering software of bigger quality.
+to stop wasting our time and start delivering software of higher quality.
