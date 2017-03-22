@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Puzzles And Open Source"
-buttons: <a class="github-button" href="https://github.com/decorators-squad/camel" data-icon="octicon-star" data-count-href="/decorators-squad/camel/stargazers" data-count-api="/repos/decorators-squad/camel#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star decorators-squad/camel on GitHub">Star</a> <a class="github-button" href="https://github.com/decorators-squad/camel/fork" data-icon="octicon-repo-forked" data-count-href="/decorators-squad/camel/network" data-count-api="/repos/decorators-squad/camel#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork decorators-squad/camel on GitHub">Fork</a>
 date: 2017-03-22
 tags: pdd oop opensource
 author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
