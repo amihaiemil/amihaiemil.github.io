@@ -9,7 +9,7 @@ shareable: true
 preview: A brief explanation of what I understand by the words "remote work"
 ---
 
-Ever since I started contributing to opensource and more notably since I started
+Ever since I started contributing to opensource and more frequently since I started
 sharing articles on LinkedIn, HR people are contacting me with remote work
 opportunities. Besides that, I usually keep an eye open for companies offering this kind
 of employment.
@@ -38,12 +38,9 @@ anyone sitting on their couch or at 10 feet from their bed is less enclined to b
 than someone sitting in an office. And, who knows, maybe you stumble across an employer who decides
 that it's a good and ethical idea to install keyloggers and printscreen software on your machine.
 
-My point is that this kind of remote work is **an illusion**, a well crafted lie.
-Chances are that it's a much more stressful way of working and surely you don't have more freedom. Again -- being glued to a desk is the same as being glued to a couch. I hope I don't need to tell you that no one has ever opened their laptop at the beach,
-under a palm tree, and started working remotely.
+My point is that this kind of remote work is **an illusion**. Chances are that it's a much more stressful way of working and surely you don't have more freedom. Again -- being glued to a desk is the same as being glued to a couch. I hope I don't need to tell you that no one has ever opened their laptop at the beach, under a palm tree, and started working remotely.
 
-I think that the real problems are: 1) full-time, committed, schedule and 2) meetings/calls with the colleagues. As long as you
-have one of these two, you will be nowhere near the advertised freedom. I assume the full-time part is already clear, so
+I think that the real problems are: 1) full-time, committed, schedule and 2) meetings/calls with the colleagues. As long as you have one of these two, you will be nowhere near the advertised freedom. I assume the full-time part is already clear, so
 here's what I don't like about having to call my colleagues: I have to wrap my schedule around it; I cannot do anything on
 Tuesdays because at 2pm I have to attend one of those useless, money-milking telcos. I also cannot rely on a Thursday, without my laptop, because my phone will most likely ring: "Hey, could you help us a little, Joe does not understand something here...".
 
