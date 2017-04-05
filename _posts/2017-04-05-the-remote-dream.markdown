@@ -70,5 +70,5 @@ Since the tasks are small, I do not become a 'God' for that project -- the clien
 he simply forwards the task to another developer.
 
 This is pretty much what I would expect from a remote client. If I had ten or fifteen such clients,
-I would be the happiest developer, but unfortunately <a href="http://www.teamed.io">Teamed/a> is the only
+I would be the happiest developer, but unfortunately <a href="http://www.teamed.io" target="_blank">Teamed</a> is the only
 company with such a workflow, that I could find so far. Do you happen to know other similar companies?
