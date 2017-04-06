@@ -34,7 +34,7 @@ Where is the gained value? Maybe you save 1h a day because you don't have to act
 to the office. Other than that, the picture I have in mind is rather sad: instead of being in the office 8h a day,
 you're spending the same amount of time alone, in your living room. Communication with your
 colleagues becomes a lot harder because you are not close to one another (plus, maybe there is a big timezone difference).
-Add the motivation issue to all this: anyone sitting on their couch is less enclined to be productive
+Add the motivation issue to all this: anyone sitting on their couch is less inclined to be productive
 than someone sitting in an office. And, who knows, maybe you stumble across an employer who decides
 that it's a good and ethical idea to install key loggers and printscreen software on your machine.
 
