@@ -55,7 +55,7 @@ to come to you and hear something like: *"Please, implement this method and unit
 *"I have this idea of an application and bla bla bla"*. If you don't have a clear project, with a well-defined
 set of tasks, then we'll inevitably end up in a "long-term relationship", which translates to fake remote work.
 
-In order for work to be truly remote, the project has to be split up in many tiny pieces,
+In order for work to be truly remote, **the project has to be split up in many tiny pieces**,
 tasks that any developer could implement fast! The ideal workflow is as follows:
 
    * I get an email containing the task;
