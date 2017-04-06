@@ -31,16 +31,20 @@ say that the office is a better alternative.
 </figure>
 
 Where is the gained value? Maybe you save 1h a day because you don't have to actually go
-to the office. Other than that, the picture I have in mind is rather sad: sitting 8h in front
-of your laptop alone, while your kids are at school and your wife at work. Communication with your
-colleagues becomes a lot harder because you are not close to one another. Add the motivation issue to all this:
-anyone sitting on their couch or at 10 feet from their bed is less enclined to be productive
+to the office. Other than that, the picture I have in mind is rather sad: instead of being in the office 8h a day,
+you're spending the same amount of time alone, in your living room. Communication with your
+colleagues becomes a lot harder because you are not close to one another (plus, maybe there is a big timezone difference).
+Add the motivation issue to all this: anyone sitting on their couch is less enclined to be productive
 than someone sitting in an office. And, who knows, maybe you stumble across an employer who decides
-that it's a good and ethical idea to install keyloggers and printscreen software on your machine.
+that it's a good and ethical idea to install key loggers and printscreen software on your machine.
 
-My point is that this kind of remote work is **an illusion**. Chances are that it's a much more stressful way of working and surely you don't have more freedom. Again -- being glued to a desk is the same as being glued to a couch. I hope I don't need to tell you that no one has ever opened their laptop at the beach, under a palm tree, and started working remotely.
+My point is that this kind of remote work is **an illusion**. It only makes you
+less active, lonelier and overall more stressed, while stealing the same amount of time.
+Again -- being glued to a desk is the same as being glued to a couch. I hope you don't imagine
+that someone has ever opened their laptop at the beach, under a palm tree.
 
-I think that the real problems are: 1) full-time, committed, schedule and 2) meetings/calls with the colleagues. As long as you have one of these two, you will be nowhere near the advertised freedom. I assume the full-time part is already clear, so
+I think that the real problems are: 1) full-time, committed, schedule and 2) meetings/calls with the colleagues.
+As long as you have one of these two, you will be nowhere near the advertised freedom. I assume the full-time part is already clear, so
 here's what I don't like about having to call my colleagues: I have to wrap my schedule around it; I cannot do anything on
 Tuesdays because at 2pm I have to attend one of those useless, money-milking telcos. I also cannot rely on a Thursday, without my laptop, because my phone will most likely ring: "Hey, could you help us a little, Joe does not understand something here...".
 
@@ -55,17 +59,18 @@ In order for work to be truly remote, the project has to be split up in many tin
 tasks that any developer could implement fast! The ideal workflow is as follows:
 
    * I get an email containing the task;
-   * I provide the solution;
+   * I provide the solution or the outline, if the task is too big (creating smaller tasks for continuing implementation)
    * Code review, discussion and changes (right there, in the ticket's comments);
    * The solution is accepted;
    * I get an email from PayPal saying that the payment has arrived for said task;
    * End of story;
 
-Now, when I have more time, I might take on more tasks or leave them to other developers if I don't have time or simply don't feel like solving them.
+Now, sometimes I might take on more tasks or leave them to other developers if I don't have time or simply don't feel like solving them.
 Since the tasks are small, I do not become a 'God developer' for the project -- the client doesn't suffer from my absence,
 he simply forwards the task to another developer.
 
-This is pretty much what I would expect from a remote client. If I had ten or fifteen such clients,
-I would be the happiest developer, but unfortunately <a href="http://www.teamed.io" target="_blank">Teamed</a> is the only
+To sum up, this is pretty much what I would expect from a remote client: no fixed schedule,
+no commitment and no tracking; just **clear tasks, payment per deliverable and as little wasted time as possible**.
+If I had ten or fifteen such clients, I would be the happiest developer, but unfortunately <a href="http://www.teamed.io" target="_blank">Teamed</a> is the only
 company with such a workflow that I could find so far. If you happen to know other similar
 companies, don't hesitate to let me know in the comments.
