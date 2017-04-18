@@ -4,6 +4,13 @@
   {% include head.html %}
 
   <body>
+    {% include header.html %}
+    <script
+      type="text/javascript"
+      id="charlesscript"
+      repo="amihaiemil/amihaiemil.github.io"
+      src="http://www.amihaiemil.com/js/charles/charles.min.js">
+    </script>
     {% if page.shareable%}
         <!-- facebook Javascript SDK-->
         <div id="fb-root"></div>
@@ -33,7 +40,6 @@
           }(document, "script", "twitter-wjs"));
         </script>
     {% endif %}
-    {% include header.html %}
 
     <div class="page-content">
       <div class="wrapper">
