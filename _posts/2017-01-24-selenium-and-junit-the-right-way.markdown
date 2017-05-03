@@ -95,21 +95,21 @@ public final class SeleniumGithub implements Github {
       this.pwd = pwd;
       this.driver = new FirefoxDriver();
     }
-    public MainDashboardPage login() {
+    public MainDashboard login() {
       this.driver.get("https://github.com/login");
       //find and fill the username and pwd fields
       //press login
-      return new RtMainDashboardPage(this.driver);
+      return new SlMainDashboard(this.driver);
     }
-    public UserProfilePage user(String username) {
+    public UserProfile user(String username) {
       this.driver.get("https://www.github.com/" + username)
-      return new RtUserProfilePage(driver);
+      return new SlUserProfile(driver);
     }
     ...
 }
 {% endhighlight %}
 
-The class above is a gist of what your design should look like. If you look closely, you'll notice it exposes only interfaces, not actual implementations. All the implementations (e.g. ``RtMainDashboardPage`` and ``RtUserProfilePage``) are **hidden** (package protected), except the entry class.
+The class above is a gist of what your design should look like. If you look closely, you'll notice it exposes only interfaces, not actual implementations. All the implementations (e.g. ``SlMainDashboard`` and ``SlUserProfile``) are **hidden** (package protected), except the entry class.
 
 This not only provides encapsulation, it also gives us control. Since no class can be instantiated, other than the entry point, it means that we fully guide the client through the framework; we know exactly where he is at any given time and what actions have been performed in order to get him there.
 
@@ -118,7 +118,7 @@ In other words, you will never see something like this:
 {% highlight java %}
 @Test
 public void settingsPageIsDisplayed() {
-  MainDashboardPage dashboard = new RtMainDashboardPage(new FirefoxDriver());
+  MainDashboard dashboard = new SlMainDashboard(new FirefoxDriver());
   //...
 }
 {% endhighlight %}
@@ -130,8 +130,8 @@ Instead, the test should look like this:
 @Test
 public void settingsPageIsDisplayed() {
   Github github = new SeleniumGithub("username", "password");
-  MainDashboardPage dashboard = github.login();
-  SettingsPage settings = dashboard.settings();
+  MainDashboard dashboard = github.login();
+  Settings settings = dashboard.settings();
   //...
 }
 {% endhighlight %}
