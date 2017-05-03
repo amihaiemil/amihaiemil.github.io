@@ -23,9 +23,9 @@ when surfing through your API from the browser, you should get the feeling that 
 is missing.
 
 <figure class="articleimg">
- <img src="/images/trap_happy.PNG" alt="Trap Happy">
+ <img src="/images/jerry_and_the_lion.png" alt="Jerry And The Lion">
  <figcaption>
- Tom & Jerry - Trap Happy, by  William Hanna and Joseph Barbera
+ Tom & Jerry - Jerry And The Lion, by  William Hanna and Joseph Barbera
  </figcaption>
 </figure>
 
