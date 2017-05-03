@@ -65,9 +65,8 @@ Now, of course, you shouldn't see two sets of tests just for that line of code. 
 I would dictate it via a system property, or a Maven build profile.
 
 ``Github`` and all the other interfaces (e.g. ``UserProfile``, ``MainDashboard`` etc)
-are fluently coupled, so tests done using these abstractions will gurantee that the endpoints are
-navigable and give the feeling of an HTML page without styling. Needless to say, same as in
-the Selenium case, the only public class should be ``RestfulGithub``.
+are fluently coupled, so tests using these abstractions will gurantee that the endpoints are
+navigable. Needless to say, same as in the Selenium case, the only public class should be ``RestfulGithub``.
 
 Here is how ``RestfulGithub`` could look:
 
@@ -79,7 +78,7 @@ public final class RestfulGithub implements Github {
   private Request request;
 
   public RestfulGithub() {
-      this(RtVersionEye.DEFAULT);
+      this(RestfulGithub.DEFAULT);
   }
   public RestfulGithub(final String token) {
       this(
@@ -110,7 +109,7 @@ final class RsUserProfile implements UserProfile {
   }
   @Override
   public String username() {
-    this.req.fetch()
+    return this.req.fetch()
       .as(JsonResponse.class)
       .json()
       .readObject()
