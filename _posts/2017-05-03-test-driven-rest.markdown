@@ -118,15 +118,15 @@ final class RsUserProfile implements UserProfile {
 }
 {% endhighlight %}
 
-I used the [jcabi-http](https://github.com/jcabi/jcabi-http) client because it is much simpler and productive than
-Apache HTTP client for instance. You can find the whole code from above [here](/#github), as well.
+I used the [jcabi-http](https://github.com/jcabi/jcabi-http) client because it is much simpler and productive than,
+for instance, Apache HttpClient.
 
 Finally, if you follow this approach you will have to invest some time in designing the testing framework, but you will earn
 the following:
 
-1) A truly surfable API, which respects the HATEOAS principle
-2) A single, maintainable, suite of tests for both the UI and the API
-3) By the time the tests are written you have a client library which you can deliver
-to any third party that wants to integrate with your services
+  * A truly surfable API, which respects the HATEOAS principle
+  * A single, maintainable, suite of tests for both the UI and the API
+  * By the time the tests are written you have a client library which you can deliver
+  to any third party that wants to integrate with your services
 
 What do you think? How do you make sure your APi respects the right paradigm?
