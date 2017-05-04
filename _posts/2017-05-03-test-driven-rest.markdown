@@ -105,11 +105,11 @@ And here is ``RsUserProfile``:
 final class RsUserProfile implements UserProfile {
   private Request request;
   RtUserProfile(final Request req, final String username) {
-    this.req = req.uri().path("/users/").path(username).back();
+    this.request = req.uri().path("/users/").path(username).back();
   }
   @Override
   public String username() {
-    return this.req.fetch()
+    return this.request.fetch()
       .as(JsonResponse.class)
       .json()
       .readObject()
