@@ -13,7 +13,7 @@ First of all, let's agree that not any set of HTTP endpoints can be called RESTf
 There are many webapps which expose a few endpoints for rudimentary integrations
 and claim to have "RESTful web services".
 
-A set of HTTP methods is said to respect the REST paradigm only if they are [navigable](http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven)).
+A set of HTTP methods is said to respect the REST paradigm only if they are [navigable](http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven).
 I think that such a programatic interface should expose more or less the entire functionality that the user sees on the UI.
 It should be, if you like, the "backdoor" of your application, used by other apps in the same way a normal user
 would navigate from one page to another.
