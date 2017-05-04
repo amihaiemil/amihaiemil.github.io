@@ -42,8 +42,8 @@ In short, a good Selenium test should look like this:
 @Test
 public void usernameIsDisplayed(){
     Github github = new SeleniumGithub(); //Github called with WebDriver
-    String username = github.user("amihaiemil").username();
-    assertTrue("amihaiemil".equals(username));
+    UserProfile profile = github.user("amihaiemil");
+    assertTrue("amihaiemil".equals(profile.username()));
 }
 {% endhighlight %}
 
@@ -56,17 +56,17 @@ We only have to change the ``Github`` implementation in order to test its API:
 @Test
 public void usernameIsDisplayed(){
     Github github = new RestfulGithub(); //Github called with an HTTP client
-    String username = github.user("amihaiemil").username();
-    assertTrue("amihaiemil".equals(username));
+    UserProfile profile = github.user("amihaiemil");
+    assertTrue("amihaiemil".equals(profile.username()));
 }
 {% endhighlight %}
 
-Now, of course, you shouldn't see two sets of tests just for that line of code. In a real scenarion,
+Now, of course, you shouldn't see two sets of tests just for that line of code. In a real scenario,
 I would dictate it via a system property, or a Maven build profile.
 
 ``Github`` and all the other interfaces (e.g. ``UserProfile``, ``MainDashboard`` etc)
 are fluently coupled, so tests using these abstractions will gurantee that the endpoints are
-navigable. Needless to say, same as in the Selenium case, the only public class should be ``RestfulGithub``.
+navigable. Needless to say, same as in the Selenium case, _the only public class should be_ ``RestfulGithub``.
 
 Here is how ``RestfulGithub`` could look:
 
