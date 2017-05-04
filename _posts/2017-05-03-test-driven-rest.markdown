@@ -31,7 +31,7 @@ is missing.
 
 Since we want to make sure that both the front-end and the REST-end work fine and
 offer the same functionality, it only makes sense to **use the same test code for both of them**.
-It sounds strange, right? The code that tests the UI should also test the APi. It is achievable,
+It sounds strange, right? The code that tests the UI should also test the API. It is achievable,
 provided that the architect pays as much attention on the tests as he does on the app's code (which, sadly, is not always the case).
 
 I explained [here](http://www.amihaiemil.com/2017/01/24/selenium-and-junit-the-right-way.html)
@@ -129,4 +129,4 @@ the following:
   * By the time the tests are written you have a client library which you can deliver
   to any third party that wants to integrate with your services
 
-What do you think? How do you make sure your APi respects the right paradigm?
+What do you think? How do you make sure your API respects the right paradigm?
