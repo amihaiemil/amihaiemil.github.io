@@ -118,6 +118,7 @@ final class RsUserProfile implements UserProfile {
 }
 {% endhighlight %}
 
+In this example, the [/users/{username}](https://api.github.com/users/amihaiemil) endpoint has been called, with my Github username.
 I used the [jcabi-http](https://github.com/jcabi/jcabi-http) client because it is much simpler and productive than,
 for instance, Apache HttpClient.
 
