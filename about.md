@@ -9,7 +9,7 @@ I'm contributing to opensource and writing this blog because I find it a good wa
 
 On Github, we have two organizations: [opencharles](https://github.com/opencharles) and [decorators-squad](https://github.com/decorators-squad) containing multiple projects.
 Some worth mentioning are:
-  * A Java OOP web crawler (see [Project Charles](https://github.com/opencharles))
+  * A Java OOP web crawler (see [Project Charles](http://www.amihaiemil.com/2016/12/05/project-charles.html))
   * A Github chatbot for indexing and searching gh-pages websites ([charles-rest](https://github.com/opencharles/charles-rest))
   * A Java OOP YAML parser ([camel](https://github.com/decorators-squad/camel))
   * A versioneye API OOP wrapper for Java ([versioneye-api](https://github.com/decorators-squad/versioneye-api))
