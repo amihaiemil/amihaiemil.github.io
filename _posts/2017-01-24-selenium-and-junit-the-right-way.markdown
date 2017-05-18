@@ -150,3 +150,6 @@ procedural code to fetch elements and make some assertions, then your tests will
 What do you think? Do you see other solutions?
 
 **P.S.** At some point after I wrote this article, someone asked for the code. [Here](https://github.com/amihaiemil/selenium-github-example) it is.
+
+**P.S. 2** You can use the same approach (actually, reuse this test code), to make sure that your REST api respects the
+HATEOAS principle. See [here](http://www.amihaiemil.com/2017/05/03/test-driven-rest.html).
