@@ -1,0 +1,57 @@
+---
+layout: post
+title: "Meet Charles Michael"
+date: 2017-05-23
+tags: chatbots search github
+author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+comments: true
+shareable: true
+preview: A Github chatbot for indexing and searching gh-pages websites
+---
+
+See the white search-box above? It's added on the website via a simple ``<script>`` tag,
+no rocket science. You just start typing and results should appear after the third character.
+Try typing "test".
+
+How and where is the content indexed? Well, everything is done by [this guy](https://github.com/charlesmike), Chales Michael. Say ``@charlesmike hello`` in
+any Github issue and see what happens.
+
+<figure class="articleimg">
+ <img src="/images/charlesmike_index.png" alt="Index site command" style="box-shadow: 3px 3px 3px 3px grey;">
+</figure>
+
+I wanted to have basic search functionality on my blog, but I couldn't find any elegant solution. Before you shout "GOOGLE!", think that, while they too provide a simple script to
+embed on your page, the experience is lame: the user starts typing something, hits enter and
+then is rudely redirected to Google's page, with a funny syntax in the search-box. It's the classic Google Search, instructed to look only through your website's contents.
+
+I figured that, since I have Jekyll seamlessly integrated with [Github Pages](https://pages.github.com/), it would be nice to have an ``index/search``
+service as well. So, as a pet project, I decided to write a small bot which listens for commands and once it receives an ``index`` command it crawls and indexes the given website.
+
+The Github chatbot is only the interface with the user -- the bot itself is deployed somewhere in the AWS cloud. Once crawled, the content is indexed into AWS ElasticSearch instances and instantly becomes searchable via the [search widget](https://github.com/opencharles/charles-search-box). Any ``Github Pages`` website can use it (standalone website repos or project repos from
+the gh-pages branch).
+
+There are a few commands implemented already:
+
+  * **hello** - It will introduce itself;
+  * **index site** - indexes the whole website, crawling it as a graph;
+     * any comment containing the words "index" and "site" will trigger this;
+  * **index page** - indexes a single page;
+     * the comment has to contain the words "index" and "page", and also the link to the
+       page in markdown format (e.g. ``index [link/to/page](this) page``);
+  * **delete** - deletes the index;
+     * the comment has to contain the word "delete" and the github's name (for double-checking);
+
+Commands to be implemented:
+
+  * **index sitemap** - index the site represented by a ``sitemap.xml`` file.
+
+Of course, everyone can say ``hello``, but only the repo owner can give other types
+of commands. In the near future, the commanders' list will be configurable via a ``.charles.yml`` file.
+
+Feel free to use this if you have a gh-pages website of blog. If you need another scheme of
+colors for the search widget, just open an issue [here](https://github.com/opencharles/charles-search-box)
+or make a PR with it -- it's a small CSS addition.
+
+You can find more details about the bot's architecture [here](https://github.com/opencharles/charles-rest/blob/master/architecture.md).
+If you want to deploy it on your own AWS infrastructure, you can do that easily, by setting
+some system properties, as described [here](https://github.com/opencharles/charles-rest#if-you-wish-to-install-it-on-your-own-infrastructure).
