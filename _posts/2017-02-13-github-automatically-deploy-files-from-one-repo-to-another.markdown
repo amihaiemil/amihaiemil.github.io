@@ -26,8 +26,7 @@ figured I'd write about it, since I found it rather tricky.
 
 Here's a scenario: you have a repo where some javascript developers are building
 something which will ultimately be turned into an ``awesome.min.js`` file.
-When you say ``"@rultor deploy"``, the file should be moved to the ``company.github.io`` repo, because that repo is a website hosted by [Github pages](https://pages.github.com/). This way, the HTML pages where the file is
-imported will always use the latest version of it.
+When you say ``"@rultor deploy"``, the file should be moved to the ``company.github.io`` repo, because that repo is a website hosted by [Github pages](https://pages.github.com/). This way, any page which includes that ``.js`` file from the company's website will always receive the latest version.
 
 Sounds easy, so you write a ``deploy.sh`` file for rultor to run on a ``deploy`` command:
 
