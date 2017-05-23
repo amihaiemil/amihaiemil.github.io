@@ -27,7 +27,7 @@ then is rudely redirected to Google's page, with a funny syntax in the search-bo
 I figured that, since I have Jekyll seamlessly integrated with [Github Pages](https://pages.github.com/), it would be nice to have an ``index/search``
 service as well. So, as a pet project, I decided to write a small bot which listens for commands and once it receives an ``index`` command it crawls and indexes the given website.
 
-The Github chatbot is only the interface with the user -- the bot itself is deployed somewhere in the AWS cloud. Once crawled, the content is indexed into AWS ElasticSearch instances and instantly becomes searchable via the [search widget](https://github.com/opencharles/charles-search-box). Any ``Github Pages`` website can use it (standalone website repos or project repos from
+The ``@charlesmike`` user is only the interface, while the bot itself is deployed somewhere in the AWS cloud and communicates with Github via its [API](https://developer.github.com/v3/). Once it crawled the content, it sends it to [AWS ElasticSearch](https://aws.amazon.com/elasticsearch-service/) and instantly makes it searchable via the [search widget](https://github.com/opencharles/charles-search-box). Any ``Github Pages`` website can use it (standalone website repos or project repos from
 the gh-pages branch).
 
 There are a few commands implemented already:
