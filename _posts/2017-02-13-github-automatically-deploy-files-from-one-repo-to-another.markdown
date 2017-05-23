@@ -112,7 +112,7 @@ returns - I used [jq](https://github.com/stedolan/jq) for that.
 SHA_BUILD=$(curl 'https://api.github.com/repos/company/company.github.io/contents/js/awesome.min.js' | jq '.sha')
 {% endhighlight %}
 
-Now the variable ``BUILD_SHA`` will contain the required SHA. Needless to say, the first deployment will have to be
+Now the variable ``SHA_BUILD`` will contain the required SHA. Needless to say, the first deployment will have to be
 done manually in order for this script to work.
 
 ### 3. Encoding the content using openssl
