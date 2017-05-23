@@ -48,10 +48,12 @@ Commands to be implemented:
 Of course, everyone can say ``hello``, but only the repo owner can give other types
 of commands. In the near future, the commanders' list will be configurable via a ``.charles.yml`` file.
 
+The bot will never do any actions on its own. No re-trial, no recurring processes -- everything starts with a Github comment addressed to it, [always](https://github.com/amihaiemil/amihaiemil.github.io/issues/20).
+
 Feel free to use this if you have a gh-pages website of blog. If you need another scheme of
 colors for the search widget, just open an issue [here](https://github.com/opencharles/charles-search-box)
 or make a PR with it -- it's a small CSS addition.
 
 You can find more details about the bot's architecture [here](https://github.com/opencharles/charles-rest/blob/master/architecture.md).
-If you want to deploy it on your own AWS infrastructure, you can do that easily, by setting
+If you want to deploy it on your own AWS infrastructure, you can do that easily by setting
 some system properties, as described [here](https://github.com/opencharles/charles-rest#if-you-wish-to-install-it-on-your-own-infrastructure).
