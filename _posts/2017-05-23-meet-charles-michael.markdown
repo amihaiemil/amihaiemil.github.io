@@ -45,10 +45,9 @@ Commands to be implemented:
 
   * **index sitemap** - index the site represented by a ``sitemap.xml`` file.
 
+The bot will never do any actions on its own. No re-trial, no recurring processes -- everything starts with a Github comment addressed to it, [always](https://github.com/amihaiemil/amihaiemil.github.io/issues/20).
 Of course, everyone can say ``hello``, but only the repo owner can give other types
 of commands. In the near future, the commanders' list will be configurable via a ``.charles.yml`` file.
-
-The bot will never do any actions on its own. No re-trial, no recurring processes -- everything starts with a Github comment addressed to it, [always](https://github.com/amihaiemil/amihaiemil.github.io/issues/20).
 
 Feel free to use this if you have a gh-pages website of blog. If you need another scheme of
 colors for the search widget, just open an issue [here](https://github.com/opencharles/charles-search-box)
