@@ -37,7 +37,7 @@ There are a few commands implemented already:
      * any comment containing the words "index" and "site" will trigger this;
   * **index page** - indexes a single page;
      * the comment has to contain the words "index" and "page", and also the link to the
-       page in markdown format (e.g. ``index [link/to/page](this) page``);
+       page in markdown format (e.g. ``index [this](link/to/page) page``);
   * **delete** - deletes the index;
      * the comment has to contain the word "delete" and the github's name (for double-checking);
 
