@@ -109,7 +109,7 @@ Here you just make a cURL get, but you need to parse the JSON object that the Gi
 returns - I used [jq](https://github.com/stedolan/jq) for that.
 
 {% highlight bash %}
-BUILD_SHA=$(curl 'https://api.github.com/repos/company/company.github.io/contents/js/awesome.min.js' | jq '.sha')
+SHA_BUILD=$(curl 'https://api.github.com/repos/company/company.github.io/contents/js/awesome.min.js' | jq '.sha')
 {% endhighlight %}
 
 Now the variable ``BUILD_SHA`` will contain the required SHA. Needless to say, the first deployment will have to be
