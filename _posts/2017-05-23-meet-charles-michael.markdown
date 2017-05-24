@@ -44,7 +44,7 @@ There are a few commands implemented already:
      * the comment has to contain the words "index" and "page", and also the link to the
        page in markdown format (e.g. ``index [this](link/to/page) page``);
   * **delete** - deletes the index;
-     * the comment has to contain the word "delete" and the github's name (for double-checking);
+     * the comment has to contain the word "delete" and the repo's name (for double-checking);
 
 The bot will never do any actions on its own. No re-trial, no recurring processes -- everything starts with a Github comment addressed to it, [always](https://github.com/amihaiemil/amihaiemil.github.io/issues/20).
 Of course, everyone can say ``hello``, but only the repo owner can give other types
