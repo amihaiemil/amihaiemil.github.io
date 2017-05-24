@@ -34,16 +34,17 @@ There are a few commands implemented already:
 
   * **hello** - It will introduce itself;
   * **index site** - indexes the whole website, crawling it as a graph;
-     * any comment containing the words "index" and "site" will trigger this;
+     * any comment containing the words "index" and "site" will trigger this.
+       Recommended only for small sites, as Selenium is rather volatile. **For bigger
+       blogs, try indexing by sitemap.**
+  * **index sitemap** - index the site represented by a ``sitemap.xml`` file.
+     * any comment containing the words "index" and "sitemap", and also the link to
+       the sitemap.xml file in markdown (e.g. ``index [this](link/to/sitemap) sitemap pls``)
   * **index page** - indexes a single page;
      * the comment has to contain the words "index" and "page", and also the link to the
        page in markdown format (e.g. ``index [this](link/to/page) page``);
   * **delete** - deletes the index;
      * the comment has to contain the word "delete" and the github's name (for double-checking);
-
-Commands to be implemented:
-
-  * **index sitemap** - index the site represented by a ``sitemap.xml`` file.
 
 The bot will never do any actions on its own. No re-trial, no recurring processes -- everything starts with a Github comment addressed to it, [always](https://github.com/amihaiemil/amihaiemil.github.io/issues/20).
 Of course, everyone can say ``hello``, but only the repo owner can give other types
