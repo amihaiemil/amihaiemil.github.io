@@ -44,7 +44,7 @@ fast enough and most of the tests fail. We should fix this
 * It is mandatory that, in some cases,
 a login is performed before doing any other action
 * Why are there so many different flows?
- All the unit tests should have a common framework.
+ All the tests should have a common framework.
 
 My point is that such tests are **unstable and unmaintainable**. For one, Selenium always tends to break because of some timing issues and other reasons that have nothing to do with your test code (still, you'll have to fix it somehow; worst case scenario, by using ``Thread.sleep()``). Second, you have 1000 tests all written differently and performing different flows. Lastly, your UI tests are 100% coupled with Selenium - tomorrow you might decide to change the technology, why should you rewrite your tests?
 
