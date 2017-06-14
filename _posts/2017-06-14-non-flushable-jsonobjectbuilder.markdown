@@ -13,7 +13,7 @@ You do know how to handle Json objects in Java, right? If you don't, just preten
 check out the [javax.json API](https://docs.oracle.com/javaee/7/api/javax/json/package-frame.html) introduced
 in JavaEE 7.
 
-Since JavaEE 7 this is the official, standardized way of dealing with Json in Java. Even if you develop a desktop
+Since JavaEE 7, this is the official, standardized way of dealing with Json in Java. Even if you develop a desktop
 application or a library, you can use the API by pulling in the implementation with "runtime" dependency scope.
 
 In this post I'm going to ilustrate the importance of <b>interfaces</b>, by showing you how I solved an annoying problem
@@ -79,19 +79,19 @@ public final class NfJsonObjectBuider implements JsonObjectBuilder {
     private Map<String, Object> values = new LinkedHashMap<>();
 
     @Override
-    public JsonObjectBuilder add(final String name, final JsonValue value) {
+    public JsonObjectBuilder add(String name, JsonValue value) {
         this.values.put(name, value);
         return this;
     }
 
     @Override
-    public JsonObjectBuilder add(final String name, final String value) {
+    public JsonObjectBuilder add(String name, String value) {
         this.values.put(name, value);
         return this;
     }
 
     @Override
-    public JsonObjectBuilder add(final String name, final BigInteger value) {
+    public JsonObjectBuilder add(String name, BigInteger value) {
         this.values.put(name, value);
         return this;
     }
@@ -99,17 +99,15 @@ public final class NfJsonObjectBuider implements JsonObjectBuilder {
 
     @Override
     public JsonObject build() {
-        final JsonObjectBuilder builder = Json.createObjectBuilder();//HERE: reuse their building logic.
+        //HERE: reuse their building logic.
+        final JsonObjectBuilder builder = Json.createObjectBuilder();
         for(final Entry<String, Object> pair : this.values.entrySet()) {
             this.addToBuilder(pair, builder);
         }
-        //if you wanted to flush the builder, here you would empty the values map
         return builder.build();
     }
 
-    private void addToBuilder(
-        final Entry<String, Object> pair, final JsonObjectBuilder builder
-    ) {
+    private void addToBuilder(Entry<String, Object> pair, JsonObjectBuilder builder) {
         if(pair.getValue() instanceof JsonValue) {
             builder.add(pair.getKey(), (JsonValue) pair.getValue());
         }
