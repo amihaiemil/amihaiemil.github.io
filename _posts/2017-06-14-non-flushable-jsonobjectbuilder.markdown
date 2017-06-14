@@ -66,8 +66,7 @@ public static JsonObject buildObject(JsonObjectBuilder builder) {
 }
 {% endhighlight %}
 
-This should work fine, except you will soon realize that all your code is poluted with calls to this static function. Wherever the builder is built, you absolutely need a call
-to this function. Good luck debugging if you forget to do use it somewhere. And you (or one of your new colleagues) will, for sure. Besides, static methods are always an ugly solution because they
+This should work fine, except you will soon realize that all your code is poluted with calls to this static function. Wherever the ``build()`` method is called, you have to also call this function. Good luck debugging if you forget to use it somewhere. And you (or one of your new colleagues) will, for sure. Besides, static methods are always an ugly solution because they
 make our code more procedural.
 
 Then, maybe you realize that ``javax.json.JsonObjectBuilder`` is an interface and that you can implement it to have any behaviour you need.
