@@ -67,10 +67,10 @@ public static JsonObject buildObject(JsonObjectBuilder builder) {
 {% endhighlight %}
 
 This should work fine, except you will soon realize that all your code is poluted with calls to this static function. Wherever the builder is built, you absolutely need a call
-to this function. Good luck debugging if you forget to do use it somewhere; and you (or one of your new colleagues) will, for sure.
+to this function. Good luck debugging if you forget to do use it somewhere. And you (or one of your new colleagues) will, for sure.
 
 Then, maybe, you realize that ``javax.json.JsonObjectBuilder`` is an interface and you can implement it yourself to have any behaviour you want.
-So what? Now you're going to reimplement everything those smart guys from Oracle or Redhard already implemented? No, of course not. Check this out:
+So what? Now you're going to reimplement everything those smart guys from Oracle or Redhat already implemented? No, of course not. Check this out:
 
 {% highlight java %}
 public final class NfJsonObjectBuider implements JsonObjectBuilder {
@@ -123,7 +123,7 @@ public final class NfJsonObjectBuider implements JsonObjectBuilder {
 }
 {% endhighlight %}
 
-So, you see the advantages of having a standardized API with clear interfaces?
+Do you see the advantages of having a standardized API with clear interfaces?
 Now, the only difference in your code will be that, instead of instantiating your builder like this
 
 {% highlight java %}
