@@ -47,14 +47,14 @@ In neither of these occasions, the flaw I'm talking about is not visible: ``Json
 So, in the ``car`` example above, if you would call ``build()`` multiple times, only the first would output the desired JsonObject; the following calls
 would result in an empty object. See [this](https://stackoverflow.com/questions/35187129/javax-json-strange-behavior) SO question about this "strange behaviour".
 
-Why is it a flaw? Because otherwise, you could elegantly use JsonObjectBuilder to back any "mutable" implementation you want. For instance,
-I'm using a JsonObjectBuilder to back a mock HTTP server. This basically means I have a [bunch of classes](https://github.com/decorators-squad/versioneye-api/blob/master/src/main/java/com/amihaiemil/versioneye/MkVersionEye.java) which mimic the real
+Why is it a flaw? Because otherwise, you could elegantly use JsonObjectBuilder to animate any "mutable" implementation. It is a prefect in-memory storage.
+For instance, I'm using a JsonObjectBuilder to back a mock HTTP server. This basically means I have a [bunch of classes](https://github.com/decorators-squad/versioneye-api/blob/master/src/main/java/com/amihaiemil/versioneye/MkVersionEye.java) which mimic the real
 HTTP API without actually making calls to any server. Instead, all the data is read/written from/into a JsonObjectBuilder. The build() method is called at every
 read operation and thus it is very inconvenient to have the builder flushed afterwards.
 
 So how do you solve this issue? The first thing you do is start looking into different implementations. You try both [Glassfish's](https://mvnrepository.com/artifact/org.glassfish/javax.json)
 and [Redhat's](https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-json-p-provider/3.1.3.Final) implementations to see that they behave the same. Bummer.
-Since there is no other way, the obvious solution is to write a global static method somewhere in your code, which takes the JsonObjectBuilder, builds the JsonObject and then, iterating over the JsonObject, adds the attributes back in the builder; something like this:
+Since there is no other way, the obvious solution is to write a global static method which takes the JsonObjectBuilder, builds the JsonObject and then, iterating over the JsonObject, adds the attributes back in the builder; something like this:
 
 {% highlight java %}
 public static JsonObject buildObject(JsonObjectBuilder builder) {
@@ -67,10 +67,11 @@ public static JsonObject buildObject(JsonObjectBuilder builder) {
 {% endhighlight %}
 
 This should work fine, except you will soon realize that all your code is poluted with calls to this static function. Wherever the builder is built, you absolutely need a call
-to this function. Good luck debugging if you forget to do use it somewhere. And you (or one of your new colleagues) will, for sure.
+to this function. Good luck debugging if you forget to do use it somewhere. And you (or one of your new colleagues) will, for sure. Besides, static methods are always an ugly solution because they
+make our code more procedural.
 
-Then, maybe, you realize that ``javax.json.JsonObjectBuilder`` is an interface and you can implement it yourself to have any behaviour you want.
-So what? Now you're going to reimplement everything those smart guys from Oracle or Redhat already implemented? No, of course not. Check this out:
+Then, maybe you realize that ``javax.json.JsonObjectBuilder`` is an interface and that you can implement it to have any behaviour you need.
+So what? You are now going to reimplement everything those smart guys from Oracle or Redhat already implemented? No, of course not. Check this out:
 
 {% highlight java %}
 public final class NfJsonObjectBuider implements JsonObjectBuilder {
