@@ -49,12 +49,12 @@ would result in an empty object. See [this](https://stackoverflow.com/questions/
 
 Why is it a flaw? Because otherwise, you could elegantly use JsonObjectBuilder to back any "mutable" implementation you want. For instance,
 I'm using a JsonObjectBuilder to back a mock HTTP server. This basically means I have a [bunch of classes](https://github.com/decorators-squad/versioneye-api/blob/master/src/main/java/com/amihaiemil/versioneye/MkVersionEye.java) which mimic the real
-HTTP API without actually making calls to any server; instead, all the data is read/written into a JsonObjectBuilder. The build() method is called at any
+HTTP API without actually making calls to any server. Instead, all the data is read/written from/into a JsonObjectBuilder. The build() method is called at every
 read operation and thus it is very inconvenient to have the builder flushed afterwards.
 
 So how do you solve this issue? The first thing you do is start looking into different implementations. You try both [Glassfish's](https://mvnrepository.com/artifact/org.glassfish/javax.json)
-and Redhat's [RESTEasy](https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-json-p-provider/3.1.3.Final) implementations to see that they behave the same. Bummer.
-The next thing you do is write a global static method somewhere in your code, which takes the JsonObjectBuilder, builds the JsonObject, and then, iterating over the JsonObject, it adds the attributes back in the builder; something like this:
+and [Redhat's](https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-json-p-provider/3.1.3.Final) implementations to see that they behave the same. Bummer.
+Since there is no other way, the obvious solution is to write a global static method somewhere in your code, which takes the JsonObjectBuilder, builds the JsonObject and then, iterating over the JsonObject, adds the attributes back in the builder; something like this:
 
 {% highlight java %}
 public static JsonObject buildObject(JsonObjectBuilder builder) {
