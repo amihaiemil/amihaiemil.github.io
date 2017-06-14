@@ -79,19 +79,19 @@ public final class NfJsonObjectBuider implements JsonObjectBuilder {
     private Map<String, Object> values = new LinkedHashMap<>();
 
     @Override
-    public Storage add(final String name, final JsonValue value) {
+    public JsonObjectBuilder add(final String name, final JsonValue value) {
         this.values.put(name, value);
         return this;
     }
 
     @Override
-    public Storage add(final String name, final String value) {
+    public JsonObjectBuilder add(final String name, final String value) {
         this.values.put(name, value);
         return this;
     }
 
     @Override
-    public Storage add(final String name, final BigInteger value) {
+    public JsonObjectBuilder add(final String name, final BigInteger value) {
         this.values.put(name, value);
         return this;
     }
@@ -125,7 +125,7 @@ public final class NfJsonObjectBuider implements JsonObjectBuilder {
 {% endhighlight %}
 
 Do you see the advantages of having a standardized API with clear interfaces?
-Now, the only difference in your code will be that, instead of instantiating your builder like this
+Now, the only difference in your code will be that, instead of instantiating your builder like this:
 
 {% highlight java %}
 JsonObjectBuilder builder = Json.createObjectBuilder();
@@ -139,6 +139,6 @@ JsonObjectBuilder builder = new NfJsonObjectBuider();
 
 And it will work like a charm.
 
-Finally, I am aware this is really basic OOP, but I am ready to bet quite a fair amount that most developers would come up
-with the second solution or maybe even think of switcing the API to some library from Google or what not. A lot of developers simply
-do not take advantage of such simple concepts as interfaces.
+Finally, I am aware (and you should be, too) that **this is really basic OOP**. But at the same time I am ready to bet
+quite a fair amount that most developers would come up with the second solution or maybe even think of switching to some library
+from Google or what not. A lot of developers simply do not take advantage of such simple concepts as interfaces.
