@@ -16,6 +16,7 @@ Some worth mentioning are:
 
 More to come soon...
 
+<a href="https://www.github.com/amihaiemil" target="_blank"><img src="http://ghchart.rshah.org/amihaiemil" title="My Github contributions chart" alt="amihaiemil's Github chart" /></a>
 
 I also publish articles on [Baeldung](http://www.baeldung.com/author/mihaiandronache/). Check them out as well, comment, let me know what you think!
 
