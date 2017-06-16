@@ -16,7 +16,7 @@ in JavaEE 7.
 Since JavaEE 7, this is the official, standardized way of dealing with Json in Java. Even if you develop a desktop
 application or a library, you can use the API by pulling in the implementation with "runtime" dependency scope.
 
-In this post I'm going to ilustrate the importance of <b>interfaces</b>, by showing you how I solved an annoying problem
+In this post I'm going to illustrate the importance of <b>interfaces</b>, by showing you how I solved an annoying problem
 with this specitifaction.
 
 <figure class="articleimg">
@@ -27,7 +27,7 @@ with this specitifaction.
 </figure>
 
 You've probably used this API too, most likely for parsing responses from a REST endpoint. There, you simply built a JsonObject
-from the response's InputStream and used it later ony to <b>read</b> data from it, since JsonObject is immutable. Something like this:
+from the response's InputStream and used it later only to <b>read</b> data from it, since JsonObject is immutable. Something like this:
 
 {% highlight java %}
 InputStream content = response.getContent();
@@ -52,8 +52,8 @@ For instance, I'm using a JsonObjectBuilder to back a mock HTTP server. This bas
 HTTP API without actually making calls to any server. Instead, all the data is read/written from/into a JsonObjectBuilder. The build() method is called at every
 read operation and thus it is very inconvenient to have the builder flushed afterwards.
 
-So how do you solve this issue? The first thing you do is start looking into different implementations. You try both [Glassfish's](https://mvnrepository.com/artifact/org.glassfish/javax.json)
-and [Redhat's](https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-json-p-provider/3.1.3.Final) implementations to see that they behave the same. Bummer.
+So how do you solve this issue? The first thing you do is start looking into different implementations. You try both [Glassfish](https://mvnrepository.com/artifact/org.glassfish/javax.json)
+and [Redhat](https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-json-p-provider/3.1.3.Final) to see that they behave the same. Bummer.
 Since there is no other way, the obvious solution is to write a global static method which takes the JsonObjectBuilder, builds the JsonObject and then, iterating over the JsonObject, adds the attributes back in the builder; something like this:
 
 {% highlight java %}
@@ -66,14 +66,14 @@ public static JsonObject buildObject(JsonObjectBuilder builder) {
 }
 {% endhighlight %}
 
-This should work fine, except you will soon realize that all your code is poluted with calls to this static function. Wherever the ``build()`` method is called, you have to also call this function. Good luck debugging if you forget to use it somewhere. And you (or one of your new colleagues) will, for sure. Besides this, static methods are always an ugly solution because they
+This should work fine, except you will soon realize that all your code is poluted with calls to this static function. Wherever the ``build()`` method is called, you have to also call this function. Good luck debugging if you forget to use it somewhere. And you (or one of your new colleagues) will, for sure. Besides, static methods are always an ugly solution because they
 make our code more procedural.
 
 Then, maybe you realize that ``javax.json.JsonObjectBuilder`` is an interface and that you can implement it to have any behaviour you need.
 So what? You are now going to reimplement everything those smart guys from Oracle or Redhat already implemented? No, of course not. Check this out:
 
 {% highlight java %}
-public final class NfJsonObjectBuider implements JsonObjectBuilder {
+public final class NfJsonObjectBuilder implements JsonObjectBuilder {
 
     private Map<String, Object> values = new LinkedHashMap<>();
 
@@ -136,6 +136,6 @@ JsonObjectBuilder builder = new NfJsonObjectBuider();
 
 And it will work like a charm.
 
-Finally, I am aware (and you should be, too) that **this is really basic OOP**. But at the same time I am ready to bet
+Finally, I am aware (and you should be, too) that **this is really basic OOP**. But at the same time, I am ready to bet
 quite a fair amount that most developers would come up with the second solution or maybe even think of switching to some library
 from Google or what not. A lot of developers simply do not take advantage of such simple concepts as interfaces.
