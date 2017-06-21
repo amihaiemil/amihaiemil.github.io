@@ -127,4 +127,4 @@ public class ContactResource {
 }
 {% endhighlight %}
 
-Done. Now no bots will be able to send your formular. I hope this article was useful - please let me know if you find any bugs in the code and I will fix them.
+Done. Now no bots will be able to send your formular. I hope this article was useful - feel free to ask any questions in the Disqus thread below.
