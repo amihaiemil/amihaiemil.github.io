@@ -88,8 +88,6 @@
 
 .site-nav-search {
     float: left;
-    line-height: 56px;
-
     .menu-icon {
         display: none;
     }
@@ -99,26 +97,22 @@
         left: 5px;
         bottom: 9px;
         background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
 
         .menu-icon {
             display: block;
             float: right;
             width: 36px;
-            height: 26px;
+            height: 20px;
             line-height: 0;
-            padding-top: 19px;
+            padding-top: 15px;
             text-align: center;
         }
 
-        .trigger {
-            clear: both;
+        .search-mobile {
             display: none;
         }
 
-        &:hover .trigger {
+        &:hover .search-mobile {
             display: block;
         }
 
