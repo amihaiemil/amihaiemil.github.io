@@ -112,11 +112,14 @@ Student student = new JsonStudent(
     new File("student.txt")
   )
 );
+
+//BTW, toJson(...) should return a JsonObject; you can turn it to String or put it
+//in a Writer yourself; the other way around is harder.
 String json = JsonbBuilder.create().toJson(student);
 {% endhighlight %}
 
 Unfortunately, this does not work (at least in version 1.0). That ``@JsonbProperty`` only
-dictates the name (key) of the value in the final Json and the class still requires getters for marshalling. Hopefully, it will work in the next versions, as [Jackson](https://github.com/FasterXML/jackson) offers this
+dictates the name (key) of the value in the final Json and the class still requires getters for marshalling. Hopefully, it will work in the next versions, as [Jackson](https://github.com/FasterXML/jackson-databind) offers this
 functionality.
 
 Yes, I know the example above would work if the methods were prefixed
