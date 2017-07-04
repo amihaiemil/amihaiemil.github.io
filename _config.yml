@@ -1,7 +1,7 @@
 gems:
   - jekyll-paginate
   - jekyll-feed
-  #- jekyll-sitemap
+  - jekyll-sitemap
 paginate: 10
 paginate_path: "/page:num/"
 
@@ -24,7 +24,7 @@ safe: true
 whitelist:
   - jekyll-paginate
   - jekyll-feed
-  #- jekyll-sitemap
+  - jekyll-sitemap
 source: .
 incremental: false
 highlighter: rouge
