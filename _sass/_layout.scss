@@ -86,7 +86,38 @@
     }
 }
 
+.site-nav-search {
+    float: left;
+    .menu-icon {
+        display: none;
+    }
 
+    @include media-query($on-palm) {
+        position: relative;
+        left: 5px;
+        bottom: 9px;
+        background-color: $background-color;
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 20px;
+            line-height: 0;
+            padding-top: 15px;
+            text-align: center;
+        }
+
+        .search-mobile {
+            display: none;
+        }
+
+        &:hover .search-mobile {
+            display: block;
+        }
+
+    }
+}
 
 /**
  * Site footer

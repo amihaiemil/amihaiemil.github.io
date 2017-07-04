@@ -27,6 +27,8 @@ d="M224 112h448v1312h-448v-1312zM112 0v1536h672v-1536h-672z" />
 d="M224 112h448v1312h-448v-1312zM112 0v1536h672v-1536h-672z" />
     <glyph glyph-name=".null" horiz-adv-x="0" 
  />
+<glyph glyph-name="gitter" unicode="&#xeaa4;" d="M7 843l95 0 0-626-95 0 0 626 0 0z m577-151l95 0 0-475-95 0 0 475 0 0z m-383 0l94 0 0-837-94 0 0 837 0 0z m189 0l95 0 0-837-95 0 0 837 0 0z" horiz-adv-x="682" />
+
     <glyph glyph-name="nonmarkingreturn" horiz-adv-x="597" 
  />
     <glyph glyph-name="space" unicode=" " horiz-adv-x="448" 
