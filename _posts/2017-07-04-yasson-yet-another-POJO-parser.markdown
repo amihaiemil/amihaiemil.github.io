@@ -113,8 +113,8 @@ Student student = new JsonStudent(
   )
 );
 
-//BTW, toJson(...) should return a JsonObject; you can turn it to String or put it
-//in a Writer yourself; the other way around is harder.
+//BTW, toJson(...) should return a JsonObject; you can turn it to String or put
+//it in a Writer yourself; the other way around is harder.
 String json = JsonbBuilder.create().toJson(student);
 {% endhighlight %}
 
