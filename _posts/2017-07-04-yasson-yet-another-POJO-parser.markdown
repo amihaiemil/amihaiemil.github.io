@@ -65,7 +65,7 @@ I'm not going to go in-depth about interfaces, but here's how our student could 
 {% highlight java %}
 public class StudentFromFile implements Student {
 
-  File file;
+  private File file;
 
   public StudentFromFile(File f) {
     this.file = f
@@ -87,7 +87,7 @@ We have a Student instance and we would like it to be marshallable by Yasson, so
 public class JsonStudent implements Student {
 
   //Marshalled student
-  Student student;
+  private Student student;
 
   public JsonStudent(Student s) {
     this.student = s
