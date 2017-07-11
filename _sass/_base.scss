@@ -147,20 +147,15 @@ pre {
         padding-left: 0;
     }
 }
-.headInfo {
+.centered {
   padding-top:10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.headInfo ul {
+.centered ul {
     margin-left: 0px;
-}
-.centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 ul.horizontal-list {
