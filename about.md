@@ -4,8 +4,8 @@ title: About me
 header: About me <a class="github-button" href="https://github.com/amihaiemil" data-count-href="/amihaiemil/followers" data-count-api="/users/amihaiemil#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @amihaiemil on GitHub">Follow @amihaiemil</a>
 permalink: /aboutme/about.html
 ---
-My name is Mihai Andronache and I am a Java developer. I have a Bachelor's degree in CS from [BBU](http://www.cs.ubbcluj.ro/en/), Cluj-Napoca.
-I'm contributing to opensource and writing this blog because I find it a good way to get rid of the office job routine, learn new things and keep my knowledge updated.
+My name is Mihai Andronache and I am a Java developer. I have a Bachelor's degree in Computer Science.
+I'm contributing to opensource and writing this blog because I find it a good way of getting rid of the office job routine, learning new things and keeping my knowledge updated.
 
 On Github, we have two organizations: [opencharles](https://github.com/opencharles) and [decorators-squad](https://github.com/decorators-squad) containing multiple projects.
 Some worth mentioning are:
