@@ -12,14 +12,13 @@ sitemap: false
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a>
           {{ post.buttons }}
         </h2>
         <p>{{post.preview}}  <a href="{{post.url}}">more...</a></p>
       </li>
     {% endfor %}
   </ul>
-
   <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
