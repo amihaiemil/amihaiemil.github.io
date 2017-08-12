@@ -98,7 +98,7 @@ We just call ``command.config()`` to fetch the configuration, and we know that a
 {% highlight java %}
 
 public void handleCommand(final Command com) {
-  final ConfigYml config = com.config();
+  final Config config = com.config();
   if(config.tweet()) {
     //tweet
   }
