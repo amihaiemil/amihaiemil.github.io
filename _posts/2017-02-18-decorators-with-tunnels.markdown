@@ -15,7 +15,7 @@ Sometimes, you are forced to use libraries written by other developers. Needless
  + poorly designed interfaces and classes
  + missing or poorly written (even idiotic) javadocs
 
-In other words, you have no idea how to [use](http://www.baeldung.com/design-a-user-friendly-java-library) them properly
+In other words, you have no idea how to use them properly
 and if you somehow manage to get them running, there's a big risk that, gradually,
 your own code will turn into an unmaintainable pile of garbage.
 
