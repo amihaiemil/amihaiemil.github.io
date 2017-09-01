@@ -101,11 +101,10 @@ You see? It's not about boilerplate code. We actually wrote a little more code, 
 to deal with marshaling/unmarshalling or other issues related to the car. It will just receive a Car object which will do most of the stuff for itself, for its own data.
 
 An even more important advantage is testability and maintainability. You can easily test those Car implementations. On the other hand, it really makes no sense
-to test a DTO with getters and setters. Same as it makes no sense to try and unit test that private static method with 200 lines that turns the DTO in and out. Everyone can understand
-what that method does, it's simple. Nobody will ever forget to call a setter there and ruin the logic in 3 other "business methods".
+to test a DTO with getters and setters. Same as there is no sense in trying to unit test that private static method, with 200 lines, that turns the DTO in and out. Everyone can understand
+what that method does, it's simple -- nobody will ever forget to call a setter there and ruin the logic in 3 other "business methods".
 
-So, I strongly believe data should be animated, it should be the skeleton of some smarter object, which in turn should implement interfaces and be composable. Here is another, shorter example, of the
-same principle:
+So, I strongly believe that data should be animated, it should be the skeleton of some smarter object, which in turn should implement interfaces and be composable. Here is another, more concrete, example of the same principle:
 
 We implemented [camel](https://github.com/decorators-squad/camel), an OOP YAML parser for Java. There is the [YamlMapping](https://github.com/decorators-squad/camel/blob/master/src/main/java/com/amihaiemil/camel/YamlMapping.java) interface and you get an instance of it by using a builder, very similar to the ``javax.json`` API:
 
@@ -134,4 +133,5 @@ We struggled to find a proper solution, for parsing the ``File`` and putting the
 
 That ``ReadYamlMapping`` takes the data and *animates* it for us. We ask for the value of a key and it just searches through what data it has. There is no actual "parsing" logic anywhere. No data is split apart and morphed into an equally dumb and stale data object. Well, if you look inside its implementation, there is a layer of abstraction, which simplifies the stuff a little. It works with lines, rather than the really raw input. I see no problem with that, since ``YamlLines`` is also an object which *does* something with the data, rather than *being* the data.
 
-To conclude, I hope I managed to convince you of the harm that DTOs do in our code. I am aware that we cannot possibly get rid of DTOs, but I'm saying we should use standard formats like XML, JsonObject etc, and wrap these formats in intelligent objects which can actually do something for us, can easily be tested, extended and mainteined. Any questions?
+To conclude, I hope I managed to convince you of the harm that DTOs do in our code. I am aware that we cannot possibly get rid of DTOs, but I'm saying we should use standard formats like XML, JsonObject etc, and wrap these formats in intelligent objects which can actually do something for us, can easily be tested, extended and mainteined. There are probably many questions about
+the code above, feel free to shoot them in the Disqus thread below.
