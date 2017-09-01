@@ -15,7 +15,7 @@ I sort of wrote about this topic already [here](http://www.amihaiemil.com/2017/0
 but it was more of a rant, so maybe it's better to put those same lines in a clearer and more focused format, accompanied by one more example.
 
 I first discovered the idea of "live objects" in ["Elegant Objects", by Yegor Bugayenko](https://www.amazon.com/Elegant-Objects-1-Yegor-Bugayenko/dp/1519166915).
-Even though other ideas presented in the book are quite debatable, I think this one is clear and there might not be a single, proper argument against it.
+Even though other ideas presented in the book are quite debatable, I think this one is clear and I honestly could not find a single argument against it.
 
 So, let's see what's it about and how I apply it in order to refactor and make my code more maintainable.
 
