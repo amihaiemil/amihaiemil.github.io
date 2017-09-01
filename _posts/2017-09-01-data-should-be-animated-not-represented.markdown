@@ -80,7 +80,7 @@ which means you can decorate it, compose the Car of your dreams, which will a lo
 {% highlight java %}
 /**
  * Car with CapsLock.
- \*/
+ */
 public class ClCar implements Car {
   private Car car;
 
