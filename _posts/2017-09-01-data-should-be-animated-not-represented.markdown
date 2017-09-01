@@ -12,7 +12,7 @@ preview: In practical OOP, it is impossible to get rid of DTOs. However, we can 
 ---
 
 I sort of wrote about this topic already [here](http://www.amihaiemil.com/2017/07/04/yasson-yet-another-POJO-parser.html),
-but that article was more of a rant, so maybe it's better to put those same lines in a clearer and more focused format, accompanied by one more example.
+but it was more of a rant, so maybe it's better to put those same lines in a clearer and more focused format, accompanied by one more example.
 
 I first discovered the idea of "animate objects" in ["Elegant Objects", by Yegor Bugayenko](https://www.amazon.com/Elegant-Objects-1-Yegor-Bugayenko/dp/1519166915).
 Even though other ideas presented in the book are quite debatable, I think this one is clear and there might not be a single, proper argument against it.
@@ -20,7 +20,7 @@ Even though other ideas presented in the book are quite debatable, I think this 
 So, let's see what's it about and how I apply it in order to refactor and make my code more maintainable.
 
 <figure class="articleimg">
- <img src="/images/part_time_pal.png" alt="Part Time Pal">
+ <img src="/images/part_time_pal.PNG" alt="Part Time Pal">
  <figcaption>
  Tom & Jerry - Part Time Pal, by  William Hanna and Joseph Barbera
  </figcaption>
