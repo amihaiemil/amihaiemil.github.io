@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Data Should Be Animated, Not Mapped"
-date: 2017-08-12
+date: 2017-09-01
 tags: oop java design
 author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
 comments: true
