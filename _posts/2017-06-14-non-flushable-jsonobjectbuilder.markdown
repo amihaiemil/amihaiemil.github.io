@@ -47,7 +47,7 @@ In neither of these occasions, the flaw I'm talking about is not visible: ``Json
 So, in the ``car`` example above, if you would call ``build()`` multiple times, only the first would output the desired JsonObject; the following calls
 would result in an empty object. See [this](https://stackoverflow.com/questions/35187129/javax-json-strange-behavior) SO question about this "strange behaviour".
 
-Why is it a flaw? Because otherwise, you could elegantly use JsonObjectBuilder to animate any "mutable" implementation. It is a prefect in-memory storage.
+Why is it a flaw? Because otherwise, you could elegantly use JsonObjectBuilder as [the skeleton](http://www.amihaiemil.com/2017/09/01/data-should-be-animated-not-represented.html) of any "mutable" implementation. It is a prefect in-memory storage.
 For instance, I'm using a JsonObjectBuilder to back a mock HTTP server. This basically means I have a [bunch of classes](https://github.com/decorators-squad/versioneye-api/blob/master/src/main/java/com/amihaiemil/versioneye/MkVersionEye.java) which mimic the real
 HTTP API without actually making calls to any server. Instead, all the data is read/written from/into a JsonObjectBuilder. The build() method is called at every
 read operation and thus it is very inconvenient to have the builder flushed afterwards.
