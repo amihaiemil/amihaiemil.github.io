@@ -102,8 +102,7 @@ You would use the above classes like this:
 You see? It's not about boilerplate code. We actually wrote a little more code, but our "business logic" will never be polluted. It will never have
 to deal with marshaling/unmarshalling or other issues related to the car's data. It will just receive a Car object which will do most of the stuff for itself, for its own data.
 
-An even more important advantage is testability and maintainability. You can easily test those Car implementations. On the other hand, it really makes no sense
-to test a DTO with getters and setters. Same as there is no sense in trying to unit test that private static method, with 200 lines, which turns the DTO in and out. Everyone can understand
+An even more important advantage is testability. You can easily test those Car implementations. On the other hand, it really makes no sense to test a DTO with getters and setters. Same as there is no sense in trying to unit test that private static method, with 200 lines, which turns the DTO in and out. Everyone can understand
 what that method does, it's simple. Nobody will ever forget to call a setter there, ruining the logic in 3 other "business methods".
 
 So, I strongly believe that data should be animated. It should be the skeleton of some smarter object, which in turn should implement interfaces and be composable. Here is another, more concrete, example of the same principle:
