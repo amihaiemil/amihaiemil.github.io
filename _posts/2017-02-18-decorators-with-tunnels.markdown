@@ -3,10 +3,11 @@ layout: post
 title: "Tunnel Decorators"
 date: 2017-02-18
 tags: java oop design
-author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+author: amihaiemil
 comments: true
 shareable: true
 preview: Using decorators to encapsulate the work with a badly designed library.
+image: http://www.amihaiemil.com/images/jerry_and_jumbo.png
 ---
 
 Sometimes, you are forced to use libraries written by other developers. Needless to say, these libraries often have annoying flaws such as:
@@ -24,7 +25,7 @@ quite a mess. I solved the issue using a flavor of decorators.
 Read on.
 
 <figure class="articleimg">
- <img src="/images/jerry_and_jumbo.png" alt="Jerry and Jumbo">
+ <img src="{{page.image}}" alt="Jerry and Jumbo">
  <figcaption>
  Tom & Jerry - Jerry and Jumbo, by  William Hanna and Joseph Barbera
  </figcaption>

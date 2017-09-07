@@ -3,10 +3,11 @@ layout: post
 title: "The Remote Dream"
 date: 2017-04-05
 tags: development
-author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+author: amihaiemil
 comments: true
 shareable: true
 preview: A brief explanation of what I understand by the words "remote work"
+image: http://www.amihaiemil.com/images/trap_happy.PNG
 ---
 
 Ever since I started contributing to opensource and more frequently since I started
@@ -23,7 +24,7 @@ and one that requires you to be in the office from 9 to 5. I would even
 say that the office is a better alternative.
 
 <figure class="articleimg">
- <img src="/images/trap_happy.PNG" alt="Trap Happy">
+ <img src="{{page.image}}" alt="Trap Happy">
  <figcaption>
  Tom & Jerry - Trap Happy, by  William Hanna and Joseph Barbera
  (from <a target="_blank" href="http://tomandjerrycaps.blogspot.co.at/2012/07/trap-happy.html">here</a>)

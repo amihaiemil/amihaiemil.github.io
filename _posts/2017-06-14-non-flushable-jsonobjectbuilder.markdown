@@ -3,10 +3,11 @@ layout: post
 title: "Non flushable javax.json.JsonObjectBuilder"
 date: 2017-06-14
 tags: java oop design
-author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+author: amihaiemil
 comments: true
 shareable: true
 preview: Working around flushable javax.json.JsonObjectBuilder
+image: http://www.amihaiemil.com/images/mouse_trouble.PNG
 ---
 
 You do know how to handle Json objects in Java, right? If you don't, just pretend you do and
@@ -20,7 +21,7 @@ In this post I'm going to illustrate the importance of <b>interfaces</b>, by sho
 with this specitifaction.
 
 <figure class="articleimg">
- <img src="/images/mouse_trouble.PNG" alt="Mouse Trouble">
+ <img src="{{page.image}}" alt="Mouse Trouble">
  <figcaption>
  Tom & Jerry - Mouse Trouble, by  William Hanna and Joseph Barbera (from <a target="\_blank" href="http://tomandjerrycaps.blogspot.co.at/">here</a>)
  </figcaption>
