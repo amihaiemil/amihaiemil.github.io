@@ -10,14 +10,6 @@ layout: postlayout
       <span class="post-meta">{{ tag }}</span>
     {% endfor %} • by <a href="https://www.github.com/{{ page.author }}">{{page.author}}</a>
     </p>
-    {% if page.image %}
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="@amihaiemil">
-        <meta name="twitter:creator" content="{{page.author}}">
-        <meta name="twitter:title" content="{{page.title}}">
-        <meta name="twitter:description" content="{{page.preview}}">
-        <meta name="twitter:image" content="{{page.image}}">
-    {% endif %}
   </header>
 
   <article class="post-content">
