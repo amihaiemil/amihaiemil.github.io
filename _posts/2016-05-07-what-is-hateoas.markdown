@@ -3,7 +3,7 @@ layout: post
 title:  "What is HATEOAS?"
 date:   2016-05-07
 tags: rest design
-author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+author: amihaiemil
 comments: true
 shareable: true
 preview: You can implement web services using a single HTTP method and nothing else, or you can make use of all the power that HTTP gives you (different methods, status codes, mime-types etc) to make your services truly RESTful.

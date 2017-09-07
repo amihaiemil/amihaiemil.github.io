@@ -3,10 +3,11 @@ layout: post
 title: "Test Driven Rest"
 date: 2017-05-03
 tags: design rest testing
-author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+author: amihaiemil
 comments: true
 shareable: true
 preview: Using tests to make sure that your REST api is navigable
+image: http://www.amihaiemil.com/images/jerry_and_the_lion.png
 ---
 
 First of all, let's agree that not any set of HTTP endpoints can be called RESTful.
@@ -23,7 +24,7 @@ when surfing through your API from the browser, you should get the feeling that 
 is missing.
 
 <figure class="articleimg">
- <img src="/images/jerry_and_the_lion.png" alt="Jerry And The Lion">
+ <img src="{{page.image}}" alt="Jerry And The Lion">
  <figcaption>
  Tom & Jerry - Jerry And The Lion, by  William Hanna and Joseph Barbera
  </figcaption>

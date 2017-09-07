@@ -3,12 +3,13 @@ layout: post
 title: "Data Should Be Animated, Not Mapped"
 date: 2017-09-01
 tags: oop java design
-author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+author: amihaiemil
 comments: true
 shareable: true
 preview: In practical OOP, it is impossible to get rid of DTOs. However, we can improve
  the way we work with data - instead of mapping it to stale, dead object, we should animate it
  with live, smart objects.
+image: http://www.amihaiemil.com/images/part_time_pal.PNG
 ---
 
 I sort of wrote about this topic already [here](http://www.amihaiemil.com/2017/07/04/yasson-yet-another-POJO-parser.html),
@@ -20,7 +21,7 @@ Even though other ideas presented in the book are quite debatable, I think this 
 So, let's see what's it about and how I apply it in order to refactor and make my code more maintainable.
 
 <figure class="articleimg">
- <img src="/images/part_time_pal.PNG" alt="Part Time Pal">
+ <img src="{{page.image}}" alt="Part Time Pal">
  <figcaption>
  Tom & Jerry - Part Time Pal, by  William Hanna and Joseph Barbera
  </figcaption>

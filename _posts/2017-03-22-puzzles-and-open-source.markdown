@@ -3,10 +3,11 @@ layout: post
 title: "Puzzles And Open Source"
 date: 2017-03-22
 tags: pdd oop opensource
-author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+author: amihaiemil
 comments: true
 shareable: true
 preview: An overview of how we developed an opensource Java library using PDD
+image: http://www.amihaiemil.com/images/tee_for_two.PNG
 ---
 
 After working with [Teamed](http://www.teamed.io/) and practicing [PDD](http://www.yegor256.com/2009/03/04/pdd.html)
@@ -21,7 +22,7 @@ In this post, I'll give you a brief overview on how long it took us to [release]
 the first version.
 
 <figure class="articleimg">
- <img src="/images/tee_for_two.PNG" alt="Tee for Two">
+ <img src="{{page.image}}" alt="Tee for Two">
  <figcaption>
  Tom & Jerry - Tee for Two, by  William Hanna and Joseph Barbera (from <a target="_blank" href="http://tomandjerrycaps.blogspot.co.at/2012/08/tee-for-two.html">here</a>)
  </figcaption>

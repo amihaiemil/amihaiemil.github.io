@@ -3,7 +3,7 @@ layout: post
 title:  "Calculate time using javascript"
 date:   2016-05-24
 tags: javascript miscellaneous
-author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+author: amihaiemil
 comments: true
 shareable: true
 preview: Useful javascript code.
