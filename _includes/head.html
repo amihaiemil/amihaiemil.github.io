@@ -6,13 +6,21 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.preview %}{{ page.preview | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   {% if page.image %}
+  <!--Twitter meta tags, so the tweet contains a nice preview of the article-->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@amihaiemil">
   <meta name="twitter:creator" content="@{{page.author}}">
   <meta name="twitter:title" content="{{page.title}}">
   <meta name="twitter:description" content="{{page.preview}}">
   <meta name="twitter:image" content="{{page.image}}">
+  <!-- OpenGraph tags, so other platforms like Facebook, also display the shared post nicely-->
+  <meta property="og:url" content="{{page.url}}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{page.title}}" />
+  <meta property="og:description" content="{{page.preview}}" />
+  <meta property="og:image" content="{{page.image}}" />
   {% endif %}
+
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/font-awesome.min.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
