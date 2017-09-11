@@ -7,7 +7,7 @@ author: amihaiemil
 comments: true
 shareable: true
 preview: A brief explanation of what I understand by the words "remote work"
-image: http://www.amihaiemil.com/images/trap_happy.PNG
+image: https://amihaiemil.github.io/images/trap_happy.PNG
 ---
 
 Ever since I started contributing to opensource and more frequently since I started

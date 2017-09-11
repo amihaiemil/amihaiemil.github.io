@@ -125,4 +125,4 @@ I also think of it as of an HTML page that's been stripped of its CSS. Look agai
 
 To summarize, make sure your API is navigable - there shouldn't be any isolated endpoints (starting from the index endpoint, you should be able to reach all of them by clicking through served links) and make sure you respect the protocol by using the right statuses, headers etc when they are needed. Again, I found Github's API to be a very good illustrator of the HATEOAS principle.
 
-**P.S.** [Here](http://www.amihaiemil.com/2017/05/03/test-driven-rest.html)'s how to use tests to make sure your API is navigable.
+**P.S.** [Here](https://amihaiemil.github.io/2017/05/03/test-driven-rest.html)'s how to use tests to make sure your API is navigable.

@@ -8,7 +8,7 @@ comments: true
 shareable: true
 preview: Yasson is the reference implementation of JSON-B and, unfortunately, version 1.0
  relies on POJOs' get/set design
-image: http://www.amihaiemil.com/images/matinee_mouse.PNG
+image: https://amihaiemil.github.io/images/matinee_mouse.PNG
 ---
 
 These days [Yasson](https://github.com/eclipse/yasson), which is the reference

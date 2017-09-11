@@ -8,7 +8,7 @@ comments: true
 shareable: true
 preview: For any webapp, no matter its technology, all the client-side content has to
  be managed using a CMS (down to line-of-code level)
-image: http://www.amihaiemil.com/images/mouse_cleaning.PNG
+image: https://amihaiemil.github.io/images/mouse_cleaning.PNG
 ---
 
 What is (or should be) considered client-side? Everything that is displayed/loads

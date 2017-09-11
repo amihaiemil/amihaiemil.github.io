@@ -7,7 +7,7 @@ author: amihaiemil
 comments: true
 shareable: true
 preview: Using decorators to encapsulate the work with a badly designed library.
-image: http://www.amihaiemil.com/images/jerry_and_jumbo.png
+image: https://amihaiemil.github.io/images/jerry_and_jumbo.png
 ---
 
 Sometimes, you are forced to use libraries written by other developers. Needless to say, these libraries often have annoying flaws such as:

@@ -29,7 +29,7 @@ or [JsonFilesRepository](https://github.com/opencharles/charles/blob/master/src/
 {% highlight java %}
 WebDriver driver = ...; //Selenium WebDriver
 Repository repo = ...; //Awesome repository implementation here. Maybe send the pages to a DB, or to an ElasticSearch instance up in AWS? You decide.
-String indexPage = "http://www.amihaiemil.com/index.html";
+String indexPage = "https://amihaiemil.github.io/index.html";
 WebCrawl graph = new GraphCrawl(
     indexPage, driver, new IgnoredPatterns(), repo
 );

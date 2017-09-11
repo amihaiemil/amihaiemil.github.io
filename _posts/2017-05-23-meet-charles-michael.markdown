@@ -8,7 +8,7 @@ author: amihaiemil
 comments: true
 shareable: true
 preview: A Github chatbot for indexing and searching gh-pages websites
-image: http://www.amihaiemil.com/images/charlesmike_index.png
+image: https://amihaiemil.github.io/images/charlesmike_index.png
 ---
 
 See the white search-box above? It's added on the website via a simple ``<script>`` tag,

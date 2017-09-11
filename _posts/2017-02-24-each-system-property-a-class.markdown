@@ -8,7 +8,7 @@ comments: true
 shareable: true
 preview: Each System.getProperty("...") should be in its own class. Otherwise, the
  code containing it is not testable.
-image: http://www.amihaiemil.com/images/egg_and_jerry.png
+image: https://amihaiemil.github.io/images/egg_and_jerry.png
 ---
 
 A lot of Java applications use [System properties](https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html)

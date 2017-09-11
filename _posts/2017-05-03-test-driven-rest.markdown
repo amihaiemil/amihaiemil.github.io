@@ -7,7 +7,7 @@ author: amihaiemil
 comments: true
 shareable: true
 preview: Using tests to make sure that your REST api is navigable
-image: http://www.amihaiemil.com/images/jerry_and_the_lion.png
+image: https://amihaiemil.github.io/images/jerry_and_the_lion.png
 ---
 
 First of all, let's agree that not any set of HTTP endpoints can be called RESTful.
@@ -19,7 +19,7 @@ I think that such a programatic interface should expose more or less the entire 
 It should be, if you like, the "backdoor" of your application, used by other apps in the same way a normal user
 would navigate from one page to another.
 
-I also said [here](http://www.amihaiemil.com/2016/05/07/what-is-hateoas.html) that,
+I also said [here](https://amihaiemil.github.io/2016/05/07/what-is-hateoas.html) that,
 when surfing through your API from the browser, you should get the feeling that the page did not load properly and the styling
 is missing.
 
@@ -35,7 +35,7 @@ offer the same functionality, it only makes sense to **use the same test code fo
 It sounds strange, right? The code that tests the UI should also test the API. It is achievable,
 provided that the architect pays as much attention on the tests as he does on the app's code (which, sadly, is not always the case).
 
-I explained [here](http://www.amihaiemil.com/2017/01/24/selenium-and-junit-the-right-way.html)
+I explained [here](https://amihaiemil.github.io/2017/01/24/selenium-and-junit-the-right-way.html)
 how to encapsulate the WebDriver instance in order to have clear and maintainable UI tests.
 In short, a good Selenium test should look like this:
 

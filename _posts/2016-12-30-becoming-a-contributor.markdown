@@ -9,7 +9,7 @@ shareable: true
 preview: How we should work together using PDD, plus other details
 ---
 
-I anounced in the previous [post](http://www.amihaiemil.com/2016/12/22/contributors-wanted.html) that I am looking for contributors to my open source projects.
+I anounced in the previous [post](https://amihaiemil.github.io/2016/12/22/contributors-wanted.html) that I am looking for contributors to my open source projects.
 
 I described the big picture, how I expect us to be working together  but still, more details are needed. That's why I wrote this post. It will cover three topics: communication, tasks size and some guidelines regarding coding style.
 

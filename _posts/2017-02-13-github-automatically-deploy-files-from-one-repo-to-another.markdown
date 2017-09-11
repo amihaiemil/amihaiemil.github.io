@@ -8,7 +8,7 @@ comments: true
 shareable: true
 preview: A simple guide to help you with automatically moving files from one repo
  to another, using Rultor
-image: http://www.amihaiemil.com/images/jerrys_cousin.png
+image: https://amihaiemil.github.io/images/jerrys_cousin.png
 ---
 
 Due to its rich and well designed API, Github has a vast number of integrations that run on top of it. [Rultor](http://doc.rultor.com/) is one of the many pieces of

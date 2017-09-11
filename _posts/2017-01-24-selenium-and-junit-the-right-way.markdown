@@ -8,7 +8,7 @@ comments: true
 shareable: true
 preview: Are you writing Selenium tests with JUnit? If you are not
  a good OOP programmer, you're probably doing it wrong.
-image: http://www.amihaiemil.com/images/truce_hurts.png
+image: https://amihaiemil.github.io/images/truce_hurts.png
 ---
 
 There are many tutorials out there about how to use Selenium with JUnit to write automated tests for the UI. However, most (if not all of them) only show you how to play around with a ``WebDriver`` instance, fetch a web-page, call a ``findBy*`` method and make some assertions.
@@ -153,4 +153,4 @@ What do you think? Do you see other solutions?
 **P.S.** At some point after I wrote this article, someone asked for the code. [Here](https://github.com/amihaiemil/selenium-github-example) it is.
 
 **P.S. 2** You can use the same approach (actually, reuse this test code), to make sure that your REST api respects the
-HATEOAS principle. See [here](http://www.amihaiemil.com/2017/05/03/test-driven-rest.html).
+HATEOAS principle. See [here](https://amihaiemil.github.io/2017/05/03/test-driven-rest.html).

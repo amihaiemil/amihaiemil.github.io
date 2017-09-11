@@ -7,7 +7,7 @@ author: amihaiemil
 comments: true
 shareable: true
 preview: How to run Selenium tests with Google Chrome Headless on Travis CI.
-image: http://www.amihaiemil.com/images/the_truce_hurts_apple.png
+image: https://amihaiemil.github.io/images/the_truce_hurts_apple.png
 ---
 
 How do you run any browser automation tool in a CI environment, like [Travis](https://travis-ci.org/), where there is no graphical browser? How can

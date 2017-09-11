@@ -9,10 +9,10 @@ shareable: true
 preview: In practical OOP, it is impossible to get rid of DTOs. However, we can improve
  the way we work with data - instead of mapping it to stale, dead object, we should animate it
  with live, smart objects.
-image: http://www.amihaiemil.com/images/part_time_pal.PNG
+image: https://amihaiemil.github.io/images/part_time_pal.PNG
 ---
 
-I sort of wrote about this topic already [here](http://www.amihaiemil.com/2017/07/04/yasson-yet-another-POJO-parser.html),
+I sort of wrote about this topic already [here](https://amihaiemil.github.io/2017/07/04/yasson-yet-another-POJO-parser.html),
 but it was more of a rant, so maybe it's better to put those same lines in a clearer and more focused format, accompanied by one more example.
 
 I first discovered the idea of "live objects" in ["Elegant Objects", by Yegor Bugayenko](https://www.amazon.com/Elegant-Objects-1-Yegor-Bugayenko/dp/1519166915).
@@ -75,7 +75,7 @@ public class JsonCar implements Car {
 }
 {% endhighlight %}
 
-Of course, this simple JsonCar doesn't do more than the previous one. But it is a proper object, [with an interface](http://www.amihaiemil.com/2017/08/12/how-interfaces-are-refactoring-our-code.html),
+Of course, this simple JsonCar doesn't do more than the previous one. But it is a proper object, [with an interface](https://amihaiemil.github.io/2017/08/12/how-interfaces-are-refactoring-our-code.html),
 which means you can decorate it, compose the Car of your dreams, which will do a lot for you. To make sure the car always prints with CapsLock you have this class:
 
 {% highlight java %}
