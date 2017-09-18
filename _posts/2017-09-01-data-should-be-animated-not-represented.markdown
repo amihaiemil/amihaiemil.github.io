@@ -15,8 +15,7 @@ image: https://amihaiemil.github.io/images/part_time_pal.PNG
 I sort of wrote about this topic already [here](https://amihaiemil.github.io/2017/07/04/yasson-yet-another-POJO-parser.html),
 but it was more of a rant, so maybe it's better to put those same lines in a clearer and more focused format, accompanied by one more example.
 
-I first discovered the idea of "live objects" in ["Elegant Objects", by Yegor Bugayenko](https://www.amazon.com/Elegant-Objects-1-Yegor-Bugayenko/dp/1519166915).
-Even though other ideas presented in the book are quite debatable, I think this one is clear and I honestly could not find a single argument against it.
+I first discovered the idea of "live objects" in <a target="_blank" href="https://www.amazon.com/gp/product/1519166915/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1519166915&linkCode=as2&tag=amihaiemil-20&linkId=871631ae2772a197aa2125125187c97e">"Elegant Objects", by Yegor Bugayenko</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=amihaiemil-20&l=am2&o=1&a=1519166915" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"/>. Even though other ideas presented in the book are quite debatable, I think this one is clear and I honestly could not find a single argument against it.
 
 So, let's see what's it about and how I apply it in order to refactor and make my code more maintainable.
 
