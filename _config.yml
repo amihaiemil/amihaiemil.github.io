@@ -15,7 +15,7 @@ url: http://amihaiemil.github.io # the base hostname & protocol for your site
 twitter_username: amihaiemil
 github_username:  amihaiemil
 
-include: '.well-known'
+include: ['.well-known']
 
 # Build settings
 timezone: Romania/Bucharest
