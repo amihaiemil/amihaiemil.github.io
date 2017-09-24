@@ -15,9 +15,7 @@ url: http://amihaiemil.github.io # the base hostname & protocol for your site
 twitter_username: amihaiemil
 github_username:  amihaiemil
 
-keep_files: [
- '.well-known/acme-challenge'
-]
+include: '.well-known'
 
 # Build settings
 timezone: Romania/Bucharest
