@@ -117,4 +117,4 @@ used while setting all this up:
  * [CSR Generation and Certificate Installation: Glassfish 4.x
 ](https://support.comodo.com/index.php?/Knowledgebase/Article/View/1123/37/csr-generation-and-certificate-installation-glassfish-4x)
 
-and much digging through StackOverflow.
+and some digging through StackOverflow.
