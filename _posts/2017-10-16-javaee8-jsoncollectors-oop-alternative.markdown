@@ -11,7 +11,7 @@ preview: A short overview of JavaEE 8's JsonCollectors and an OOP alternative fo
 image: https://amihaiemil.github.io/images/mouse_in_the_house2.png
 ---
 
-With JavaEE 8 comes a new version of the JSON-P (JSON Processing) specification, namely version
+With JavaEE 8 there comes a new version of the JSON-P (JSON Processing) specification, namely version
 1.1. One of the new things this version brings is the utility class [JsonCollectors](https://javaee.github.io/javaee-spec/javadocs/javax/json/stream/JsonCollectors.html).
 
 This class is OK, it provides some useful collectors to manipulate collections of JsonValues and turn them into JsonObjects or JsonArrays. Let's see how it works and dive into a more OOP alternative (I'm going to examine JsonArray, but this applies to JsonObject as well and probably to the others too).
@@ -46,7 +46,7 @@ JsonArray array = builder.build();
 Very beautiful and handy. Actually, I'm not the only one writing these examples, you can already
 find a few at a first Google search.
 
-What I didn't see, however, is an OOP approach. The snippets above answer the question "How to we *put* these values *into* an array?", instead of answering the question "How do we *make* these values *act as* an array?".
+What I didn't see, however, is an OOP approach. The snippets above answer the question "How do we *put* these values *into* an array?", instead of answering the question "How do we *make* these values *act as* an array?".
 
 It's a very important difference. In the current approach, you have a few issues:
 
