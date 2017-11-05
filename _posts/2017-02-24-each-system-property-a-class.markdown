@@ -3,11 +3,12 @@ layout: post
 title: "Each System Property Should Have Its Own Class"
 date: 2017-02-24
 tags: java oop unit-testing
-author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+author: amihaiemil
 comments: true
 shareable: true
 preview: Each System.getProperty("...") should be in its own class. Otherwise, the
  code containing it is not testable.
+image: https://amihaiemil.github.io/images/egg_and_jerry.png
 ---
 
 A lot of Java applications use [System properties](https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html)
@@ -18,7 +19,7 @@ Naturally, somewhere in the code, the properties are checked and a decision is m
 based on them. The question is: how can that code be well unit-tested?
 
 <figure class="articleimg">
- <img src="/images/egg_and_jerry.png" alt="The Egg and Jerry">
+ <img src="{{page.image}}" alt="The Egg and Jerry">
  <figcaption>
  Tom & Jerry - The Egg and Jerry, by  William Hanna and Joseph Barbera
  </figcaption>

@@ -3,13 +3,13 @@ layout: post
 title:  "What is HATEOAS?"
 date:   2016-05-07
 tags: rest design
-author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+author: amihaiemil
 comments: true
 shareable: true
 preview: You can implement web services using a single HTTP method and nothing else, or you can make use of all the power that HTTP gives you (different methods, status codes, mime-types etc) to make your services truly RESTful.
 ---
 
-This article assumes you have at least an intermediate knowledge about REST. If you don't, there are [many](https://www.google.ro/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=rest%20tutorial) tutorials that teach you how to implement a RESTful API. I learned REST from Bill Burke's [RESTful Java with JAX-RS 2.0](http://cdn.oreillystatic.com/oreilly/booksamplers/9781449361341_sampler.pdf), which I would recommend to any Java EE developer starting to learn this architecture. Also, Github's [API](https://api.github.com/) serves as a great example.
+This article assumes you have at least an intermediate knowledge about REST. If you don't, there are [many](https://www.google.ro/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=rest%20tutorial) tutorials that teach you how to implement a RESTful API. I learned REST from Bill Burke's <a target="_blank" href="https://www.amazon.com/gp/product/144936134X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=144936134X&linkCode=as2&tag=amihaiemil-20&linkId=07f99afb3af45ca09a0eae25d566b326">RESTful Java with JAX-RS 2.0</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=amihaiemil-20&l=am2&o=1&a=144936134X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />, which I would recommend to any Java EE developer starting to learn this architecture. Also, Github's [API](https://api.github.com/) serves as a great example.
 
 In his book Burke also describes HATEOAS (hypermedia as the engine of application state). It is what's known as the 3rd level of REST [maturity](http://martinfowler.com/articles/richardsonMaturityModel.html). In fact, [according to](http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven) the paradigm's creator, an API is truly RESTful only if it follows the HATEOAS principle.
 
@@ -125,4 +125,4 @@ I also think of it as of an HTML page that's been stripped of its CSS. Look agai
 
 To summarize, make sure your API is navigable - there shouldn't be any isolated endpoints (starting from the index endpoint, you should be able to reach all of them by clicking through served links) and make sure you respect the protocol by using the right statuses, headers etc when they are needed. Again, I found Github's API to be a very good illustrator of the HATEOAS principle.
 
-**P.S.** [Here](http://www.amihaiemil.com/2017/05/03/test-driven-rest.html)'s how to use tests to make sure your API is navigable.
+**P.S.** [Here](https://amihaiemil.github.io/2017/05/03/test-driven-rest.html)'s how to use tests to make sure your API is navigable.

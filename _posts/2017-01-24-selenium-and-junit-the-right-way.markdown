@@ -3,11 +3,12 @@ layout: post
 title:  "Selenium and JUnit, the right way!"
 date:   2017-01-24
 tags: junit selenium java
-author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+author: amihaiemil
 comments: true
 shareable: true
 preview: Are you writing Selenium tests with JUnit? If you are not
  a good OOP programmer, you're probably doing it wrong.
+image: https://amihaiemil.github.io/images/truce_hurts.png
 ---
 
 There are many tutorials out there about how to use Selenium with JUnit to write automated tests for the UI. However, most (if not all of them) only show you how to play around with a ``WebDriver`` instance, fetch a web-page, call a ``findBy*`` method and make some assertions.
@@ -15,7 +16,7 @@ There are many tutorials out there about how to use Selenium with JUnit to write
 Take [this](http://toolsqa.com/java/junit-framework/junit-test-selenium-webdriver/) article, for example. It's currently the first on Google, when you search for "selenium and junit". If you write your tests in that manner you will eventually end up in a lot of trouble. This post tries to explain why and offer a much better alternative.
 
 <figure class="articleimg">
- <img src="/images/truce_hurts.png" alt="The Truce Hurts">
+ <img src="{{page.image}}" alt="The Truce Hurts">
  <figcaption>
  Tom & Jerry - The Truce Hurts, by  William Hanna and Joseph Barbera
  </figcaption>
@@ -152,4 +153,4 @@ What do you think? Do you see other solutions?
 **P.S.** At some point after I wrote this article, someone asked for the code. [Here](https://github.com/amihaiemil/selenium-github-example) it is.
 
 **P.S. 2** You can use the same approach (actually, reuse this test code), to make sure that your REST api respects the
-HATEOAS principle. See [here](http://www.amihaiemil.com/2017/05/03/test-driven-rest.html).
+HATEOAS principle. See [here](https://amihaiemil.github.io/2017/05/03/test-driven-rest.html).

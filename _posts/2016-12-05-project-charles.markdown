@@ -4,7 +4,7 @@ title:  Project Charles
 buttons: <a class="github-button" href="https://github.com/opencharles/charles" data-icon="octicon-star" data-count-href="/opencharles/charles/stargazers" data-count-api="/repos/opencharles/charles#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star opencharles/charles on GitHub">Star</a> <a class="github-button" href="https://github.com/opencharles/charles/fork" data-icon="octicon-repo-forked" data-count-href="/opencharles/charles/network" data-count-api="/repos/opencharles/charles#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork opencharles/charles on GitHub">Fork</a>
 date:   2016-12-05
 tags: projects github web
-author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+author: amihaiemil
 comments: true
 shareable: true
 preview: A simple and smart Java webcrawler.
@@ -29,7 +29,7 @@ or [JsonFilesRepository](https://github.com/opencharles/charles/blob/master/src/
 {% highlight java %}
 WebDriver driver = ...; //Selenium WebDriver
 Repository repo = ...; //Awesome repository implementation here. Maybe send the pages to a DB, or to an ElasticSearch instance up in AWS? You decide.
-String indexPage = "http://www.amihaiemil.com/index.html";
+String indexPage = "https://amihaiemil.github.io/index.html";
 WebCrawl graph = new GraphCrawl(
     indexPage, driver, new IgnoredPatterns(), repo
 );

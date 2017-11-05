@@ -3,21 +3,22 @@ layout: post
 title: "How Interfaces Are Refactoring Our Code"
 date: 2017-08-12
 tags: oop java design
-author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+author: amihaiemil
 comments: true
 shareable: true
 preview: An example of why any object, in any application, should implement all its public methods
  from interfaces.
+image: https://amihaiemil.github.io/images/mouse_in_the_house.png
 ---
 
 I'm sure you've heard this idea before: all the public methods of an object should come from interfaces. I very much agree with it and, if you ask me, I'll tell you that all objects, without exception,
 should implement at least one interface. This is of paramount importance, especially when developing libraries and reusable components. You want to provide
-extensibility and testability, you want to let your users [decorate or reimplement objects](http://www.amihaiemil.com/2017/06/14/non-flushable-jsonobjectbuilder.html) etc.
+extensibility and testability, you want to let your users [decorate or reimplement objects](https://amihaiemil.github.io/2017/06/14/non-flushable-jsonobjectbuilder.html) etc.
 
 But what about standalone applications, where you have objects that represent things which can have only one implementation? Even those? Yes. Let's see why, through an example.
 
 <figure class="articleimg">
- <img src="/images/mouse_in_the_house.png" alt="A Mouse In The House">
+ <img src="{{page.image}}" alt="A Mouse In The House">
  <figcaption>
  Tom & Jerry - A Mouse In The House, by  William Hanna and Joseph Barbera
  </figcaption>
@@ -98,7 +99,7 @@ We just call ``command.config()`` to fetch the configuration, and we know that a
 {% highlight java %}
 
 public void handleCommand(final Command com) {
-  final ConfigYml config = com.config();
+  final Config config = com.config();
   if(config.tweet()) {
     //tweet
   }

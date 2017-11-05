@@ -3,11 +3,12 @@ layout: post
 title: "Github: Automatically Deploy Files From One Repo to Another"
 date: 2017-02-13
 tags: rultor github
-author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+author: amihaiemil
 comments: true
 shareable: true
 preview: A simple guide to help you with automatically moving files from one repo
  to another, using Rultor
+image: https://amihaiemil.github.io/images/jerrys_cousin.png
 ---
 
 Due to its rich and well designed API, Github has a vast number of integrations that run on top of it. [Rultor](http://doc.rultor.com/) is one of the many pieces of
@@ -18,7 +19,7 @@ from one repo to another with Rultor. This is something that I did recently and
 figured I'd write about it, since I found it rather tricky.
 
 <figure class="articleimg">
- <img src="/images/jerrys_cousin.png" alt="Jerry's Cousin">
+ <img src="{{page.image}}" alt="Jerry's Cousin">
  <figcaption>
  Tom & Jerry - Jerry's Cousin, by  William Hanna and Joseph Barbera
  </figcaption>
