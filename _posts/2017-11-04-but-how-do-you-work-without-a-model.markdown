@@ -34,23 +34,23 @@ Check the following class:
 {% highlight java %}
 /**
  * The average price of a Car according to the market.
- \*/
+ */
 public class MarketPrice implements Price {
 
     /**
      * Currency of the price.
-     \*/
+     */
     private String currency;
 
     /**
      * Car which has this price.
-     \*/
+     */
     private Strinc Car car;
 
     /**
      * Ctor. Default currency is Euro.
      * @param car Car which has this price.
-     \*/
+     */
     public MarketPrice(final Car car) {
        this(car, "EUR");
     }
@@ -59,7 +59,7 @@ public class MarketPrice implements Price {
      * Ctor.
      * @param car Car which has this price.
      * @param currency Currency of the price.
-     \/
+     */
     public MarketPrice(final Car car, final String currency) {
        this.currency = currency;
        this.car = car;
@@ -86,7 +86,7 @@ The ``MarketPrice`` class would be used as follows:
 {% highlight java %}
 /**
  * Car storred in MongoDB.
- \*/
+ */
 public class MongoCar implements Car {
 
     ...
@@ -114,12 +114,12 @@ public class CachedPrice implements Price {
 
   /**
    * Decorated Price; we cache its value.
-   \*/
+   */
   private Price decorated;
 
   /**
    * Cached value;
-   \*/
+   */
   private Dobule value;
 
   @Override
@@ -155,7 +155,7 @@ An elegant solution, I believe, is to let an object of type Cars handle more ins
 {% highlight java %}
 /**
  * Cars in MongoDB.
- \*/
+ */
 public class MongoCars implements Cars {
   ...
 
@@ -166,7 +166,7 @@ public class MongoCars implements Cars {
 
   /**
    * Filter these cars according to a <b>constant</b> Price.
-   \*/
+   */
   @Override
   public Cars filter(final Constant price) {//Constant implements Price and always returns the same value.
     new FilteredCars(this, price);
