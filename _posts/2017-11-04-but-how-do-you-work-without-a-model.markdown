@@ -178,7 +178,7 @@ public class MongoCars implements Cars {
 
 The cool iterator is the one returned by ``FilteredCars.iterator()``. It runs over the encapsulated
 Cars and makes sure it jumps over (or even removes) the cars which do not respect the given Price.
-The following code will always display the correct cars:
+Now we have the guarantee that, at iteration time, a Car respects our filter.
 
 {% highlight java %}
 final Cars cars = ...;//some cars;
