@@ -45,7 +45,7 @@ public class MarketPrice implements Price {
     /**
      * Car which has this price.
      */
-    private Strinc Car car;
+    private Car car;
 
     /**
      * Ctor. Default currency is Euro.
