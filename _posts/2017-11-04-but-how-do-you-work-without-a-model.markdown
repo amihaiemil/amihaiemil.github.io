@@ -187,7 +187,6 @@ for(final Car cheaper : cars.filter(new Constant(10.000))) {
 }
 {% endhighlight %}
 
-What do you think? Is it harder to design? Definetly, the architect has a tough job. But once the design is in place, implementation & testing is easy and decoration is a piece of cake -- each of the above classes are easily tested and extended through decoration (which would not have been possible without interfaces). Besides, we have no dumb, untested code (nobody tests POJOs), we have no static methods, no spaghetti code anywhere.
+What do you think? Is it harder to design? Definetly, the architect has a tough job. But once the design is in place, implementation & testing is easy and decoration is a piece of cake -- each of the above classes are easily tested and extended through decoration (which would not have been possible without interfaces). Besides, we have no stale, untested code (nobody tests POJOs), we have no static methods and no spaghetti code anywhere.
 
-To summarize, keep in mind the following: traditional get/set models are mere syntactic sugar. They are dead and cannot
-do anything for us. There is no difference between ``car.getPrice()`` and ``xml.getElement("price")`` -- any logic related to the price is still scattered around somewhere. Why shouldn't this logic be inside a live, smart object, which has an interface?
+To summarize, keep in mind the following: traditional get/set models are mere syntactic sugar. They are dead and cannot do anything for us. There is no difference between ``car.getPrice()`` and ``xml.getElement("price")`` -- any logic related to the price is still scattered around somewhere. Why shouldn't this logic be inside a live, smart object, which has an interface?
