@@ -141,7 +141,7 @@ Done; any implementation of Price, if wrapped inside this decorator, will fetch 
 This also fixes the consistency problem, we can be sure that a filter, once applied, will remain valid (the values won't change at the next call).
 
 Still, in our scenario, maybe we shouldn't cache the prices. Again, our app doesn't hold any information about them,
-so it makes sense to always have them updated, to respect the market. How do we filter the cars then? Without a caching mechanism, the following code will introduce bugs:
+so it makes sense to always have them updated, to respect the market. How do we filter the cars then? Without a caching mechanism, the following code may introduce bugs:
 
 {% highlight java %}
 List<Car> cars = ...;//a list of cars;
@@ -150,7 +150,7 @@ List<Car> cheaper = cars.filter(car -> car.price().value() <= 10.000);
 
 You see, after the creation of the ``cheaper`` cars List, the price of a Car may change and become > 10.000. Yet it is still in the list. How do we fix this?
 
-An elegant solution, I believe, is to let an object of type Cars handle more instances of Car. Yet another strange thing. Why can't we simply use a List? Because Lists are also dumb containers of data, as you see above. They know nothing and we cannot always rely that they hold valid values. Instead, if we implement our own plural, we can tune up the Iterator and make the filtering dynamic (interface Cars extends Iterable<Car>):
+An elegant solution, I believe, is to let an object of type Cars handle more instances of Car. Yet another strange thing. Why can't we simply use a List? Because lists are also dumb containers of data, as you see above. They know nothing and we cannot always rely on them to hold valid values. Instead, if we implement our own plural, we can tune up the Iterator and make the filtering dynamic (interface Cars extends Iterable):
 
 {% highlight java %}
 /**
@@ -165,7 +165,7 @@ public final class MongoCars implements Cars {
   }
 
   /**
-   * Filter these cars according to a <b>constant</b> Price.
+   * Filter these cars according to a constant Price.
    */
   @Override
   public Cars filter(final Constant price) {//Constant implements Price and always returns the same value.
@@ -187,6 +187,6 @@ for(final Car cheaper : cars.filter(new Constant(10.000))) {
 }
 {% endhighlight %}
 
-What do you think? Is it harder to design? Definetly, the architect has a tough job. But once the design is in place, implementation & testing is easy and decoration is a piece of cake -- each of the above classes are easily tested and extended through decoration (which would not have been possible without interfaces). Besides, we have no stale, untested code (nobody tests POJOs), we have no static methods and no spaghetti code anywhere.
+What do you think? Is it harder to design? Definetly, the architect has a tough job. But once the design is in place, implementation & testing are easy and decoration is a piece of cake -- each of the above classes are easily tested and extended through decoration (which would not be possible without interfaces). Besides, we have no stale, untested code, no static methods and no spaghetti code anywhere.
 
 To summarize, keep in mind the following: traditional get/set models are mere syntactic sugar. They are dead and cannot do anything for us. There is no difference between ``car.getPrice()`` and ``xml.getElement("price")`` -- any logic related to the price is still scattered around somewhere. Why shouldn't this logic be inside a live, smart object, which has an interface?
