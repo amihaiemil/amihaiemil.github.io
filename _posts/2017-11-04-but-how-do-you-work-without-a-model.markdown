@@ -35,7 +35,7 @@ Check the following class:
 /**
  * The average price of a Car according to the market.
  */
-public class MarketPrice implements Price {
+public final class MarketPrice implements Price {
 
     /**
      * Currency of the price.
@@ -87,7 +87,7 @@ The ``MarketPrice`` class would be used as follows:
 /**
  * Car storred in MongoDB.
  */
-public class MongoCar implements Car {
+public final class MongoCar implements Car {
 
     ...
 
@@ -110,7 +110,7 @@ But wait, we have at least 2 issues with this design:
 Efficiency, if needed, can be easily fixed with a "caching decorator":
 
 {% highlight java %}
-public class CachedPrice implements Price {
+public final class CachedPrice implements Price {
 
   /**
    * Decorated Price; we cache its value.
@@ -156,7 +156,7 @@ An elegant solution, I believe, is to let an object of type Cars handle more ins
 /**
  * Cars in MongoDB.
  */
-public class MongoCars implements Cars {
+public final class MongoCars implements Cars {
   ...
 
   @Override
