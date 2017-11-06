@@ -120,14 +120,14 @@ public final class CachedPrice implements Price {
   /**
    * Cached value;
    */
-  private Dobule value;
+  private Double value;
 
   @Override
   public Double value() throws IOException {
     if(this.value == null){
       this.value = this.decorated.value();
     }
-    return this.value();
+    return this.value;
   }
 
   @Override
