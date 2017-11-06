@@ -8,7 +8,7 @@ comments: true
 shareable: true
 preview: This is the question that I get most of the times, when I tell people how
  I design my code and that I hate the concept of getter/setter model POJO.
-image: /images/zoot_cat.png
+image: https://amihaiemil.github.io/images/zoot_cat.png
 ---
 
 Almost everytime I discuss OOP and code design with someone, right after I tell them
