@@ -59,8 +59,9 @@ figure.articleimg {
   align-items: center;
 }
 figure.articleimg figcaption {
-	font-size:.8em;
-	line-height:1em;
+    font-size:.8em;
+    line-height:1em;
+    padding-top: 4px;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
