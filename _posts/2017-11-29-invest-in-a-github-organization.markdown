@@ -6,8 +6,8 @@ tags: opensource management development
 author: amihaiemil
 comments: true
 shareable: true
-preview: Any software company who wants to keep up with the world
- has to be present in the Open Source world.
+preview: I think that any software company who wants to keep up with the world
+ has to be present on Github.
 image: https://amihaiemil.github.io/images/jerry_and_the_goldfish.PNG
 ---
 
