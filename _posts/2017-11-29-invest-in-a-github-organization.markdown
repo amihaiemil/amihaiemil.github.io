@@ -6,7 +6,7 @@ tags: opensource development
 author: amihaiemil
 comments: true
 shareable: true
-preview: Any software company who wants to keep up with the world
+preview: I think that any software company which wants to keep up with the world
  has to be present on Github.
 image: https://amihaiemil.github.io/images/jerry_and_the_goldfish.PNG
 ---
