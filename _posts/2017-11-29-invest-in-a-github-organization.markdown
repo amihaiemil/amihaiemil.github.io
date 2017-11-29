@@ -52,7 +52,7 @@ I don't think you can achieve this without an OSS culture, it is not enough to s
 
 **Third**, of course, is **Marketing**. Not necessarily for the clients, but for the developers which you are looking for.
 Today, everyone struggles to hire and keep developers. Let me tell you that I would trade all the Play Stations, ping-pong tables and funny pillows for the chance
-of working on OSS *in my fulltime schedule*. You, as a company, will be much more appealing to software developers, simply because they will see that you are interested in new technologies and how the software world spins. They will know that you are not some clueless employer which still works with mummified technologies or uses the new ones in a shallow manner.
+of working on OSS *in my fulltime schedule*. You, as a company, will be much more appealing to software developers simply because they will see that you are interested in new technologies and how the software world spins. They will know that you are not some clueless employer which still works with mummified technologies or uses the new ones in a shallow manner.
 
 Don't get me wrong, I am not saying that you should make your clients' code available on the internet or that you should put your billion-dollar idea on Github (although there are billion-dollar products there). Instead, you should contribute to existing projects, or publish your own components. I think we can agree that from any big project, no matter how important and confidential,
 at least one generic, reusable package can be extracted -- who knows, maybe your product interacts with AWS and your team manages to implement a Java SDK for AWS that is not such a disaster as the [official one](http://www.amihaiemil.com/2017/02/18/decorators-with-tunnels.html).
