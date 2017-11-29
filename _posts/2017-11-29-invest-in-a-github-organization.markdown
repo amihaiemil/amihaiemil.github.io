@@ -6,7 +6,7 @@ tags: opensource management development
 author: amihaiemil
 comments: true
 shareable: true
-preview: I think that any software company who wants to keep up with the world
+preview: Any software company who wants to keep up with the world
  has to be present on Github.
 image: https://amihaiemil.github.io/images/jerry_and_the_goldfish.PNG
 ---
@@ -32,27 +32,26 @@ and any packages that could be shared with the world. In this post I'm going to 
  </figcaption>
 </figure>
 
-First reason is the fact that everything is out there. Not just logging libraries and HTTP clients, but *entire frameworks and applications*.
-React, Angular, ElasticSearch and many other celebrities are all open sourced. Their code is open and since almost any developer nowadays has touched these technologies, they should at least
+**First** reason is the fact that everything is out there. Not just logging libraries and HTTP clients, but **entire frameworks and applications**.
+[React](https://github.com/facebook/react), [Angular](https://github.com/angular/angular.js), [ElasticSearch](https://github.com/elastic/elasticsearch) and many other celebrities are all open sourced. Their code is open and since almost any developer nowadays has touched these technologies, they should at least
 know where their are, how to file an Issue, make a Pull Request, find solutions for bugs etc -- they won't find all these on shady forums or on StackOverflow anymore. No, they will
-find everything on Github: comments, guidelines, wikis, known bugs, you name it. I keep wondering, what does a closed company do when there is a bug in an OSS product that it uses?
+find everything on Github: comments, guidelines, wikis, known bugs, you name it. I keep wondering: what does a closed company do when there is a bug in an OSS product that it uses?
 Does it wait indefinetely for a new release, hoping that the problem will be fixed? Wouldn't it be better if it forked the repository and provided a PR?
 
-Second, any tech company wishes to be "agile", in the sense that developers should move quickly, solve bugs fast, switch frameworks and packages without husstle etc.
+**Second**, any tech company wishes to be "agile", in the sense that developers should move quickly, solve bugs fast, switch frameworks and packages without hustle etc.
 A developer who has only worked in a strict, closed environment does not have the habit or experience to do that. He or she won't know that ReactJs v15 has [an ugly bug](https://github.com/facebook/react/issues/7027) which causes input fields to lose characters on IE. At some point, when they become aware of it,
 they'll update to v16 and spend a ridiculous amount of time trying to figure out why the ``npm`` build doesn't work anymore, not understanding how to update other changed dependencies.
 
-By the way, the ``npm`` community is a good example of such agility. They say that nowadays, if you go on holiday for two weeks you risk to lose half of your knowledge.
-Well, it is true! Those Javascript people are capable of rewriting an application or framework from scratch (overnight) rather than fix some shady bug, or deal with the messy code of the colleagues who were fired three years ago; they are that productive! Things are moving at an insane pace, everyone collaborates out there in the open, while you are wasting days in meetings, trying to decide which consultant to hire in order to train your team in ReactJS. Then, in one year or two (best case) React will die and you will, yet again, be left with legacy software that nobody has a clue how to maintain.
+By the way, the ``npm`` community is a good example of such agility. Those Javascript people are capable of rewriting an application or framework from scratch overnight, rather than fix some shady bug or deal with the messy code of the colleagues who were fired three years ago. They are that productive! Things are moving at an insane pace, everyone collaborates in the open, while you are wasting days in meetings, trying to decide which consultant to hire in order to train your team in ReactJS. Then, in one year or two (best case) React will die and you will, yet again, be left with legacy software that nobody has a clue how to maintain.
 
-Even old, dead and buried technologies, such as [GWT](https://github.com/gwtproject/gwt), are on Github. Do you have GWT in some apps? Probabily, since it used to be the cooleast toy back in 2012.
-Did you know that, starting with Chrome 61, all the popups in GWT < 2.8.2 are [misplaced](https://github.com/gwtproject/gwt/issues/9542)? Do you know why? It's because the Chrome guys changed something regarding the way scrolled distances are calculated. There is a ton of similar tickets, since any JS library which displays popups could be affected.
+Even old, dead and buried technologies, such as [GWT](https://github.com/gwtproject/gwt), are on Github. You've probably heard of it, since it used to be the coolest toy back in 2012.
+Did you know that, starting with Chrome 61, all the popups in GWT < 2.8.2 are [misplaced](https://github.com/gwtproject/gwt/issues/9542)? It's because the Chrome guys changed something regarding the way scrolled distances are calculated. There is a ton of similar tickets, since any JS library which displays popups could be affected.
 
 The point is, you need to be in the game, you need to know how and when certain frameworks and tools (old and new),
-that you are using, are being developed. You cannot achieve this without an OSS culture, it is not enough to shuffle
+that you are using, are being developed. I don't think you can achieve this without an OSS culture, it is not enough to shuffle
 the latest Software Magazine and read the newest buzzwords.
 
-Third, of course, is Marketing. Not necessarily for the clients, but for the developers which you are looking for.
+**Third**, of course, is Marketing. Not necessarily for the clients, but for the developers which you are looking for.
 Today, everyone struggles to hire and keep developers. Let me tell you that I would trade all the Play Stations, ping-pong tables and funny pillows for the chance
 of working on OSS *in my fulltime schedule*. You, as a company, will be much more appealing to software developers, simply because they will see that you are interested in new technologies and how the software world spins. They will know that you are not some clueless employer which still works with mummified technologies or uses the new ones in a shallow manner.
 
@@ -60,4 +59,4 @@ Don't get me wrong, I am not saying that you should make your clients' code avai
 at least one generic, reusable package can be extracted -- who knows, maybe your product interacts with AWS and your team manages to implement a Java SDK for AWS that is not such a disaster as the [official one](http://www.amihaiemil.com/2017/02/18/decorators-with-tunnels.html).
 
 To summarize, this is the gist of why I believe that OSS is mandatory for any software company which wants to survive on the long run. It should not be a burdain, but a life line.
-A company can't afford to stay ignorant anymore; for new companies this means certain death while for old, well established ones, it means a never ending cicle of legacy, ill-maintained software which sooner or later will lead to "Chapter 11" as well.
+A company can't afford to stay ignorant anymore if it wants to remain competitive and survive on the market.
