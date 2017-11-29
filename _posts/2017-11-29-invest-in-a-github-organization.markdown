@@ -8,7 +8,7 @@ comments: true
 shareable: true
 preview: Any software company who wants to keep up with the world
  has to be present on Github.
-image: https://amihaiemil.github.io/images/zoot_cat.png
+image: https://amihaiemil.github.io/images/jerry_and_the_goldfish.PNG
 ---
 
 To start, let me say that Github is the subject here simply because they are the biggest
@@ -26,9 +26,9 @@ time and budget in maintaining an Organization on Github, a place where it shoul
 and any packages that could be shared with the world. In this post I'm going to cover a few reasons that make me think that.
 
 <figure class="articleimg">
- <img src="{{page.image}}" alt="The Zoot Cat">
+ <img src="{{page.image}}" alt="Jerry And The Goldfish">
  <figcaption>
- Tom & Jerry - The Zoot Cat, by  William Hanna and Joseph Barbera
+ Tom & Jerry - Jerry And The Goldfish, by  William Hanna and Joseph Barbera
  </figcaption>
 </figure>
 
