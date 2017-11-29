@@ -2,7 +2,7 @@
 layout: post
 title: "Invest in a Github Organization!"
 date: 2017-11-29
-tags: opensource management development
+tags: opensource development
 author: amihaiemil
 comments: true
 shareable: true
@@ -34,13 +34,12 @@ and any packages that could be shared with the world. In this post I'm going to 
 
 **First** reason is the fact that everything is out there. Not just logging libraries and HTTP clients, but **entire frameworks and applications**.
 [React](https://github.com/facebook/react), [Angular](https://github.com/angular/angular.js), [ElasticSearch](https://github.com/elastic/elasticsearch) and many other celebrities are all open sourced. Their code is open and since almost any developer nowadays has touched these technologies, they should at least
-know where their are, how to file an Issue, make a Pull Request, find solutions for bugs etc -- they won't find all these on shady forums or on StackOverflow anymore. No, they will
+know where their are, how to file an Issue, make a Pull Request, find solutions for bugs etc -- they will
 find everything on Github: comments, guidelines, wikis, known bugs, you name it. I keep wondering: what does a closed company do when there is a bug in an OSS product that it uses?
 Does it wait indefinetely for a new release, hoping that the problem will be fixed? Wouldn't it be better if it forked the repository and provided a PR?
 
-**Second**, any tech company wishes to be "agile", in the sense that developers should move quickly, solve bugs fast, switch frameworks and packages without hustle etc.
-A developer who has only worked in a strict, closed environment does not have the habit or experience to do that. He or she won't know that ReactJs v15 has [an ugly bug](https://github.com/facebook/react/issues/7027) which causes input fields to lose characters on IE. At some point, when they become aware of it,
-they'll update to v16 and spend a ridiculous amount of time trying to figure out why the ``npm`` build doesn't work anymore, not understanding how to update other changed dependencies.
+**Second**, any tech company wishes to be **agile**, in the sense that developers should move quickly, solve bugs fast, switch frameworks and packages without hustle, setup CI/CD pieplines in a matter of minutes etc. A developer who has only worked in a strict, closed environment does not have the habit or experience to do all that. He or she won't know that ReactJs v15 has [an ugly bug](https://github.com/facebook/react/issues/7027) which causes input fields to lose characters on IE. At some point, when they become aware of it,
+they'll update to v16 and spend a ridiculous amount of time trying to figure out why the ``npm`` build doesn't work anymore (that is, if they bother to check the good old Jenkins CI which has been red for weeks anyway).
 
 By the way, the ``npm`` community is a good example of such agility. Those Javascript people are capable of rewriting an application or framework from scratch overnight, rather than fix some shady bug or deal with the messy code of the colleagues who were fired three years ago. They are that productive! Things are moving at an insane pace, everyone collaborates in the open, while you are wasting days in meetings, trying to decide which consultant to hire in order to train your team in ReactJS. Then, in one year or two (best case) React will die and you will, yet again, be left with legacy software that nobody has a clue how to maintain.
 
@@ -48,10 +47,10 @@ Even old, dead and buried technologies, such as [GWT](https://github.com/gwtproj
 Did you know that, starting with Chrome 61, all the popups in GWT < 2.8.2 are [misplaced](https://github.com/gwtproject/gwt/issues/9542)? It's because the Chrome guys changed something regarding the way scrolled distances are calculated. There is a ton of similar tickets, since any JS library which displays popups could be affected.
 
 The point is, you need to be in the game, you need to know how and when certain frameworks and tools (old and new),
-that you are using, are being developed. I don't think you can achieve this without an OSS culture, it is not enough to shuffle
-the latest Software Magazine and read the newest buzzwords.
+that you are using, are being developed. Furthermore, you have to move fast, automate as much as possible, deliver daily.
+I don't think you can achieve this without an OSS culture, it is not enough to shuffle the latest Software Magazine and read the newest buzzwords.
 
-**Third**, of course, is Marketing. Not necessarily for the clients, but for the developers which you are looking for.
+**Third**, of course, is **Marketing**. Not necessarily for the clients, but for the developers which you are looking for.
 Today, everyone struggles to hire and keep developers. Let me tell you that I would trade all the Play Stations, ping-pong tables and funny pillows for the chance
 of working on OSS *in my fulltime schedule*. You, as a company, will be much more appealing to software developers, simply because they will see that you are interested in new technologies and how the software world spins. They will know that you are not some clueless employer which still works with mummified technologies or uses the new ones in a shallow manner.
 
