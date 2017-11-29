@@ -7,7 +7,7 @@ author: amihaiemil
 comments: true
 shareable: true
 preview: Any software company who wants to keep up with the world
- has to be present on Github.
+ has to be present in the Open Source world.
 image: https://amihaiemil.github.io/images/jerry_and_the_goldfish.PNG
 ---
 
