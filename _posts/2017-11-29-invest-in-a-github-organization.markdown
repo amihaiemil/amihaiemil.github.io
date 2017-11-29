@@ -17,7 +17,7 @@ sense to focus on it. In the future, a better platform might show up and then th
 apply to that one.
 
 A few years ago, OSS software was something everyone made fun of nearby the coffee
-machine. The only developers who had a Github account were the ones who were willing to spend 12+ a day programming,
+machine. The only developers who had a Github account were the ones who were willing to spend 12h a day programming,
 because their company wouldn't even hear of the concept. These days, however, the sitiuation has changed dramatically.
 Some of the biggest companies rely on opensource to develop their business and also to contribute back to the community.
 
@@ -59,5 +59,5 @@ of working on OSS *in my fulltime schedule*. You, as a company, will be much mor
 Don't get me wrong, I am not saying that you should make your clients' code available on the internet or that you should put your billion-dollar idea on Github (although there are billion-dollar products there). Instead, you should contribute to existing projects, or publish your own components. I think we can agree that from any big project, no matter how important and confidential,
 at least one generic, reusable package can be extracted -- who knows, maybe your product interacts with AWS and your team manages to implement a Java SDK for AWS that is not such a disaster as the [official one](http://www.amihaiemil.com/2017/02/18/decorators-with-tunnels.html).
 
-To summarize, this is the gist of why I believe that OSS is mandatory for any software company which wants to survive on the long run. It is not be a burdain, but a life line.
-A company can't afford to stay ignorant anymore, for new companies this means certain death while for old, well established ones, it means a never ending cicle of legacy, ill-maintained software which sonner or later will lead to "Chapter 11" as well.
+To summarize, this is the gist of why I believe that OSS is mandatory for any software company which wants to survive on the long run. It should not be a burdain, but a life line.
+A company can't afford to stay ignorant anymore; for new companies this means certain death while for old, well established ones, it means a never ending cicle of legacy, ill-maintained software which sooner or later will lead to "Chapter 11" as well.
