@@ -18,10 +18,10 @@ More to come soon...
 
 <a href="https://www.github.com/amihaiemil" target="_blank"><img src="http://ghchart.rshah.org/amihaiemil" title="My Github contributions chart" alt="amihaiemil's Github chart" /></a>
 
-Follow me to see my latest activity.
-Feel free to drop me a line if you want to join me, I am always looking
-for [contributors](https://amihaiemil.github.io/2016/12/22/contributors-wanted.html).
+Follow me to see my latest activity. You can also find some of my articles on [JavaCodeGeeks.com](https://www.javacodegeeks.com/).
 
 <a class="github-button" href="https://github.com/amihaiemil" data-count-href="/amihaiemil/followers" data-count-api="/users/amihaiemil#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @amihaiemil on GitHub">Follow @amihaiemil</a>
 
 <a href="https://twitter.com/amihaiemil" class="twitter-follow-button" data-show-count="true">Follow @amihaiemil</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<div class="centered"><img src="https://cdn.javacodegeeks.com/wp-content/uploads/2012/12/JavaCodeGeek_Badge.png"></div>
