@@ -102,7 +102,7 @@ Glassfish has 3 HTTP listeners predefined, under ``Configuration > server-config
   * Set the port to 443 (HTTPS port)
   * In the SSL tab, set the Certificate NickName to ``letsencryptcrt`` and the Key Store to ``keystore.jks``
 
-Click "Save" and you're done. You should now be able to access any deployed application via ``https://example.com/...``
+Click "Save", **restart the Glassfish instance** and you're done. You should now be able to access any deployed application via ``https://example.com/...``
 <br><br>
 
 ---
