@@ -14,7 +14,7 @@ image: https://amihaiemil.github.io/images/old_rockin_chair_tom.png
 
 If you use [Docker](https://docs.docker.com/engine/docker-overview/), you should know that it has a client-server architecture. There is the ``docker`` command line tool, which sends all the commands (``build``, ``pull``, ``run`` etc) to the Docker Host's API; the command line tool is just an elegant wrapper so you don't have to make raw HTTP calls yourself.
 
-This architecture gives a very convenient decoupling. For instance, you can instruct the ``docker`` client to send commands to a remote Docker Daemon, not the one from localhost. Even more, thanks to this architecture, all softs of software can integrate with Docker, which is exactly what [comdor](http://www.comdor.co), one of my projects, is doing. However, I hit a show stopper and its development is currently on-hold, waiting for [docker-java-api](https://github.com/amihaiemil/docker-java-api)'s first version to be released.
+This architecture gives a very convenient decoupling. For instance, you can instruct the ``docker`` client to send commands to a remote Docker Daemon, not the one from localhost. Even more, thanks to this architecture, all sorts of software can integrate with Docker, which is exactly what [comdor](http://www.comdor.co), one of my projects, is doing. However, I hit a show stopper and its development is currently on-hold, waiting for [docker-java-api](https://github.com/amihaiemil/docker-java-api)'s first version to be released.
 
 <figure class="articleimg">
  <img src="{{page.image}}" alt="Old Rockin Chair Tom">
