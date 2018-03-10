@@ -33,7 +33,7 @@ Let me ask you a question: when you first started using Docker (or any applicati
 
 Bottom line is that they are not very usable. I want to access Docker from Java, not to build/assemble Docker in Java -- I hope you feel the difference.
 
-**The second reason** (and this was actually the show-stopper) that made me decide to write a new one, is that both of them seem to be a mess of dependencies. They even warn you that they may cause classpath issues (they both bring in Jersey 2.x implementation which apparently is incompatible with Jersey 1.x) -- this caused problems in my project, since it's Java EE, I couldn't even deploy the application on Glassfish, it caused some very strange exceptions. I tried all sorts of workarounds, including [shading of dependencies](https://maven.apache.org/plugins/maven-shade-plugin/), nothing seemed to work.
+**The second reason** (and this was actually the show-stopper) that made me decide to write a new one, is that both of them seem to be very fat. They even warn you that they may cause classpath issues (they both bring in Jersey 2.x implementation which apparently is incompatible with Jersey 1.x) -- this caused problems in my project, since it's Java EE, I couldn't even deploy the application on Glassfish, it caused some very strange exceptions. I tried all sorts of workarounds, including [shading of dependencies](https://maven.apache.org/plugins/maven-shade-plugin/), nothing seemed to work.
 
 So, I made the decision to build my own Java wrapper one which should be:
 
