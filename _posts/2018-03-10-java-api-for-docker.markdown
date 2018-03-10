@@ -45,7 +45,7 @@ So, I made the decision to build my own Java wrapper one which should be:
 It is still in its early stage so I can only give some hints about how it should work:
 
 {% highlight java %}
-  Docker docker = new LocalDocker("unix:///var/run/docker.sock");
+  final Docker docker = new LocalDocker("unix:///var/run/docker.sock");
   docker.containers().create(
     Json.createObjectBuilder()//JSON payload for creating a Container.
         .add(..., ...)
