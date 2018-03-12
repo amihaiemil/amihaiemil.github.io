@@ -46,7 +46,7 @@ It is still in its early stage so I can only give some hints about how it should
 
 {% highlight java %}
   final Docker docker = new LocalDocker("unix:///var/run/docker.sock");
-  docker.containers().create(
+  final Container created = docker.containers().create(
     Json.createObjectBuilder()//JSON payload for creating a Container.
         .add(..., ...)
         .build()
