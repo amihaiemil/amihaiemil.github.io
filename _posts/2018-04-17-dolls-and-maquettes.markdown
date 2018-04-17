@@ -41,7 +41,7 @@ So how can we begin writing such code? Well, the first step is to understand tha
   * We can mock an interface, or have Fake implementations;
   etc.
 
-Furthermore we should think about the **behaviour** more than anything else. If we have a ``Student`` and we give them a grade, that grade should instantly be visible everywhere it needs to be. We should be able to trust that the object will do its job as expected, no need to design a puppet that we would modify and pass around for everyone to look at and do their job with it:
+Furthermore we should think about the **behaviour** more than anything else. If we have a ``Student`` and we give them a grade, that grade should instantly be visible everywhere it needs to be. We should be able to trust that the object will do its job as expected, no need to design a puppet that we would modify and then pass around for everyone to look at and do their job with:
 
 {% highlight java %}
   //This is it, grade is given and it already made its effect everywhere
