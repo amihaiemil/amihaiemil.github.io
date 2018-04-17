@@ -8,7 +8,7 @@ comments: true
 shareable: true
 preview: Yet another metaphor about the harm that JavaBeans are causing
  in object oriented software.
-image: /images/designs_on_jerry.PNG
+image: https://amihaiemil.github.io/images/designs_on_jerry.PNG
 ---
 
 I've already written quite a few posts about why I don't consider JavaBeans real objects. For instance, I think we agreed [here](/2017/09/01/data-should-be-animated-not-represented.html) and [here](/2017/11/04/but-how-do-you-work-without-a-model.html) that model objects are mere
