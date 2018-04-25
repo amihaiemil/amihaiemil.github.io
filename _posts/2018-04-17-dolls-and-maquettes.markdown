@@ -13,7 +13,7 @@ image: https://amihaiemil.github.io/images/designs_on_jerry.png
 
 I've already written quite a few posts about why I don't consider JavaBeans real objects. For instance, I think we agreed [here](/2017/09/01/data-should-be-animated-not-represented.html) and [here](/2017/11/04/but-how-do-you-work-without-a-model.html) that model objects are mere
 syntax sugar and we might as well not have them at all, they are useless abstractions that do
-not offer any functionality.
+not offer any functionality. Instead, the objects' interfaces should be our model.
 
 Nevertheless, let's try one more time, this time through a little metaphor
 and some imagination. Yes, I believe that, in order to be good OOP programmers, we need imagination and the ability to visualise how objects are working together, something a little more than UML diagrams.
