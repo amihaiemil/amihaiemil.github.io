@@ -3,10 +3,11 @@ layout: post
 title: "Selenium With Headless Chrome On Travis CI"
 date: 2017-07-14
 tags: selenium headless travisCi
-author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+author: amihaiemil
 comments: true
 shareable: true
 preview: How to run Selenium tests with Google Chrome Headless on Travis CI.
+image: https://amihaiemil.github.io/images/the_truce_hurts_apple.png
 ---
 
 How do you run any browser automation tool in a CI environment, like [Travis](https://travis-ci.org/), where there is no graphical browser? How can
@@ -16,7 +17,7 @@ The answer is: you need a headless browser; that is, a browser which can work
 without a GUI. Luckily, we don't have to use [phantomJS](http://phantomjs.org/) or [xvfb](https://docs.travis-ci.com/user/gui-and-headless-browsers/#Using-xvfb-to-Run-Tests-That-Require-a-GUI) anymore, since Google Chrome now supports [headless mode](https://developers.google.com/web/updates/2017/04/headless-chrome).
 
 <figure class="articleimg">
- <img src="/images/the_truce_hurts_apple.png" alt="The Truce Hurts">
+ <img src="{{page.image}}" alt="The Truce Hurts">
  <figcaption>
  Tom & Jerry - The Truce Hurts, by  William Hanna and Joseph Barbera
  </figcaption>

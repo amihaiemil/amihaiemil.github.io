@@ -4,7 +4,7 @@ title:  "Hello world!"
 date:   2016-04-09 20:20:27
 tags: miscellaneous
 comments: true
-author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+author: amihaiemil
 preview: First post!
 ---
 

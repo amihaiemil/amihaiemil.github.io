@@ -3,11 +3,12 @@ layout: post
 title: "Always Use a CMS For The Client Side"
 date: 2017-03-13
 tags: design webapps devops
-author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+author: amihaiemil
 comments: true
 shareable: true
 preview: For any webapp, no matter its technology, all the client-side content has to
  be managed using a CMS (down to line-of-code level)
+image: https://amihaiemil.github.io/images/mouse_cleaning.PNG
 ---
 
 What is (or should be) considered client-side? Everything that is displayed/loads
@@ -24,7 +25,7 @@ Of course, you may not care about this if you're a single developer who deploys
 an app to [Amazon EC2](https://aws.amazon.com/ec2/) anytime, with a few clicks.
 
 <figure class="articleimg">
- <img src="/images/mouse_cleaning.PNG" alt="Mouse Cleaning">
+ <img src="{{page.image}}" alt="Mouse Cleaning">
  <figcaption>
  Tom & Jerry - Mouse Cleaning, by  William Hanna and Joseph Barbera
  </figcaption>

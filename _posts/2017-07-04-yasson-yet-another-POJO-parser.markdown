@@ -3,11 +3,12 @@ layout: post
 title: "Yasson: Yet Another POJO Parser"
 date: 2017-07-04
 tags: java oop design
-author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+author: amihaiemil
 comments: true
 shareable: true
 preview: Yasson is the reference implementation of JSON-B and, unfortunately, version 1.0
  relies on POJOs' get/set design
+image: https://amihaiemil.github.io/images/matinee_mouse.PNG
 ---
 
 These days [Yasson](https://github.com/eclipse/yasson), which is the reference
@@ -19,7 +20,7 @@ Json objects in java (if you're confused with regards to JavaEE 7's ``javax.json
 It's similar to JAXB api for XML marshaling/unmarshalling (does the same harm).
 
 <figure class="articleimg">
- <img src="/images/matinee_mouse.PNG" alt="Matinee Mouse">
+ <img src="{{page.image}}" alt="Matinee Mouse">
  <figcaption>
  Tom & Jerry - Matinee Mouse, by  William Hanna and Joseph Barbera
  </figcaption>

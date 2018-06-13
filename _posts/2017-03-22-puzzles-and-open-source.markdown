@@ -3,17 +3,18 @@ layout: post
 title: "Puzzles And Open Source"
 date: 2017-03-22
 tags: pdd oop opensource
-author: <a href="https://www.github.com/amihaiemil" target="_blank">amihaiemil</a>
+author: amihaiemil
 comments: true
 shareable: true
 preview: An overview of how we developed an opensource Java library using PDD
+image: https://amihaiemil.github.io/images/tee_for_two.PNG
 ---
 
 After working with [Teamed](http://www.teamed.io/) and practicing [PDD](http://www.yegor256.com/2009/03/04/pdd.html)
 for more than a year, I was wondering how the methodology would work with a fresh project. I had never worked on
 a new project in this way and, honestly, I was having some doubts.
 
-I decided to look for [contributors](http://www.amihaiemil.com/2016/12/22/contributors-wanted.html) and
+I decided to look for [contributors](https://amihaiemil.github.io/2016/12/22/contributors-wanted.html) and
 start a new project. Two programmers responded rather quickly: one from Russia, the other from Egypt.
 We started working on an object-oriented java library for [Yaml](http://yaml.org/).
 
@@ -21,7 +22,7 @@ In this post, I'll give you a brief overview on how long it took us to [release]
 the first version.
 
 <figure class="articleimg">
- <img src="/images/tee_for_two.PNG" alt="Tee for Two">
+ <img src="{{page.image}}" alt="Tee for Two">
  <figcaption>
  Tom & Jerry - Tee for Two, by  William Hanna and Joseph Barbera (from <a target="_blank" href="http://tomandjerrycaps.blogspot.co.at/2012/08/tee-for-two.html">here</a>)
  </figcaption>
