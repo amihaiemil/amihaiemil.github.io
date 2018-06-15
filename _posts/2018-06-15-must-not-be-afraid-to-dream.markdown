@@ -6,9 +6,8 @@ tags: oop design
 author: amihaiemil
 comments: true
 shareable: true
-preview: It seems to me that some developers are simply afraid of abstractions
- They must know everything that's going on and that's why their code becomes
- unmaintainable.
+preview: To celebrate 2 years of this blog, I put together the most common comments
+ and complaints of my readers, in a FAQ-like post.
 image: https://amihaiemil.github.io/images/the_little_indians.png
 ---
 
