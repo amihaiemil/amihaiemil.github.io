@@ -36,8 +36,8 @@ The comparison may sound crazy but that's what it is: mainstream OOP just gave p
 So how can we begin writing such code? Well, the first step is to understand that any proper object must have an interface. I've written about that as well, but let me reiterate a few reasons:
 
   * The interface is *what* the object is and can do. If it has no interface then it has no rules, no identity, no capabilities, it is just a bag of procedures;
-  * With an interface, we can decorate the object;
-  * We can have multiple implementations of it. It is easier to see that, instead of struggling (i.e. having some procedures) to convert X to Y, we should add a new implementation of Y based on X;
+  * With an interface, we can decorate the object and in general, patterns are seen easier;
+  * We can have multiple implementations of it. It is easier to see that, instead of struggling to convert X to Y, we should add a new implementation of Y based on X;
   * We can mock an interface, or have Fake implementations;
   etc.
 
