@@ -60,7 +60,7 @@ And all is enabled by PDD and the fact that the project is open source. Give thi
   + there is time to be spent on sessions of training for new programmers because, in order to implement a method
   and a unit test, one must absolutely know every detail of the project
   + finally, somwhere in-between, there's also some coding to be done
-  + probably no proper CI, because Joe forgot to set up a Jenkins job for the project
+  + probably no proper CI, because someone forgot to set up a Jenkins job for the project
   and now this stays in a feared backlog of tasks.
 
 I hope the advantages are clear, even though I did not mention all of them directly.
