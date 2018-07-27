@@ -75,7 +75,7 @@ talk.start(command);
 
 It is very much a matter of [naming](/2018/01/07/my-take-on-object-naming.html), but not only that: in other to achieve this effect we, as programmers, need to shift our way of thinking from methods to classes and objects. The first thing we should think about is how an object will be used, what is its place in the scheme: an object should be a component which integrates seamlessly with other objects, not a service to which other objects come and [ask](https://www.martinfowler.com/bliki/TellDontAsk.html) for something.
 
-From the above idea we can conclude that each and every object should have a clear purpose. Thus, there should never be any object that "isn't worth testing" (like a ``get/set`` model, for instance): if a piece of code isn't worth testing, then it means it has no real place in the architecture and should not exist.
+From the above idea we can conclude that each and every object should have a clear purpose. Furthermore, there should never be any object that "isn't worth testing" (like a ``get/set`` model, for instance): if a piece of code isn't worth testing, then it means it has no real place in the architecture and should not exist.
 
 If I would have designed the bot in a traditional way, the construct above would probably be replaced by the following:
 
