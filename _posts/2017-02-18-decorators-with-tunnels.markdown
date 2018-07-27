@@ -55,7 +55,7 @@ HTTP request to an AWS web service. Do you like it? I don't:
         .execute(new SimpleResponseHandler<String>());
 {% endhighlight %}
 
-Marked with ``//?!?`` above is what's wrong with the API:
+Marked with ``//?!?`` above is what's wrong with the <strike><a href="https://www.amihaiemil.com/2018/03/10/java-api-for-docker.html">API</a></strike> SDK:
 
  + setters over setters
  + why is the ``Request`` parameterized?
