@@ -22,6 +22,4 @@ Follow me to see my latest activity. You can also find some of my articles on [J
 
 <a class="github-button" href="https://github.com/amihaiemil" data-count-href="/amihaiemil/followers" data-count-api="/users/amihaiemil#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @amihaiemil on GitHub">Follow @amihaiemil</a>
 
-<a href="https://twitter.com/amihaiemil" class="twitter-follow-button" data-show-count="true">Follow @amihaiemil</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 <div class="centered"><img src="https://cdn.javacodegeeks.com/wp-content/uploads/2012/12/JavaCodeGeek_Badge.png"></div>
