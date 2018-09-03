@@ -23,6 +23,6 @@ this "position". I believe that such a person will be at best mediocre in what t
  </figcaption>
 </figure>
 
-To start, don't get me wrong, I am not criticising multi-faceted developers: it is of little help to be an experienced Java developer if you have no idea how the JS client calls your API or if you are not able to change a datepicker on the UI. However, being able to understand and maybe maintain all the parts of an application is completely different than writing an entire application start-to-finish -- I'm talking about the developers that claim they can do the latter.
+**Disclaimer:** I am not criticising multi-faceted developers: as an experienced back-end developer you should also know how the JS client calls your API or be able to change a datepicker on the UI. However, being able to understand and maybe maintain all the parts of an application is completely different than writing an entire application start-to-finish. This post is about the developers that say they can do the latter and do it well.
 
-Let's
+To start, I assume that a Fullstack Developer will claim they are proficient (senior level) in both the front and the back-end. They won't admit that they [burned some steps], since that would prove the very point of this article. Now, let me tell you what I understand by "Senior Developer" and then it should be clear why I believe a single person cannot master everything.
