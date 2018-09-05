@@ -56,8 +56,10 @@ From a senior back-end developer, I would expect the same as the above, with a f
 
 The lists above are non-exhaustive, of course, there are probably topics I forgot. Bottom line is, to me, "senior" is the topmost level a person can reach in a certain technology. There may be one more level: "architect, but that's close to it, I don't see a signifiant difference between the two.
 
-Now, back to the "fullstack developer" - do you think a single person can master all these topics, on two programming languages (JS and the backend one)? Know every single bit of the ecosystem of the two? I don't. But, nevertheless, let's give them a chance, assume they can indeed know it all and I still see a few problems:
+Now, back to the "fullstack developer" - do you think a single person can master all these topics, on two programming languages (JS and the backend one)? Know every single bit of the ecosystem of the two? It would be the work of a titan. But, nevertheless, let's give them a chance, assume they can indeed know it all and I still see a few problems:
 
-* Their hourly rate should be $250+, meaning it would simply be cheaper to hire more specialized devs.
-* If they get hired, the amount of time they'd spend to do all the work (and do it well!) would most likely be the same, if not higher, than what two or more (cheaper!) devs would spend.
+* Their hourly rate should be $250+, meaning it would simply be cheaper to hire more, specialized, devs.
+* If they get hired, the amount of time they'd spend to do all the work (and do it well) would most likely be the same, if not higher, than what two or more (cheaper) devs would spend.
 * The person becomes that project's God. One-man team means bad business for the client in any imaginable scenario.
+
+So, you see now why I don't believe in this "fullstack" concept. I think it's simply a bad idea to skip steps, take up another technology before having an in-depth overview of the initial one. And again, I assume there are a few developers out there with the dedication and experience necessary to achieve this, yet I still see the problems mentioned above (same as always, a non-exhaustive list). 
