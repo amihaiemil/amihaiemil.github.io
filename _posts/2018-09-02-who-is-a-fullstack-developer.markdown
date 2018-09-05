@@ -7,7 +7,7 @@ author: amihaiemil
 comments: true
 shareable: true
 preview: My thoughts on being a "Fullstack Developer".
-image: https://amihaiemil.github.io/images/jerrys_cousin_call.png
+image: https://amihaiemil.github.io/images/mice_follies.PNG
 ---
 
 These days it is very common to see the job title "Fullstack Developer" on LinkedIn.
@@ -17,9 +17,9 @@ Knowing I am a little against the current, you've probably guessed that I don't 
 this "position". I believe that such a person will be at best mediocre in what they do. I am surely not the only one who thinks this way, but let me just explain my reasoning.
 
 <figure class="articleimg">
- <img src="{{page.image}}" alt="Jerry's Cousin">
+ <img src="{{page.image}}" alt="Mice Follies">
  <figcaption>
- Tom & Jerry - Jerry's Cousin, by  William Hanna and Joseph Barbera
+ Tom & Jerry - Mice Follies, by  William Hanna and Joseph Barbera
  </figcaption>
 </figure>
 
