@@ -58,7 +58,7 @@ The lists above are non-exhaustive, of course, there are probably topics I forgo
 Now, back to the "fullstack developer" - do you think a single person can master all these topics, on two (maybe three) programming languages? Know every single bit of each different ecosystem? It would be the work of a titan. But, nevertheless, let's give them a chance, assume they can indeed know it all and I still see a few issues:
 
 * Their hourly rate should be $250+, meaning it would be cheaper to hire more, specialized, devs.
-* If they get hired, the amount of time they'd spend to do all the work, and do it well, would most likely be the same, if not higher, than what two or more specialised devs would spend.
+* If they get hired, the amount of time they'd spend to do all the work, and do it well, would most likely be the same, if not higher than what two or more specialised devs would spend.
 * The person becomes that project's God. One-man team means bad business for the client in any imaginable scenario.
 
 So, you see now why I don't believe in this "fullstack" concept. I think it's simply a bad idea to skip steps, take up another technology before having an in-depth overview of the initial one. And again, I assume there are a few developers out there with the dedication and experience necessary to achieve this, yet I still see the problems mentioned above (a non-exhaustive list as well).
