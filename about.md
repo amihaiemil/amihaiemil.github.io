@@ -23,7 +23,7 @@ REST apis or CI/CD automations. Here are the articles most interesting to read:
     be delivered to any 3rd party who wants to integrate with our web services.
 
 * [JavaEE 8: JsonCollectors And The OOP Alternative](https://www.amihaiemil.com/2017/10/16/javaee8-jsoncollectors-oop-alternative.html)
-  * This is a very specific article about JSON-P 1.1. However it reveals the most important principle I've learned about OOP:
+  * This is a very specific article about JSON-P 1.1. However, it reveals the most important principle I've learned about OOP:
   never try to transform object A into B, but rather add a new implementation of B based on A.
 
 * [Logic Should Hide In Plain Sight](https://www.amihaiemil.com/2018/07/22/logic-should-hide-in-plain-sight.html)
