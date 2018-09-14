@@ -6,8 +6,8 @@ permalink: /aboutme/about.html
 ---
 My name is Mihai and I am a Java developer with a Bachelor's degree in Computer Science.
 I'm contributing to opensource and writing this blog because I find it a good way of getting rid of the office job routine,
-learning new things and keeping my knowledge updated. I also strongly believe that any company which respects itself and wants to
-remain relevant should [invest](https://www.amihaiemil.com/2017/11/29/invest-in-a-github-organization.html) in opensource.
+learning new things and keeping my knowledge updated. I also strongly believe that any company which wants to
+remain relevant on the market should [invest](https://www.amihaiemil.com/2017/11/29/invest-in-a-github-organization.html) in opensource.
 
 I write a new article about once a month on topics concerning mostly Object-Oriented Programming but also Unit and Integration testing,
 REST apis or CI/CD automations. Here are the articles most interesting to read:
