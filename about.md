@@ -5,18 +5,32 @@ header: About me
 permalink: /aboutme/about.html
 ---
 My name is Mihai and I am a Java developer with a Bachelor's degree in Computer Science.
-I'm contributing to opensource and writing this blog because I find it a good way of getting rid of the office job routine, learning new things and keeping my knowledge updated.
+I'm contributing to opensource and writing this blog because I find it a good way of getting rid of the office job routine,
+learning new things and keeping my knowledge updated. I also strongly believe that any company which respects itself and wants to
+remain relevant should [invest](https://www.amihaiemil.com/2017/11/29/invest-in-a-github-organization.html) in opensource.
 
-On Github, we have two organizations: [opencharles](https://github.com/opencharles) and [decorators-squad](https://github.com/decorators-squad) containing multiple projects.
-Some worth mentioning are:
-  * A Java OOP web crawler (see [Project Charles](https://amihaiemil.github.io/2016/12/05/project-charles.html))
-  * A Github chatbot for indexing and searching gh-pages websites ([charles-rest](https://github.com/opencharles/charles-rest))
-  * A Java OOP YAML parser ([camel](https://github.com/decorators-squad/camel))
-  * A versioneye API OOP wrapper for Java ([versioneye-api](https://github.com/decorators-squad/versioneye-api))
+I write a new article about once a month on topics concerning mostly Object-Oriented Programming but also Unit and Integration testing,
+REST apis or CI/CD automations. Here are the articles most interesting to read:
 
-More to come soon...
+* [Selenium and JUnit, the right way!](https://www.amihaiemil.com/2017/01/24/selenium-and-junit-the-right-way.html)
+  * UI automation tests should be agnostic of the used automation tool.
+    The Selenium part should be completely encapsulated into fluent objects.
+    It is a form of [POM](https://www.toptal.com/selenium/test-automation-in-selenium-using-page-object-model-and-page-factory) pattern, but much more object oriented.
 
-<a href="https://www.github.com/amihaiemil" target="_blank"><img src="http://ghchart.rshah.org/amihaiemil" title="My Github contributions chart" alt="amihaiemil's Github chart" /></a>
+* [Test Driven Rest](https://www.amihaiemil.com/2017/05/03/test-driven-rest.html)
+  * Using tests and the same principle of abstraction and encapsulation as in the Selenium article, we can make sure that our RESTful API is truly
+    navigable. In the end, ideally, we should have a *single set of tests* for both the UI Automation and the RESTful API, and also a Java client library which could
+    be delivered to any 3rd party who wants to integrate with our web services.
+
+* [JavaEE 8: JsonCollectors And The OOP Alternative](https://www.amihaiemil.com/2017/10/16/javaee8-jsoncollectors-oop-alternative.html)
+  * This is a very specific article about JSON-P 1.1. However it reveals the most important principle I've learned about OOP:
+  never try to transform object A into B, but rather add a new implementation of B based on A.
+
+* [Logic Should Hide In Plain Sight](https://www.amihaiemil.com/2018/07/22/logic-should-hide-in-plain-sight.html)
+  * An article where I explained where should the "business logic" find its place in an object-oriented codebase.
+
+* [Java API For Docker](https://www.amihaiemil.com/2018/03/10/java-api-for-docker.html)
+  * Another targeted article, but which explains the difference between an SDK and an API.
 
 Follow me to see my latest activity. You can also find some of my articles on [JavaCodeGeeks.com](https://www.javacodegeeks.com/).
 
