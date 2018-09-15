@@ -78,7 +78,7 @@ This one has simple HttpClient behind, no Unix Sockets, however, we have to make
 
 You see, the user works only with interfaces. It is fluent and no dubious config objects or ports are required -- at least not for first usage, maybe we could decorate these implementations somehow, to give more tune-up power to the user.
 
-Furthermore, it should be integrated with the language as much as possible. For instance, this is
+Furthermore, it should be integrated with the <strike>language</strike> JDK as much as possible. For instance, this is
 how I would like to iterate over all the containers:
 
 {% highlight java %}
