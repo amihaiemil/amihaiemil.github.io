@@ -59,7 +59,7 @@ It doesn't know anything, it just sits there, waiting to be injected with data, 
 at least 5 setters called somewhere, to build it. Either that, or you fatten your deployable with some parsing library.
 
 Furthermore, after you build it, such a Car will do nothing for you, you will always call a ``get`` on it, and do something yourself.
-For instance, you may want to be sure that the mark is always in capital letters. With the Car above, whenever you call ``car.getMark()``, you have to specify ``.toUpperCase()``. The pollution is obvious. Any logic about a Car is outside of it, it cannot do anything for you. Actually, you might as well use a JsonObject instead of a Car. It's the same thing, the Car model's role so far is merely syntax sugar.
+For instance, you may want to be sure that the mark is always in capital letters. With the Car above, whenever you call ``car.getMark()``, you have to specify ``.toUpperCase()``. The pollution is obvious. Any logic about a Car is outside of it, it cannot do anything for you. Actually, you might as well use a JsonObject instead of a Car. It's the same thing, the Car's role so far is merely syntax sugar.
 
 Instead, here's a better object, which is "alive". An object which hides the original data and animates it for you:
 
@@ -102,12 +102,9 @@ You would use the above classes like this:
 You see? It's not about boilerplate code. We actually wrote a little more code, but our "business logic" will never be polluted. It will never have
 to deal with marshaling/unmarshalling or other issues related to the car's data. It will just receive a Car object which will do most of the stuff for itself, for its own data.
 
-An even more important advantage is testability. You can easily test those Car implementations. On the other hand, it really makes no sense to test a DTO with getters and setters. Same as there is no sense in trying to unit test that private static method, with 200 lines, which turns the DTO in and out. Everyone can understand
-what that method does, it's simple. Nobody will ever forget to call a setter there, ruining the logic in 3 other "business methods".
+An even more important advantage is testability. You can easily test those Car implementations. On the other hand, it really makes no sense to test a DTO with getters and setters. Same as there is no sense in trying to unit test that private static method, with 200 lines, which turns the DTO in and out. Everyone can understand what that method does, it's simple. Nobody will ever forget to call a setter there, ruining the logic in 3 other "business methods". So, I strongly believe that data should be animated. It should be the skeleton of some smarter object, which in turn should implement interfaces and be composable.
 
-So, I strongly believe that data should be animated. It should be the skeleton of some smarter object, which in turn should implement interfaces and be composable. Here is another, more concrete, example of the same principle:
-
-We implemented [camel](https://github.com/decorators-squad/camel), an OOP YAML api for Java. There is the [YamlMapping](https://github.com/decorators-squad/camel/blob/master/src/main/java/com/amihaiemil/camel/YamlMapping.java) interface and you get an instance of it by using a builder, very similar to the ``javax.json`` API:
+Here is another, more concrete, example of the same principle: we implemented [camel](https://github.com/decorators-squad/camel), an OOP YAML api for Java. There is the [YamlMapping](https://github.com/decorators-squad/camel/blob/master/src/main/java/com/amihaiemil/camel/YamlMapping.java) interface and you get an instance of it by using a builder, very similar to the ``javax.json`` API:
 
 {% highlight java %}
   YamlMapping yaml = Yaml.createYamlMappingBuilder()
