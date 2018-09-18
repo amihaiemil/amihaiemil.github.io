@@ -104,7 +104,7 @@ to deal with marshaling/unmarshalling or other issues related to the car's data.
 
 An even more important advantage is testability. You can easily test those Car implementations. On the other hand, it really makes no sense to test a DTO with getters and setters. Same as there is no sense in trying to unit test that private static method, with 200 lines, which turns the DTO in and out. Everyone can understand what that method does, it's simple. Nobody will ever forget to call a setter there, ruining the logic in 3 other "business methods". So, I strongly believe that data should be animated. It should be the skeleton of some smarter object, which in turn should implement interfaces and be composable.
 
-Here is another, more concrete, example of the same principle: we implemented [eo-yaml](https://github.com/decorators-squad/eo-yaml), an OOP YAML api for Java. There is the [YamlMapping](https://www.amihaiemil.com/2017/11/04/but-how-do-you-work-without-a-model.html) interface and you get an instance of it by using a builder, very similar to the ``javax.json`` API:
+Here is another, more concrete, example of the same principle: we implemented [eo-yaml](https://github.com/decorators-squad/eo-yaml), an OOP YAML api for Java. There is the [YamlMapping](https://github.com/decorators-squad/eo-yaml/blob/master/src/main/java/com/amihaiemil/eoyaml/YamlMapping.java) interface and you get an instance of it by using a builder, very similar to the ``javax.json`` API:
 
 {% highlight java %}
   YamlMapping yaml = Yaml.createYamlMappingBuilder()
