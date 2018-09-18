@@ -125,7 +125,7 @@ Here is another, more concrete, example of the same principle: we implemented [e
     ).build();
 {% endhighlight %}
 
-The implementation is [RtYamlMapping](https://github.com/decorators-squad/camel/blob/master/src/main/java/com/amihaiemil/camel/RtYamlMapping.java), which works with a ``Map``, behind the scenes. This was the *building* of a Yaml, which is very easy. But what about the *reading*? How do we read from a file, turn all the contents into a ``Map``, and wrap it inside ``RtYamlMapping``?
+The implementation is [RtYamlMapping](https://github.com/decorators-squad/eo-yaml/blob/master/src/main/java/com/amihaiemil/eoyaml/RtYamlMapping.java), which works with a ``Map``, behind the scenes. This was the *building* of a Yaml, which is very easy. But what about the *reading*? How do we read from a file, turn all the contents into a ``Map``, and wrap it inside ``RtYamlMapping``?
 
 We struggled to find a proper solution for parsing the ``File`` and putting the contents into a ``Map``. It meant a lot of stuff: read the file, get each element, see whether it is a sequence or a mapping etc. Plus, all this would be scattered around, in some static methods. The idea simply didn't fit in the architecture of an OOP library. Then, we realised the aproach was wrong: we did not have to turn the ``File``'s contents' into a ``Map``. Instead, we just needed a new implementation of YamlMapping, which came out to be [ReadYamlMapping](https://github.com/decorators-squad/eo-yaml/blob/master/src/main/java/com/amihaiemil/eoyaml/ReadYamlMapping.java).
 
