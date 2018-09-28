@@ -32,7 +32,7 @@ REST apis or CI/CD automations. Here are the articles most interesting to read:
 * [Java API For Docker](https://www.amihaiemil.com/2018/03/10/java-api-for-docker.html)
   * Another targeted article, but which explains the difference between an SDK and an API.
 
-Follow me to see my latest activity and subrscribe to my [RSS feed](https://www.amihaiemil.com/feed.xml) in order to be notified about the newest articles. You can also find some of my articles on [JavaCodeGeeks.com](https://www.javacodegeeks.com/).
+Follow me to see my latest activity and subscribe to my [RSS feed](https://www.amihaiemil.com/feed.xml) in order to be notified about the newest articles. You can also find some of my articles on [JavaCodeGeeks.com](https://www.javacodegeeks.com/).
 
 <a class="github-button" href="https://github.com/amihaiemil" data-count-href="/amihaiemil/followers" data-count-api="/users/amihaiemil#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @amihaiemil on GitHub">Follow @amihaiemil</a>
 
