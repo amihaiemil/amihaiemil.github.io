@@ -27,7 +27,7 @@ REST apis or CI/CD automations. Here are the articles most interesting to read:
   never try to transform object A into B, but rather add a new implementation of B based on A.
 
 * [Logic Should Hide In Plain Sight](https://www.amihaiemil.com/2018/07/22/logic-should-hide-in-plain-sight.html)
-  * An article where I explained where should the "business logic" find its place in an object-oriented codebase.
+  * An article in which I explained where should the "business logic" find its place in an object-oriented codebase.
 
 * [Java API For Docker](https://www.amihaiemil.com/2018/03/10/java-api-for-docker.html)
   * Another targeted article, but which explains the difference between an SDK and an API.
