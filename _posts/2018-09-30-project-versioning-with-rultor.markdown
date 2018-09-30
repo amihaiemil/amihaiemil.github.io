@@ -7,7 +7,7 @@ author: amihaiemil
 comments: true
 shareable: true
 preview: A brief explanation about how my projects are versioned.
-image: https://amihaiemil.github.io/images/mouse_cleaning2.PNG
+image: https://amihaiemil.github.io/images/mouse_cleaning2.png
 ---
 
 All of my projects, libraries or applications, are published on Maven Central. Now, in case you
