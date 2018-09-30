@@ -27,7 +27,7 @@ Now, when it comes to versioning, I use the classic ``x.y.z`` scheme: incrementi
 
 While Rultor can build and send the artifact to Maven Central, as well as create a tag ("release") in the Github repo, it has absolutely no idea about the actual versioning rules. This means that the version in  ``pom.xml`` and any other links or coordinates to your artifacts are not updated.
 
-After a few hours of work and successfully crashing Rultor once (sorry about that), I came up with the [following](https://github.com/amihaiemil/docker-java-api/blob/master/rcfg.sh) script which I use in all of my projects. It does a few essential things:
+After a few hours of work and successfully crashing Rultor once (sorry about that), I came up with [this script](https://github.com/amihaiemil/docker-java-api/blob/master/rcfg.sh) which I use in all of my projects. It does a few essential things:
 
 * It performs the actual mvn build, specifically with the ``release`` profile. This is actually the step when the artifacts are sent to Maven Central.
 * It sets the next development version in ``pom.xml``
