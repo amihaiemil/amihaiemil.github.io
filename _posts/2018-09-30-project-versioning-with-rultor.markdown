@@ -10,11 +10,11 @@ preview: A brief explanation about how my projects are versioned.
 image: https://amihaiemil.github.io/images/mouse_cleaning2.png
 ---
 
-All of my projects, libraries or applications, are published on Maven Central. Now, in case you
+All of my projects, libraries or applications, are published on Maven Central. In case you
 don't know how that works, I'll tell you in short: it's [a nightmare](https://maven.apache.org/repository/guide-central-repository-upload.html).
 
 Of course, I had to go through those steps one or two times but then I realised I might as well let [Rultor](http://www.rultor.com/) do all that work for me since I was already using it in order to keep
-the master branch read-only and automate the merging of Pull Requests. [Here](https://www.yegor256.com/2014/08/19/how-to-release-to-maven-central.html) is how the release process can be automated elegantly -- I used pretty much the same steps.
+the master branch read-only and automate the merging of Pull Requests. [Here](https://www.yegor256.com/2014/08/19/how-to-release-to-maven-central.html) is how the release process can be automated elegantly -- I followed pretty much the same steps.
 
 <figure class="articleimg">
  <img src="{{page.image}}" alt="Mouse Cleaning">
@@ -23,7 +23,7 @@ the master branch read-only and automate the merging of Pull Requests. [Here](ht
  </figcaption>
 </figure>
 
-I use the classic ``x.y.z`` scheme: incrementing ``z`` means the release is containing mostly bugfixes and small features, incrementing ``y`` means that it's containing some big features and incrementing ``x`` means that the release is not backwards compatible with the previous ones. Naturally, I want the coordinates in my repo to be automatically updated (for instance, if the new version is ``0.0.3``, the version in ``pom.xml`` should become ``0.0.4-SNAPSHOT``, the next development iteration).
+Now, when it comes to versioning, I use the classic ``x.y.z`` scheme: incrementing ``z`` means the release is containing mostly bugfixes and small features, incrementing ``y`` means that it's containing some big features and incrementing ``x`` means that the release is not backwards compatible with the previous ones. Naturally, I want the coordinates in my repo to be automatically updated (for instance, if the new version is ``0.0.3``, the version in ``pom.xml`` should become ``0.0.4-SNAPSHOT``, the next development iteration).
 
 While Rultor can build and send the artifact to Maven Central, as well as create a tag ("release") in the Github repo, it has absolutely no idea about the actual versioning rules. This means that the version in  ``pom.xml`` and any other links or coordinates to your artifacts are not updated.
 
