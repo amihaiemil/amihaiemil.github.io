@@ -5,7 +5,10 @@ header: About me
 permalink: /aboutme/about.html
 ---
 My name is Mihai and I am a Java developer with a Bachelor's degree in Computer Science.
-I'm contributing to opensource and writing this blog because I find it a good way of learning new things and keeping my knowledge updated. I also strongly believe that any company which wants to remain relevant on the market should [invest](https://www.amihaiemil.com/2017/11/29/invest-in-a-github-organization.html) in opensource.
+I'm contributing to opensource and writing this blog because I find it a good way of learning new things and keeping my knowledge updated.
+
+I am interested not only in the quality of my own code, but also in the quality of the tools that I am using. I like to deeply [understand](https://www.amihaiemil.com/2018/01/24/teach-them-the-language-first.html) the technologies I'm working with, follow their development and (lately) also contribute to them myself.
+I also strongly believe that any company which wants to remain relevant on the market should [invest](https://www.amihaiemil.com/2017/11/29/invest-in-a-github-organization.html) in opensource.
 
 I write a new article about once a month on topics concerning mostly Object-Oriented Programming but also Unit and Integration testing,
 REST apis or CI/CD automations. Here are the articles most interesting to read:
