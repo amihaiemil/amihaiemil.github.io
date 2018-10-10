@@ -1,4 +1,4 @@
 #config file for @charlesmike
 commanders:
   - amihaiemil
-tweet: false
+driver: phantomjs
