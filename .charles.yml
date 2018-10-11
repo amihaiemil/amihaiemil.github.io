@@ -1,4 +1,10 @@
 #config file for @charlesmike
 commanders:
   - amihaiemil
+ignored:
+  - *.xml
+  - *.css
+  - *.js
+  - */index.html
+  - */page*/*
 driver: chrome
