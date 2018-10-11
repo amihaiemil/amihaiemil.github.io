@@ -6,5 +6,7 @@ ignored:
   - *.css
   - *.js
   - */index.html
-  - */page*/*
+  - */#
+  - */page[0-9]+/*
+  - */page[0-9]+/
 driver: chrome
