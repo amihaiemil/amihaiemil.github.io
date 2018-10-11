@@ -7,5 +7,5 @@ ignored:
   - *.js
   - */index.html
   - https://www.amihaiemil.com/#
-  - */page[0-9]+/*
+  - .+\\/page[0-9]+\\/.+
 driver: chrome
