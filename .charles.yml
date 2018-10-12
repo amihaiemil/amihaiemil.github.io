@@ -6,6 +6,4 @@ ignored:
   - *.css
   - *.js
   - */index.html
-  - https://www.amihaiemil.com/#
-  - https://www.amihaiemil.com/page[0-9]+/.+
 driver: chrome
