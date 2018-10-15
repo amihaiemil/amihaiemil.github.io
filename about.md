@@ -4,6 +4,7 @@ title: About me
 header: About me
 permalink: /aboutme/about.html
 ---
+<img class="badge" src="https://amihaiemil.github.io/images/oca7.gif">
 My name is Mihai and I am a Java developer with a Bachelor's degree in Computer Science.
 I'm contributing to opensource and writing this blog because I find it a good way of learning new things and keeping my knowledge updated.
 
