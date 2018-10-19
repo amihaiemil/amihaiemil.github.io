@@ -32,7 +32,7 @@ JsonArray array = values.stream().collect(
 );
 {% endhighlight %}
 
-If you work work with Java EE 7 and maybe Java 7 instead of Java 8, you would have to do the following:
+If you work with Java EE 7 and maybe Java 7 instead of Java 8, you would have to do the following:
 
 {% highlight java %}
 List<JsonValue> values = ...;
