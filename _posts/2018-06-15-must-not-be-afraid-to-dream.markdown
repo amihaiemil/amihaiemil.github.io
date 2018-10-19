@@ -23,7 +23,7 @@ By the way, the title is a quote from [a brilliant movie](https://www.imdb.com/t
  </figcaption>
 </figure>
 
-I never really knew how to call the first reaction, so let's call it "habit" or "laziness". They say **"that's not how it's done"** most of the times. To them, I say simply: there is no *way* of doing it, there is no cook book for OOP. When it comes to object oriented programming we only have a few guidelines, some design patterns and some pathetic interview questions.
+I never really knew how to call the first reaction, so let's call it "habit" or "laziness". They say **"that's not how it's done"** most of the times. To them, I say simply: there is no *way* of doing it, there is no cook book for OOP. When it comes to object oriented programming we only have a few guidelines, some design patterns and some silly interview questions.
 
 When I hear the above complaint, I always hope they mean to say that you cannot [incorporate](/2018/04/17/dolls-and-maquettes.html) the presented ideas into existing frameworks very easily. Indeed, the challenge is big, but who says you can't design a better alternative, a more object-oriented one? Never be easily impressed, always question the big players (especially them) and their solutions! Don't forget that the coolest platforms that you are [using](/2018/01/24/teach-them-the-language-first.html) every day are written by developers who are just as bored as you are and not necessarily smarter or more experienced.
 
