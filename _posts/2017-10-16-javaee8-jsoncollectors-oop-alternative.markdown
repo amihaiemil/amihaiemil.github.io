@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "JavaEE 8: JsonCollectors And The OOP Alternative"
+title: "Jakarta EE 8: JsonCollectors And The OOP Alternative"
 date: 2017-10-16
 tags: java oop javaee design
 author: amihaiemil
 comments: true
 shareable: true
-preview: A short overview of JavaEE 8's JsonCollectors and an OOP alternative for
+preview: A short overview of Jakarta EE 8's JsonCollectors and an OOP alternative for
  JavaEE 7 and below.
 image: https://amihaiemil.github.io/images/mouse_in_the_house2.png
 ---
 
-With JavaEE 8 there comes a new version of the JSON-P (JSON Processing) specification, namely version
+With <a href="https://jakarta.ee/about/"><strike>Java EE 8</strike></a> Jakarta EE 8 there comes a new version of the JSON-P (JSON Processing) specification, namely version
 1.1. One of the new things this version brings is the utility class [JsonCollectors](https://javaee.github.io/javaee-spec/javadocs/javax/json/stream/JsonCollectors.html).
 
 This class is OK, it provides some useful collectors to manipulate collections of JsonValues and turn them into JsonObjects or JsonArrays. Let's see how it works and dive into a more OOP alternative (I'm going to examine JsonArray, but this applies to JsonObject as well and probably to the others too).
@@ -23,7 +23,7 @@ This class is OK, it provides some useful collectors to manipulate collections o
  </figcaption>
 </figure>
 
-Straight to the point, in JavaEE 8, you can turn a collection of JsonValue into a JsonArray like this:
+Straight to the point, with JSON-P 1.1, you can turn a collection of JsonValue into a JsonArray like this:
 
 {% highlight java %}
 List<JsonValue> values = ...;
@@ -32,7 +32,7 @@ JsonArray array = values.stream().collect(
 );
 {% endhighlight %}
 
-If you work work with JavaEE 7 and maybe Java 7 instead of Java 8, you would have to do the following:
+If you work work with Java EE 7 and maybe Java 7 instead of Java 8, you would have to do the following:
 
 {% highlight java %}
 List<JsonValue> values = ...;
