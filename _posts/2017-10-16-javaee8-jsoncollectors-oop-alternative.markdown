@@ -105,6 +105,6 @@ public final class CollectedJsonArray implements JsonArray {
 }
 {% endhighlight %}
 
-I wrote this class myself. It is simple, API compliant and doesn't care who is the JSON-P provider. Yet it is painful to write, because you have to implement all those methods and delegate the work to ``this.collected``. Then, there should be some unit tests for it. I believe that this class should have been shipped with JavaEE8. It is a mere wrapper, it has just a few lines in the ctor, but it spares our application of coupling, static methods and untested code.
+I wrote this class myself. It is simple, API compliant and doesn't care who is the JSON-P provider. Yet it is painful to write, because you have to implement all those methods and delegate the work to ``this.collected``. Then, there should be some unit tests for it. I believe that this class should have been shipped with JSON-P 1.1. It is a mere wrapper, it has just a few lines in the ctor, but it spares our application of coupling, static methods and untested code.
 
 What do you think? How would you have implemented it?
