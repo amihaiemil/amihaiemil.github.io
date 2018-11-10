@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "An Extention To TellDontAsk"
+title: "An Extension To TellDontAsk"
 date: 2018-11-10
 tags: oop java
 author: amihaiemil
@@ -72,6 +72,6 @@ public final class AllEmployees implements Employees {
 
 I would say the idea is to try to **implement the situation itself** rather than tell an object to lead you to said situation. That is, we implemented those those filtered employees because the original object could not perform the filtering for us while maintaining the context. Simply telling the object to do it would have brought us to the same situation (of working with people that have the given skills) but these people wouldn't be **Employees** anymore, they would be just a list.
 
-I see all this as an extention to the TellDontAsk principle. How to make sure you're heading in the right direction, I'm not really sure. However, I think the usage of the JDK (or whatever development kit you are using) is a good indicator: **in an object-oriented codebase the kit should be as discrete as possible**. The more you use the development kit, the less object-oriented your code really is or your abstractions are not the best they can be. On the other hand, the more you are able to add/modify/remove functionalities just by working with existing objects (or adding new implementations of existing interfaces), the more object-oriented your application is.
+I see all this as an extension to the TellDontAsk principle. How to make sure you're heading in the right direction, I'm not really sure. However, I think the usage of the JDK (or whatever development kit you are using) is a good indicator: **in an object-oriented codebase the kit should be as discrete as possible**. The more you use the development kit, the less object-oriented your code really is or your abstractions are not the best they can be. On the other hand, the more you are able to add/modify/remove functionalities just by working with existing objects (or adding new implementations of existing interfaces), the more object-oriented your application is.
 
 **P.S.** [Here](https://amihaiemil.github.io/2017/08/12/how-interfaces-are-refactoring-our-code.html) is another example of the same idea.
