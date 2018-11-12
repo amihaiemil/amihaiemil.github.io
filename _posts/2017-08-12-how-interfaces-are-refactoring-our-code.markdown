@@ -116,7 +116,7 @@ commanders. Maybe you would like your application to throw an exception if the c
 
 You see? This is why interfaces are important. If it wasn't for the ``Config`` interface, the code would be polluted with if/else forks for ``null`` checking and/or for exception throwing. Also, you can easily use the decorator pattern to add more functionality: maybe you only want to use the commanders which are admins -- there are dozens of possiblities which you wouldn't see if there was no interface there.
 
-Another way of putting it is the following: objects must do as much work for you as possible. You should ask an object to do something, rather than ask for data and manipulate it yourself. This is a [core principle in OOP](https://martinfowler.com/bliki/TellDontAsk.html), which is very hard to apply when you don't use interfaces. Objects ``Missing`` and ``Mandatory`` handle very important things for us, relieving us of useless logic and making the code more maintainable and testable.
+Another way of putting it is the following: objects must do as much work for you as possible. You should tell an object to do something, rather than ask for data and manipulate it yourself. This is a [core principle in OOP](https://martinfowler.com/bliki/TellDontAsk.html), which is very hard to apply when you don't use interfaces. Objects ``Missing`` and ``Mandatory`` handle very important things for us, relieving us of useless logic and making the code more maintainable and testable.
 
 To conclude, just keep in mind: declare interfaces for any object, even if you don't see a real
 use for it at first. You will surely see it later, when trying to use that object. Any questions?
