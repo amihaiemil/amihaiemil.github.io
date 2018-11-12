@@ -38,7 +38,7 @@ I would expect a senior front-end developer to:
 * Understand everything about the build & release process of their application;
 * Understand how a backend REST api works;
 * Understand everything about CSS, including newer stuff such as fonts, glyphs, icons etc. By the way,
-I consider CSS to be a very powerful programming language; I would expect a high-quality styling, modularied and designed in such a way that components can be easily added/removed/overlapped/composed etc. I think CSS styling should be at least a part-time job for a specialized developer;
+I consider CSS to be a very powerful programming language; I would expect a high-quality styling, designed and modularized in such a way that components can be easily added/removed/overlapped/composed etc. I think CSS styling should be at least a part-time job for a specialized developer;
 * Decent understanding of SEO principles and also security issues such as CORS;
 * Depending on the application, they should be able to design a CI/CD pipeline that wouldn't require a
 rebuild + redeployment for changes of static stuff (images, pdfs, fonts etc);
