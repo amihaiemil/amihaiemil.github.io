@@ -61,4 +61,4 @@ Now, back to the "fullstack developer" - do you think a single person can master
 * If they get hired, the amount of time they'd spend to do all the work, and do it well, would most likely be the same, if not higher than what two or more specialised devs would spend.
 * The person becomes that project's God. One-man team means bad business for the client in any imaginable scenario.
 
-So, you see now why I don't believe in this "fullstack" concept. I think it's simply a bad idea to skip steps, take up another technology before having an in-depth overview of the initial one. And again, I assume there are a few developers out there with the dedication and experience necessary to achieve this, yet I still see the problems mentioned above (a non-exhaustive list as well).
+So, you see now why I don't believe in this "fullstack" concept. I think it's simply a bad idea to skip steps, take up another technology before having an in-depth understanding of the initial one. And again, I assume there are a few developers out there with the dedication and experience necessary to achieve this, yet I still see the problems mentioned above (a non-exhaustive list as well).
