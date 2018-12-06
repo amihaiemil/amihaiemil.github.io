@@ -8,7 +8,8 @@ layout: postlayout
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }} • tags:
     {% for tag in page.tags %}
       <span class="post-meta">{{ tag }}</span>
-    {% endfor %} • by <a href="https://www.github.com/{{ page.author }}">{{page.author}}</a>
+    {% endfor %} • by <a href="https://www.github.com/{{ page.author }}">{{page.author}}</a> •
+    <a class="post-meta" href="{{ page.url | prepend: site.baseurl | append: '#disqus_thread'}}"></a>
     </p>
   </header>
 
