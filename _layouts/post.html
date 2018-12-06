@@ -9,6 +9,7 @@ layout: postlayout
     {% for tag in page.tags %}
       <span class="post-meta">{{ tag }}</span>
     {% endfor %} • by <a href="https://www.github.com/{{ page.author }}">{{page.author}}</a> •
+    <i class="fa fa-comments" aria-hidden="true"></i>
     <a class="post-meta" href="{{ page.url | prepend: site.baseurl | append: '#disqus_thread'}}">Comments</a>
     </p>
   </header>
