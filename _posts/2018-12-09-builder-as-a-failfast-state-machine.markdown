@@ -46,29 +46,34 @@ public final class StringDateBuilder implements DateBuilder {
 
     private final StringBuilder date = new StringBuilder();
 
+    @Override
     public DateBuilder addDay(final Integer day) {
       this.date.append(String.valueOf(day));
       return new ExpectSeparator(this.date);
     }
 
+    @Override
     public DateBuilder addMonth(final Integer month) {
       throw new UnsupportedOperationException(
         "A day is expected first! Use #addDay!"
       );
     }
 
+    @Override
     public DateBuilder addYear(final Integer year) {
       throw new UnsupportedOperationException(
         "A day is expected first! Use #addDay!"
       );      
     }
 
+    @Override
     public DateBuilder addSeparator(final String sep) {
       throw new UnsupportedOperationException(
         "A day is expected first! Use #addDay!"
       );
     }
 
+    @Override
     public String build() {
       throw new UnsupportedOperationException(
         "Nothing to build yet! Use #addDay!"
@@ -78,7 +83,7 @@ public final class StringDateBuilder implements DateBuilder {
 }
 {% endhighlight %}
 
-I'm sure you get the point already: the other four implementations will handle their own situations. For instance, ``ExpectSeparator`` will throw an exception from all methods except ``addSeparator(...)``, where it will append the separator and return an instance of ``ExpectMonth``. Finally, the last node of this machine will be ``ExpectBuild`` (returned by ``ExpectYear`` after adding the year), which will throw exeptions from all methods besides ``build()``.
+I'm sure you get the point already: the other four implementations will handle their own situations. For instance, ``ExpectSeparator`` will throw an exception from all methods except ``addSeparator(...)``, where it will append the separator to the ``StringBuilder`` and return an instance of ``ExpectMonth``. Finally, the last node of this machine will be ``ExpectBuild`` (returned by ``ExpectYear`` after adding the year), which will throw exceptions from all methods besides ``build()``.
 
 This design helped me keep my <strike>code</strike> objects small, free of flags and ``if/else`` forks. As usual, each of the classes above are easily tested and the builder's behaviour is easily changeable by switching the returned implementations.
 
