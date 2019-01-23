@@ -8,7 +8,7 @@ comments: true
 shareable: true
 preview: Using Apache and Let's Encrypt to automatically generate and renew SSL certificates
  for your Java EE platform.
-image: https://amihaiemil.github.io/images/push-button-kitty.PNG
+image: https://amihaiemil.github.io/images/push-button-kitty.png
 ---
 
 Some time ago, I wrote a small [tutorial](https://www.amihaiemil.com/2017/10/03/letsencrypt-glassfish-ec2.html) on how you can generate Let's Encrypt SSL certificates and install them on your Glassfish Java EE Platform. That trick worked wonders for me but having to manually renew and reinstall the certificates every three months became quite annoying.
