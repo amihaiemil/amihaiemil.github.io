@@ -43,7 +43,7 @@ After saving the changes, don't forget to reload ``Apache``, so it reads the new
 
 ``sudo systemctl reload apache2``
 
-Now instruct your firewall to expose ports ``80`` and ``443`` for incoming connections (this is probably already configured) and you have are half done. So far, you have a running Apache server which will forward all requests made to ``www.example.com`` and ``www.example.com/myapp`` to the internal Payara.
+Now instruct your firewall to expose ports ``80`` and ``443`` for incoming connections (this is probably already configured) and you are half done. So far, you have a running Apache server which will forward all requests made to ``www.example.com`` and ``www.example.com/myapp`` to the internal Payara.
 
 To enable SSL via Let's Encrypt, just follow the steps described [here](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-18-04) and don't forget to press ``2`` when the following message appears from ``certbot``:
 
