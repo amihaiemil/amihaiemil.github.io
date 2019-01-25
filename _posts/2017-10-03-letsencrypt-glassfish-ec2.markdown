@@ -33,7 +33,7 @@ As the title says, I chose [Let's Encrypt](https://letsencrypt.org/) as my CA, b
 already quite big, trusted by the community and are offering free certificates.
 
 Even though Let's Encrypt offers an automatic renewal process, note that this guide is for the **manual flow**, meaning that the certificate won't be automatically renewed, you'll have to do it
-yourself when it expires (I promise to write about the automatic renewal process too, as soon as I figure it out).
+yourself when it expires. <strike>(I promise to write about the automatic renewal process too, as soon as I figure it out)</strike> [Here](https://www.amihaiemil.com/2019/01/23/apache-payara-lets-encrypt.html) is how to autmate everything.
 
 ### 1) Register a domain and point to EC2
 
