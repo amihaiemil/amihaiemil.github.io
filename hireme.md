@@ -13,6 +13,7 @@ that you think might benefit from a 3rd party technical review?
 Check out my [projects](https://amihaiemil.github.io/projects.html), see how they are built and maintained. I can:
 
   * help you make your code more object-oriented, thus increasing maintainability and testability;
+  * help you design Java libraries, REST clients, reusable packages etc.
   * give hints related to the overall architecture, including deployment and dependency management;
   * review your tests, including unit, integration and UI automation test;
   * help you setup a CI/CD pipeline on Github;
