@@ -22,7 +22,7 @@ I did a little research and, same as the first tutorial, this one is basically a
  </figcaption>
 </figure>
 
-Long story short: Payara, Glassfish, JBoss and others all have some differences in the way they handle HTTPS so, Mr. Dachner said, the sane way to do it is to let them work via HTTP behind the scenes and let an Apache HTTP Server actually communicate with the users, acting as a Reverse Proxy, forwarding all requests to/from the hidden Java EE Platform.
+Long story short: Payara, Glassfish, JBoss and others all have some differences in the way they handle HTTPS so, Mr. Daschner said, the sane way to do it is to let them work via HTTP behind the scenes and let an Apache HTTP Server actually communicate with the users, acting as a Reverse Proxy, forwarding all requests to/from the hidden Java EE Platform.
 
 First things first, download Payara or other server of your choice, install and run it with the default configuration. By default, it should listen on port ``8080``. No need to do anything further.
 
