@@ -5,7 +5,7 @@ header: Hire me
 permalink: /hireme/hire.html
 ---
 
-<a href="https://www.amihaiemil.com/2017/04/05/the-remote-dream.html"><img title="Hire me!" class="badge" src="https://amihaiemil.github.io/images/hireme.PNG"></a>
+<img title="Hire me!" class="badge" src="https://amihaiemil.github.io/images/hireme.PNG">
 
 Do you like some of the ideas presented on this blog? Do you happen to have a Java project
 that you think might benefit from a 3rd party technical review?
