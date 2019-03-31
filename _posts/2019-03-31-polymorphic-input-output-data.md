@@ -73,7 +73,7 @@ people.insert(
 );
 {% endhighlight %}
 
-Regarding the ``JsonObject`` input parameter there is still one more question: how should the client know what values to provide? This is the part where JavaDocs come in the play: it should all be thoroughly documented in the method's JavaDoc. I guess you can call if a good trade-off: the user has to do a little study before using your method but, on the other hand, the decoupling is very convenient for both of you.
+Regarding the ``JsonObject`` input parameter there is still one more question: how should the client know what values to provide? This is the part where JavaDocs come in the play: it should all be thoroughly documented in the method's JavaDoc. I guess you can call it a good trade-off: the user has to do a little study before using your method but, on the other hand, the decoupling is very convenient for both of you.
 
 The exact approach described above I used in the development of [docker-java-api](https://github.com/amihaiemil/docker-java-api). Most methods which are creating something on the server are expecting ``JsonObject`` as input and are returning interfaces which extend ``JsonObject`` (see, for instance, [Containers.create(...)](https://github.com/amihaiemil/docker-java-api/blob/master/src/main/java/com/amihaiemil/docker/Containers.java#L75) and [Container](https://github.com/amihaiemil/docker-java-api/blob/master/src/main/java/com/amihaiemil/docker/Container.java#L37)) -- thus, if Docker's API will evolve to require different Json inputs or return different Jsons, I won't necessarily have to change any models any time soon.
 
