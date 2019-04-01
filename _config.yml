@@ -32,6 +32,7 @@ whitelist:
   - jekyll-paginate
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-tagging
 source: .
 incremental: false
 highlighter: rouge
