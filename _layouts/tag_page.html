@@ -1,0 +1,34 @@
+    
+---
+layout: default
+sitemap: false
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts with tag <b>{{page.tag}}</b></h1>
+
+  <ul class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a>
+          {{ post.buttons }}
+        </h2>
+        <p>{{post.preview}}  <a href="{{post.url}}">more...</a></p>
+      </li>
+    {% endfor %}
+  </ul>
+  <!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% endif %}
+  <span class="page_number ">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% endif %}
+</div>
+
+</div>
