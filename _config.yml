@@ -7,7 +7,7 @@ paginate: 10
 paginate_path: "/page:num/"
 
 # see https://github.com/pattex/jekyll-tagging
-tag_page_layout: tag-index
+tag_page_layout: tag_page
 tag_page_dir: tag
 
 # Site settings
