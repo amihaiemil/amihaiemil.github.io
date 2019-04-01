@@ -2,6 +2,7 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-tagging
 paginate: 10
 paginate_path: "/page:num/"
 
