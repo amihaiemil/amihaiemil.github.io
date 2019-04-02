@@ -2,7 +2,7 @@
 layout: post
 title: "Selenium With Headless Chrome On Travis CI"
 date: 2017-07-14
-tags: selenium devops ci-cd
+tags: selenium testing devops ci-cd
 author: amihaiemil
 comments: true
 shareable: true
