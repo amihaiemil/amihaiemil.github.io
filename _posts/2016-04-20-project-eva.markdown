@@ -3,7 +3,7 @@ layout: post
 title:  Project Eva
 buttons: <a class="github-button" href="https://github.com/decorators-squad/eva" data-icon="octicon-star" data-count-href="/amihaiemil/eva/stargazers" data-count-api="/repos/decorators-squad/eva#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star decorators-squad/eva on GitHub">Star</a> <a class="github-button" href="https://github.com/amihaiemil/eva/fork" data-icon="octicon-repo-forked" data-count-href="/decorators-squad/eva/network" data-count-api="/repos/decorators-squad/eva#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork decorators-squad/eva on GitHub">Fork</a>
 date:   2016-04-20
-tags: projects github ai
+tags: opensource
 author: amihaiemil
 comments: true
 shareable: true
