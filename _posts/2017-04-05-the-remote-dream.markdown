@@ -2,7 +2,7 @@
 layout: post
 title: "The Remote Dream"
 date: 2017-04-05
-tags: development
+tags: thoughts
 author: amihaiemil
 comments: true
 shareable: true
