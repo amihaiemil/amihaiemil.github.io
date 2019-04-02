@@ -2,7 +2,7 @@
 layout: post
 title: "Teach Them The Language First"
 date: 2018-01-24
-tags: oop
+tags: thoughts jakartaee
 author: amihaiemil
 comments: true
 shareable: true
