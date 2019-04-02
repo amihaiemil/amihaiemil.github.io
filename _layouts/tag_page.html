@@ -1,13 +1,14 @@
 ---
 layout: default
 ---
-<h2>{{ page.tag }}</h2>
+<div class="post">
+  <h1>Posts with tag: <b>{{ page.tag }}</b></h1>
 <ul>
-{% for post in page.posts %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }} | Tags: {{ post | tags }})</li>
+{% for post in site.tags[page.tag] %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+    {{ post.description }}
+  </li>
 {% endfor %}
 </ul>
-
-<div id="tag-cloud">
-  {{ site | tag_cloud }}
 </div>
+<hr>
