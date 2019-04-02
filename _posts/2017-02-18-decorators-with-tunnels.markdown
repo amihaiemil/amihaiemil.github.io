@@ -2,7 +2,7 @@
 layout: post
 title: "Tunnel Decorators"
 date: 2017-02-18
-tags: oop
+tags: oop refactoring
 author: amihaiemil
 comments: true
 shareable: true
