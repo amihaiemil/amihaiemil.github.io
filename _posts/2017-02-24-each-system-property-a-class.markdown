@@ -2,7 +2,7 @@
 layout: post
 title: "Each System Property Should Have Its Own Class"
 date: 2017-02-24
-tags: java oop unit-testing
+tags: oop
 author: amihaiemil
 comments: true
 shareable: true
