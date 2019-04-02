@@ -2,7 +2,7 @@
 layout: post
 title:  "Calculate time using javascript"
 date:   2016-05-24
-tags: miscellaneous
+tags: thoughts
 author: amihaiemil
 comments: true
 shareable: true
