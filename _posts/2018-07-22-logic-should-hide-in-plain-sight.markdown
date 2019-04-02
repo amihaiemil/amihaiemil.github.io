@@ -2,7 +2,7 @@
 layout: post
 title: "Logic Should Hide In Plain Sight"
 date: 2018-07-22
-tags: oop design
+tags: oop
 author: amihaiemil
 comments: true
 shareable: true
