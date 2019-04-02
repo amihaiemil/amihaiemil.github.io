@@ -2,7 +2,7 @@
 layout: post
 title: "Yasson: Yet Another POJO Parser"
 date: 2017-07-04
-tags: java oop design
+tags: oop
 author: amihaiemil
 comments: true
 shareable: true
