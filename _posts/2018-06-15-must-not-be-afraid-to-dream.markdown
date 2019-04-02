@@ -2,7 +2,7 @@
 layout: post
 title: "\"You mustn't be afraid to dream a little bigger, darling\""
 date: 2018-06-15
-tags: oop design
+tags: thoughts
 author: amihaiemil
 comments: true
 shareable: true
