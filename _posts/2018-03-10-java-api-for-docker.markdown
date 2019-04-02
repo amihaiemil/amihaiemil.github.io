@@ -3,7 +3,7 @@ layout: post
 title: "Java API For Docker"
 buttons: <a class="github-button" href="https://github.com/amihaiemil/docker-java-api" data-icon="octicon-star" data-count-href="/amihaiemil/docker-java-api/stargazers" data-count-api="/repos/amihaiemil/docker-java-api#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star amihaiemil/docker-java-api on GitHub">Star</a> <a class="github-button" href="https://github.com/amihaiemil/docker-java-api/fork" data-icon="octicon-repo-forked" data-count-href="/opencharles/charles/network" data-count-api="/repos//amihaiemil/docker-java-api#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork amihaiemil/docker-java-api on GitHub">Fork</a>
 date: 2018-03-10
-tags: oop java design
+tags: oop opensource
 author: amihaiemil
 comments: true
 shareable: true
