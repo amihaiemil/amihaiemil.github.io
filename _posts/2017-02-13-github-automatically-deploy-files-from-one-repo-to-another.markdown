@@ -2,7 +2,7 @@
 layout: post
 title: "Github: Automatically Deploy Files From One Repo to Another"
 date: 2017-02-13
-tags: rultor github
+tags: opensource devops ci-cd
 author: amihaiemil
 comments: true
 shareable: true
