@@ -2,7 +2,7 @@
 layout: post
 title:  "Contributors wanted"
 date:   2016-12-22
-tags: contributors java oop github
+tags: opensource
 author: amihaiemil
 comments: true
 shareable: true
