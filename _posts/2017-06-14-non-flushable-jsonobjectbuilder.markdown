@@ -2,7 +2,7 @@
 layout: post
 title: "Non flushable javax.json.JsonObjectBuilder"
 date: 2017-06-14
-tags: oop
+tags: oop jakartaee
 author: amihaiemil
 comments: true
 shareable: true
