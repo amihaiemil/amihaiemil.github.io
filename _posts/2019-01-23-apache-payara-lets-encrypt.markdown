@@ -2,7 +2,7 @@
 layout: post
 title: "Apache. Payara. Let's Encrypt."
 date: 2019-01-23
-tags: devops ssl javaee
+tags: devops ci-cd jakartaee
 author: amihaiemil
 comments: true
 shareable: true
