@@ -2,7 +2,7 @@
 layout: post
 title:  "Selenium and JUnit, the right way!"
 date:   2017-01-24
-tags: junit selenium architecture
+tags: testing selenium architecture
 author: amihaiemil
 comments: true
 shareable: true
