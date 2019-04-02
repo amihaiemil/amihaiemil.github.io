@@ -2,7 +2,7 @@
 layout: post
 title: "Polymorphic Input/Output Data"
 date: 2019-03-31
-tags: java oop
+tags: oop
 author: amihaiemil
 comments: true
 shareable: true
