@@ -2,7 +2,7 @@
 layout: post
 title: "Invest in a Github Organization!"
 date: 2017-11-29
-tags: opensource development
+tags: opensource
 author: amihaiemil
 comments: true
 shareable: true
