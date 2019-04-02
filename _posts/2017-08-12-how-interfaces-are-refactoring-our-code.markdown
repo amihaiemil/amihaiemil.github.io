@@ -2,7 +2,7 @@
 layout: post
 title: "How Interfaces Are Refactoring Our Code"
 date: 2017-08-12
-tags: oop java design
+tags: oop
 author: amihaiemil
 comments: true
 shareable: true
