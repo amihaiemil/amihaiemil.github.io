@@ -2,7 +2,7 @@
 layout: post
 title: "Let's Encrypt. Glassfish. AWS EC2."
 date: 2017-10-03
-tags: devops ssl javaee aws
+tags: devops jakartaee
 author: amihaiemil
 comments: true
 shareable: true
