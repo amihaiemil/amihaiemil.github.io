@@ -2,7 +2,7 @@
 layout: post
 title: "An Extension To TellDontAsk"
 date: 2018-11-10
-tags: oop java
+tags: oop
 author: amihaiemil
 comments: true
 shareable: true
