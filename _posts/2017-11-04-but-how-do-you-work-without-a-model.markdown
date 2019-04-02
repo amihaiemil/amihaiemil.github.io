@@ -2,7 +2,7 @@
 layout: post
 title: "\"But how do you work without a model?\""
 date: 2017-11-04
-tags: java oop design
+tags: oop
 author: amihaiemil
 comments: true
 shareable: true
