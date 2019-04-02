@@ -2,7 +2,7 @@
 layout: post
 title: "Always Use a CMS For The Client Side"
 date: 2017-03-13
-tags: design webapps devops
+tags: devops architecture
 author: amihaiemil
 comments: true
 shareable: true
