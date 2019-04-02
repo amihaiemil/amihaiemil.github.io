@@ -2,7 +2,7 @@
 layout: post
 title:  "What is HATEOAS?"
 date:   2016-05-07
-tags: rest
+tags: rest architecture
 author: amihaiemil
 comments: true
 shareable: true
