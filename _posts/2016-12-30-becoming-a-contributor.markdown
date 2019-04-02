@@ -2,7 +2,7 @@
 layout: post
 title:  "Becoming a contributor"
 date:   2016-12-30
-tags: contributors java oop github
+tags: opensource
 author: amihaiemil
 comments: true
 shareable: true
