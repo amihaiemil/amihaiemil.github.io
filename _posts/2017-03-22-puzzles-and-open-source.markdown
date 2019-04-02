@@ -2,7 +2,7 @@
 layout: post
 title: "Puzzles And Open Source"
 date: 2017-03-22
-tags: pdd oop opensource
+tags: oop opensource
 author: amihaiemil
 comments: true
 shareable: true
