@@ -2,7 +2,7 @@
 layout: post
 title: "Project Versioning With Rultor"
 date: 2018-09-30
-tags: devops ci/cd
+tags: devops ci-cd
 author: amihaiemil
 comments: true
 shareable: true
