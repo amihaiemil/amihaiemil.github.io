@@ -2,7 +2,7 @@
 layout: post
 title: "Jakarta EE 8: JsonCollectors And The OOP Alternative"
 date: 2017-10-16
-tags: java oop javaee design
+tags: oop jakartaee refactoring
 author: amihaiemil
 comments: true
 shareable: true
