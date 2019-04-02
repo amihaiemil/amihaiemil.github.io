@@ -2,7 +2,7 @@
 layout: post
 title: "Test Driven Rest"
 date: 2017-05-03
-tags: oop rest architecture
+tags: oop rest architecture testing
 author: amihaiemil
 comments: true
 shareable: true
