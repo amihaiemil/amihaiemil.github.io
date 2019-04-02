@@ -2,7 +2,7 @@
 layout: post
 title: "Builder As A (Fail-Fast) State Machine"
 date: 2018-12-09
-tags: builder oop
+tags: oop
 author: amihaiemil
 comments: true
 shareable: true
