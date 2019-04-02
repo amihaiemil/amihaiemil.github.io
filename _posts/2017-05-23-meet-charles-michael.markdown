@@ -3,7 +3,7 @@ layout: post
 title: "Meet Charles Michael"
 date: 2017-05-23
 buttons: <a class="github-button" href="https://github.com/opencharles/charles-rest" data-icon="octicon-star" data-count-href="/opencharles/charles-rest/stargazers" data-count-api="/repos/opencharles/charles-rest#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star opencharles/charles-rest on GitHub">Star</a> <a class="github-button" href="https://github.com/opencharles/charles-rest/fork" data-icon="octicon-repo-forked" data-count-href="/opencharles/charles-rest/network" data-count-api="/repos/opencharles/charles-rest#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork opencharles/charles-rest on GitHub">Fork</a>
-tags: chatbots search github
+tags: opensource devops
 author: amihaiemil
 comments: true
 shareable: true
