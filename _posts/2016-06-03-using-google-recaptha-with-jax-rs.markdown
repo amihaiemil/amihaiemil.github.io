@@ -2,7 +2,7 @@
 layout: post
 title:  "Using Google Recaptcha 2 with JAX-RS"
 date:   2016-06-03
-tags: rest anti-spam
+tags: rest
 author: amihaiemil
 comments: true
 shareable: true
