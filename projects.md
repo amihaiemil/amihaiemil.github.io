@@ -24,7 +24,7 @@ either by filing Issues or by providing a Pull Request (ideally no more than 5 c
 
 <a href="https://www.github.com/amihaiemil" target="_blank"><img src="http://ghchart.rshah.org/amihaiemil" title="My Github contributions chart" alt="amihaiemil's Github chart" /></a>
 
-If you like my work and want to support me, consider making a small PayPal donation! 
+If you like my work and want to support me, consider making a small donation via PayPal! 
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick" />
