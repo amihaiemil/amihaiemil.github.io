@@ -23,3 +23,12 @@ If you find one of these projects interesting, feel free to contribute
 either by filing Issues or by providing a Pull Request (ideally no more than 5 changed files, including tests).
 
 <a href="https://www.github.com/amihaiemil" target="_blank"><img src="http://ghchart.rshah.org/amihaiemil" title="My Github contributions chart" alt="amihaiemil's Github chart" /></a>
+
+If you like my work and want to support me, consider making a small PayPal donation! 
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="U8MANV6YYNVWL" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_RO/i/scr/pixel.gif" width="1" height="1" />
+</form>
