@@ -22,7 +22,7 @@ Some worth mentioning are:
 If you find one of these projects interesting, feel free to contribute
 either by filing Issues or by providing a Pull Request (ideally no more than 5 changed files, including tests).
 
-<a href="https://www.github.com/amihaiemil" target="_blank"><img src="http://ghchart.rshah.org/amihaiemil" title="My Github contributions chart" alt="amihaiemil's Github chart" /></a>
+<a href="https://www.github.com/amihaiemil" target="_blank"><img src="https://ghchart.rshah.org/amihaiemil" title="My Github contributions chart" alt="amihaiemil's Github chart" /></a>
 
 If you like my work and want to support me, consider making a small donation via PayPal! 
 
