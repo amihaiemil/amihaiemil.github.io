@@ -27,7 +27,7 @@ First, I create a repository. Nothing fancy here, I do it all from the Github UI
 
 * Licence! Depending on your goals, you might need a different type of [licence](https://opensource.org/licenses). At the moment, I am only interested in the "author recognition" and "no liability" clauses. For that, I use the [BSD-3 Clause](https://opensource.org/licenses/BSD-3-Clause) licence everywhere. Be sure to also copy the licence text at the beginning of all the source code files.
 
-* .gitignore: Be sure to ignore all the project's meta-files like IDE-specific settings, build directories and so on. My proects are all Java so I specify there everything that has to do with Eclipse, Netbeans, IntelliJ, Maven etc.
+* .gitignore: Be sure to ignore all the project's meta-files like IDE-specific settings, build directories and so on. My projects are all Java so I specify there everything that has to do with Eclipse, Netbeans, IntelliJ, Maven etc.
 
 * README: Write an elegant "readme" from the start. It will help you see the goals more clearly and give you a boost of confidence even if the project is still just in your head!
 
