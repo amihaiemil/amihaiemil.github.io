@@ -16,10 +16,10 @@ Check out my [projects](https://amihaiemil.github.io/projects.html), see how the
   * help you design Java libraries, REST clients, reusable packages etc.
   * give hints related to the overall architecture, including deployment and dependency management;
   * review your tests, including unit, integration and UI automation test;
-  * help you setup a CI/CD pipeline on Github;
-  * explain how git works, help you setup your opensource project.
+  * help you setup a CI/CD pipeline;
+  * help you setup your opensource project.
 
-If you think the above would help you, write me an <a title="Feel free to drop me a line" href="mailto:{{site.email }}">e-mail</a>! I am looking for short-term jobs which are not so demanding, ideally as a technical reviewer/advisor.
+If you think the above would help you, write me an <a title="Feel free to drop me a line" href="mailto:{{site.email }}">e-mail</a>!
 
 I work based on trust: after a job is finished, I expect Paypal to ring in the next few hours. Miss a payment without a prior agreement and we're done -- simple as that. My hourly rate is $50, but I am open to negotiation.
 
