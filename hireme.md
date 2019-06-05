@@ -19,8 +19,6 @@ Check out my [projects](https://amihaiemil.github.io/projects.html), see how the
   * help you setup a CI/CD pipeline;
   * help you setup your opensource project.
 
-If you think the above would help you, write me an <a title="Feel free to drop me a line" href="mailto:{{site.email }}">e-mail</a>!
-
-I work based on trust: after a job is finished, I expect Paypal to ring in the next few hours. Miss a payment without a prior agreement and we're done -- simple as that. My hourly rate is $50, but I am open to negotiation.
+If you think the above would help you, write me an <a title="Feel free to drop me a line" href="mailto:{{site.email }}">e-mail</a>! My hourly rate is $50, but I am open to negotiation.
 
 <a class="github-button" href="https://github.com/amihaiemil" data-count-href="/amihaiemil/followers" data-count-api="/users/amihaiemil#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @amihaiemil on GitHub">Follow @amihaiemil</a>
