@@ -2,7 +2,7 @@
 layout: post
 title: "Hide It All!"
 date: 2019-06-12
-tags: oop java
+tags: oop
 author: amihaiemil
 comments: true
 shareable: true
