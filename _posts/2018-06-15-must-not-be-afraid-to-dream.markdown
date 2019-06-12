@@ -17,9 +17,9 @@ missed the occasion, I want to celebrate it a little late and write about three 
 By the way, the title is a quote from [a brilliant movie](https://www.imdb.com/title/tt1375666/) and is what I usually think about when I hear programmers complaining about object orientation.
 
 <figure class="articleimg">
- <img src="{{page.image}}" alt="The Little Indians">
+ <img src="{{page.image}}" alt="Two Little Indians">
  <figcaption>
- Tom & Jerry - The Little Indians, by  William Hanna and Joseph Barbera
+ Tom & Jerry - Two Little Indians, by  William Hanna and Joseph Barbera
  </figcaption>
 </figure>
 
