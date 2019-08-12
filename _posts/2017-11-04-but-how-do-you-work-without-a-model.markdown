@@ -182,7 +182,7 @@ Now we have the guarantee that, at iteration time, a Car respects our filter.
 
 {% highlight java %}
 final Cars cars = ...;//some cars;
-for(final Car cheaper : cars.filter(new Constant(10.000))) {
+for(final Cars cheaper : cars.filter(new Constant(10.000))) {
 
 }
 {% endhighlight %}
