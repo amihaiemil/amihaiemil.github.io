@@ -16,7 +16,7 @@ Most developers can agree that clean code means, among others, easy understandin
 The easier it is to read the code and quickly understand what's going on, the better. I've even heard people say that, ideally, even your grandmother (who presumably has no clue about programming)
 should be able to read your code and tell what's going on.
 
-While the above sounds more or less logical, I don't agree with it. As you would expect, the most common complaint I hear about OOP is that it's hard "see through
+While the above sounds more or less logical, I don't agree with it. As you would expect, the most common complaint I hear about OOP is that "it's hard to see through
 all those abstractions and visualize the graph of objects" -- it's a fair argument and, in this post, I'll try to explain why I don't think that is a problem.
 
 <figure class="articleimg">
