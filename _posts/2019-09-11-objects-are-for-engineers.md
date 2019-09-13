@@ -17,7 +17,7 @@ The easier it is to read the code and quickly understand what's going on, the be
 should be able to read your code and tell what's going on.
 
 While the above sounds more or less logical, I don't agree with it. As you would expect, the most common complaint I hear about OOP is that "it's hard to see through
-all those abstractions and visualize the graph of objects" -- it's a fair argument and, in this post, I'll try to explain why I don't think that is a problem.
+all those abstractions and visualize the graph of objects" -- it's a fair argument and, in this post, I'll try to explain why I don't think that is a real problem.
 
 <figure class="articleimg">
  <img src="{{page.image}}" alt="Designs on Jerry">
