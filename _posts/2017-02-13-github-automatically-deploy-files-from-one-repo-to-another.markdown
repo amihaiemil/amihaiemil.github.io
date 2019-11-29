@@ -101,7 +101,7 @@ decrypt:
 Getting the token in your script is the following line (rultor puts the resources under ``/home/r``)
 
 {% highlight bash %}
-TOKEN=$(cat /home/r/deployment.txt)
+TOKEN=$(cat /home/r/token.txt)
 {% endhighlight %}
 
 ### 2. Getting the old file's SHA
