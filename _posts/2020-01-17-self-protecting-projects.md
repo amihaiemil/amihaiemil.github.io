@@ -29,7 +29,7 @@ Automating quality gates means having some sort of automated checks for the rule
 
 **Building** a project usually means fetching dependencies, compiling, running the tests and packaging. Yet, we can add one more step right at the beginning: **code analysis**. In Java there are a few popular code analysers: [Checkstyle](https://checkstyle.sourceforge.io/), [PMD](https://pmd.github.io/) or, if you really want to suffer, [qulice](https://www.qulice.com/). I use Checkstyle in all my pojects.
 
-The key is to configure your code analyser to check all your conventions and even architectural rules. When a rule is broken, the build should fail, period. You won't have a backlog of old tasks to fix "those red Jenkins job" -- there will be no backlog simply because you will be forced to fix the errors before you even merge your changes into the master branch.
+The key is to configure your code analyser to check all your conventions and even architectural rules. When a rule is broken, the build should fail, period. You won't have a backlog of old tasks to fix "those red Jenkins jobs" -- there will be no backlog simply because you will be forced to fix the errors before you even merge your changes into the master branch.
 
 For instance, in my projects, I have rules ranging from cosmetic matters like naming or indentation to architectural rules such as "Classes are either abstract or final" or "All variables, of any kind, should be final". 
 
