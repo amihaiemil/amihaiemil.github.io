@@ -40,13 +40,12 @@ Remember, these checks must be blocking! You can also analize your code via an e
 
 ---
 
-
-Now, since we're talking about self-protecting projects, here is another thing that I like to do: I let the project open its own bug reports! Usually, when you catch an exception, you just log it and hope someone in your company has a Log Analyzer which is smart enough to handle every logged error. Then, hope that someone actually bothers to verify the logs.
+Now, since we're talking about self-protecting projects, here is another thing that I like to do: I let the project open its own bug reports. Usually, when you catch an exception, you just log it and hope someone in your company has a Log Analyzer which is smart enough to handle every logged error. Then, hope that someone actually bothers to verify the logs.
 
 Why not open a ticket right away? As soon as you catch an exception, you can use the RESTful API of your Issue Tracker to open a ticket. Github, GitLab or Jira all offer such APIs. Of course, this is a matter of architecture, you can't just make HTTP calls anywhere throughout your application. But if your code object-oriented, you should be able to acheive this goal elegandly.
 
 In my case, the project was a chatbot where the highest abstraction was the "Action". Whatever the chatbot did, we called an Action. Now, [Action](https://github.com/amihaiemil/comdor/blob/master/src/main/java/co/comdor/Action.java) is a Java interface with a main implementation and a **decorator** called [VigilantAction](https://github.com/amihaiemil/comdor/blob/3e7b2e2a9bfdc8d1414a22324d3556457ec0d94a/src/main/java/co/comdor/VigilantAction.java). The "vigilant" action simply calls the original Action in a ``try/catch`` block and opens a Github ticket with the caught exception. For interacting with Github, I used [this](https://github.com/jcabi/jcabi-github) library.
 
-Writing about this now, I got an idea: we should have some sort of plugin for ``Log4J`` or ``slf4J``: a plugin that would automatically open tickets on Github or other trackers, when the ``.error(...)`` method is called.
+Writing about this now, I got an idea: we should have some sort of plugin for ``Log4J`` or ``slf4J``: a plugin that would automatically open tickets on Github or other trackers, when the ``.error(...)`` method is called. Or, even more elegantly, this kind of functionality could be implemented in our application servers or runtimes: if any exception breaks the application and reaches the server log, we should have an Issue opened automatically.
 
 To conclude, I hope I made my point clear enough and I hope you won't rely on conventions so much anymore. It's better if we let the project protect itself. By the way, that's not to say that Code Review is useless! Code Review is still very important, it just becomes easier.
