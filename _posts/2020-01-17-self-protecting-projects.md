@@ -29,11 +29,11 @@ Automating quality gates means having some sort of automated checks for the rule
 
 **Building** a project usually means fetching dependencies, compiling, running the tests and packaging. Yet, we can add one more step right at the beginning: **code analysis**. In Java there are a few popular code analysers: [Checkstyle](https://checkstyle.sourceforge.io/), [PMD](https://pmd.github.io/) or, if you really want to suffer, [qulice](https://www.qulice.com/). I use Checkstyle in all my pojects.
 
-The key is to configure your code analyser to check all your conventions and even architectural rules. When a rule is broken, the build should fail, period.You won't have a backlog of old tasks to fix "those red Jenkins job" -- there will be no backlog simply because you will be forced to fix the errors before you even merge your changes into the master branch.
+The key is to configure your code analyser to check all your conventions and even architectural rules. When a rule is broken, the build should fail, period. You won't have a backlog of old tasks to fix "those red Jenkins job" -- there will be no backlog simply because you will be forced to fix the errors before you even merge your changes into the master branch.
 
 For instance, in my projects, I have rules ranging from cosmetic matters like naming or indentation to architectural rules such as "Classes are either abstract or final" or "All variables, of any kind, should be final". 
 
-The most common complaint I hear about this scenario is frustration. Can it be furstarting? Of course it can, but only until you learn some discipline. Believe me when I say, you get used to it sooner than you think and you learn to appreaciate it. At some point, it even becomes annoying to have to learn other conventions then what you got used to.
+The most common complaint I hear about this scenario is frustration. Can it be frustrating? Of course it can, but only until you learn some discipline. Believe me when I say, you get used to it sooner than you think and you learn to appreciate it. At some point, it even becomes annoying to have to learn other conventions than what you got used to.
 
 Remember, these checks must be blocking! You can also analize your code via an external tool such as [SonarQube](https://www.sonarqube.org/) but such pipelines are usually not blocking so the team just has a backlog of tasks which are never really fixed. When is the last time you went and fixed some complaints in Sonar? My guess is: never. 
 
@@ -41,7 +41,7 @@ Remember, these checks must be blocking! You can also analize your code via an e
 
 Now, since we're talking about self-protecting projects, here is another thing that I like to do: I let the project open its own bug reports. Usually, when you catch an exception, you just log it and hope someone in your company has a Log Analyzer which is smart enough to handle every logged error. Then, hope that someone actually bothers to verify the logs.
 
-Why not open a ticket right away? As soon as you catch an exception, you can use the RESTful API of your Issue Tracker to open a ticket. Github, GitLab or Jira all offer such APIs. Of course, this is a matter of architecture, you can't just make HTTP calls anywhere throughout your application. But if your code object-oriented, you should be able to acheive this goal elegandly.
+Why not open a ticket right away? As soon as you catch an exception, you can use the RESTful API of your Issue Tracker to open a ticket. Github, GitLab or Jira all offer such APIs. Of course, this is a matter of architecture, you can't just make HTTP calls anywhere throughout your application. But if your code object-oriented, you should be able to achieve this goal elegantly.
 
 In my case, the project was a chatbot where the highest abstraction was the "Action". Whatever the chatbot did, we called an Action. Now, [Action](https://github.com/amihaiemil/comdor/blob/master/src/main/java/co/comdor/Action.java) is a Java interface with a main implementation and a **decorator** called [VigilantAction](https://github.com/amihaiemil/comdor/blob/3e7b2e2a9bfdc8d1414a22324d3556457ec0d94a/src/main/java/co/comdor/VigilantAction.java). The "vigilant" action simply calls the original Action in a ``try/catch`` block and opens a Github ticket with the caught exception. For interacting with Github, I used [this](https://github.com/jcabi/jcabi-github) library.
 
