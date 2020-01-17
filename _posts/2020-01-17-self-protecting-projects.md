@@ -14,8 +14,7 @@ image: https://amihaiemil.github.io/images/designs_on_jerry2.PNG
 
 I was once attenting a presentation on the topic "Front-End Development". The talk was held by a senior developers who, at some point, started bragging about the cool conventions he and his team are using in their projects, particularly naming and structure of their CSS files. Then, he also mentioned something about their JavaScript conventions.
 
-At the end of the talk, I asked the guy what their CI/CD pipeline is, how does the build command look like and whether they actually automate any of those rules. The whole room laughed, including him. Afterwards, he said something like: "we rely on our engineers and our
-ability to review our code". I was taken by surprise -- I was expecting a lame answer, but I did not understand why everyone laughed.
+At the end of the talk, I asked the guy what their CI/CD pipeline was, how did the build command look like and whether they actually automated any of those rules. The whole room laughed, including him. Afterwards, he said something like: "we rely on our engineers and our ability to review our code". I was taken by surprise -- I was expecting a lame answer, but I did not understand why everyone laughed.
 
 What's really sad is that, to this day, I get [similar reactions](https://twitter.com/januszesser/status/1217333400958312448) when I suggest automation of Quality Gates. In this post, let me ellaborate the idea, maybe it won't seem funny anymore.
 
