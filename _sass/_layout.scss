@@ -250,6 +250,14 @@ a.post-meta:visited {
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px;
+
+  @include media-query($on-palm) {
+    max-width: none;
+    margin-right: unset;
+    margin-left: unset;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
 
 .post-content {
