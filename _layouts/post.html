@@ -17,39 +17,5 @@ layout: postlayout
   <article class="post-content">
     {{ content }}
   </article>
-  {% if page.shareable%}
-    <div class="share_buttons" style="vertical-align: top; line-height: 10px;">
-      <span
-          class="fb-share-button"
-          data-href="{{page.url}}"
-          data-layout="button_count"
-          data-size="small"
-          data-mobile-iframe="true">
-          <a
-            class="fb-xfbml-parse-ignore"
-            target="_blank"
-            href="https://www.facebook.com/sharer/sharer.php?u={{page.url}}&amp;src=sdkpreparse">
-            Share
-          </a>
-      </span>
-      <span class="twitter">
-          <a
-              class="twitter-share-button"
-              href="https://twitter.com/intent/tweet?text={{page.title}}:  ">
-              Tweet
-          </a>
-      </span>
-      <span class="linkedin">
-        <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-        <script type="IN/Share" data-url="{{page.url}}" data-counter="right"></script>
-      </span>
-      <span class="hackernews">
-        <script src="//hnbutton.appspot.com/static/hn.min.js" async defer></script>
-        <a href="http://news.ycombinator.com/submit" class="hn-share-button">Submit on HackerNews</a>
-      </span>
-      <br/><br/>
-      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false"> <img src="//www.redditstatic.com/spreddit7.gif" alt="submit to reddit" border="0" /> </a>
-    </div>
-  {% endif %}
 
 </div>
