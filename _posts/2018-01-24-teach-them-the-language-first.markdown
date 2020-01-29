@@ -9,6 +9,7 @@ shareable: true
 preview: Before learning to work with a framework, a developer should first understand
  the basis of everything, the language and the ecosystem that is built around it.
 image: https://amihaiemil.github.io/images/triplet_trouble.png
+embeddedTweet: <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Today, a developer with many years of experience told me that they are not sure what version of Glassfish they are using at work. They didn&#39;t say it, but I got the feeling they were going to ask &quot;Does it matter?&quot;. So, do you think the version is relevant? <a href="https://twitter.com/hashtag/java?src=hash&amp;ref_src=twsrc%5Etfw">#java</a> <a href="https://twitter.com/hashtag/javaEE?src=hash&amp;ref_src=twsrc%5Etfw">#javaEE</a> <a href="https://twitter.com/hashtag/JakartaEE?src=hash&amp;ref_src=twsrc%5Etfw">#JakartaEE</a></p>&mdash; Mihai 🌵 (@amihaiemil) <a href="https://twitter.com/amihaiemil/status/1222540066561691648?ref_src=twsrc%5Etfw">January 29, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ---
 
 I wanted to write this article for some time now, but I wasn't sure if it's such a spread phenomenon or maybe just my experience. [This](https://twitter.com/olivergierke/status/953642136456630274) tweet made me decide to write it.
