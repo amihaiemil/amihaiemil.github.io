@@ -243,10 +243,19 @@ a.post-meta:visited {
     }
 }
 
+.post {
+  max-width: -webkit-calc(800px - (30px * 2));
+  max-width: calc(800px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
 .post-content {
    text-align: justify;
    text-justify: inter-word;
-   
+
     h2 {
         font-size: 32px;
 
