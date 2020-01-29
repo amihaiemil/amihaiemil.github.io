@@ -13,8 +13,7 @@ image: https://amihaiemil.github.io/images/mice_follies.PNG
 These days it is very common to see the job title "Fullstack Developer" on LinkedIn.
 Job adverts, developers or even wannabe developers are using this term quite a lot. Recruiters are looking for that jack of all trades while programmers are bragging about mastering the whole palette of technologies that usually goes into an application.
 
-Knowing I am a little against the current, you've probably guessed that I don't like
-this "position". I believe that such a person will be at best mediocre in what they do. I am surely not the only one who thinks this way, but let me just explain my reasoning.
+You've probably guessed that I don't like this title. I believe that such a person will be at best mediocre in what they do. I am surely not the only one who thinks this way, but let me just explain my reasoning.
 
 <figure class="articleimg">
  <img src="{{page.image}}" alt="Mice Follies">
