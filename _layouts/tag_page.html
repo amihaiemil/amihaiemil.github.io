@@ -2,7 +2,7 @@
 layout: postlayout
 ---
 <div class="post">
-  <h1>{{tags[page.tag].size}} posts with tag: <b>{{ page.tag }}</b></h1>
+  <h1>{{site.tags[page.tag].size}} posts with tag: <b>{{ page.tag }}</b></h1>
   <ul>
     {% for post in site.tags[page.tag] %}
     <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
