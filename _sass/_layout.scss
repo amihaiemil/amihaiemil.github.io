@@ -244,8 +244,9 @@ a.post-meta:visited {
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
-
+   text-align: justify;
+   text-justify: inter-word;
+   
     h2 {
         font-size: 32px;
 
