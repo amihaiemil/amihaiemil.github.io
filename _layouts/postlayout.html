@@ -40,13 +40,13 @@
         <!--The POST CONTENT goes here, as defined in the post.html Layout-->
         {{ content }}
         <!--HERE embed the tweet and remark if they exist-->
-        {% if page.embeddedTweet And page.embeddedTweet != "" And page.embeddedTweet != nil %}
+        {% if page.embeddedTweet and page.embeddedTweet != "" and page.embeddedTweet != nil %}
             <div class="centered">
                 {{page.embeddedTweet}}
             </div>
         {% endif %}
         <!-- If the POST is shareable, the div with share buttons appears right underneath-->
-        {% if page.shareable%} 
+        {% if page.shareable%}
           <div class="share_buttons" style="vertical-align: top; line-height: 10px;">
             <span
               class="fb-share-button"
