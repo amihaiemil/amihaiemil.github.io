@@ -12,7 +12,7 @@ image: https://amihaiemil.github.io/images/macbook.png
 ---
 Hold on, I'm not an Apple fanboy! Yet, you might find this post interesting.
 
-I'm writing Java, sometimes Python and I am using opensource technologies
+I'm writing Java, sometimes Python, and I am using opensource technologies
 exclusively. Here's why I decided to get a Macbook.
 
 <figure class="articleimg">
