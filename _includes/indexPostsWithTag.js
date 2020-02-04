@@ -22,8 +22,8 @@
     {% for post in site.tags[page.tag] %}
         var postToIndex = {
           "id": id++,
-          "title": "{{ post.title }}",
-          "preview": "{{ post.preview }}",
+          "title": "{{ post.title | replace: '"', '\"' }}",
+          "preview": "{{ post.preview | replace: '"', '\"' }}",
           "date": "{{ post.date }}"
         }
         index.addDoc(postToIndex);
