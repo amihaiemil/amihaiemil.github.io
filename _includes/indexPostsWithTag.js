@@ -24,7 +24,7 @@
           "id": id++,
           "title": "{{ post.title }}",
           "preview": "{{ post.preview }}"
-          "date": {{ post.date }}
+          "date": "{{ post.date }}"
         }
         index.addDoc(postToIndex);
     {% endfor %}
