@@ -1,6 +1,4 @@
-# amihaiemil.github.io
-
-My blog about programming at https://www.amihaiemil.com
+# My blog about programming at https://amihaiemil.com
 
 I'm trying to write a new article once a month on topics concerning mostly Object Oriented Programming (heavily influenced by the [EO Paradigm](https://www.elegantobjects.org/)), but also RESTful Web Services, Unit/Integration/UI Testing and DevOps. Here are the articles most interesting to read:
 
