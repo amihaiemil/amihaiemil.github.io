@@ -23,7 +23,7 @@
         var postToIndex = {
           "id": id++,
           "title": "{{ post.title }}",
-          "preview": "{{ post.preview }}"
+          "preview": "{{ post.preview }}",
           "date": "{{ post.date }}"
         }
         index.addDoc(postToIndex);
