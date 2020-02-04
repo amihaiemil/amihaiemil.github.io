@@ -1,19 +1,14 @@
 <!--
-    ElasticLunr logic for indexing the posts by tag.
+    ElasticLunr logic for indexing the posts.
 
-    This Index should be used for search on a given Tag page.
-    The search will be performed only through the posts which are marked with said tag.
-    
-    Furthermore, search should be performed only through titles and previews, to make things lighter.
-    If we are on a Tag page, chances are users are interested in posts with the same tag, thus search
-    by title and preview text is more suitable.
+    Only the title and preview (short text) of each post will be intexed, for now.
     
     HINT: include this script at the end of the page so that, if the indexing takes
     longer, it won't affect the displaying of the page.
 -->
 
-<script src="/js/elasticlunr.min.js"></script>
-<script>
+<script src="/js/elasticlunr.min.js"></script> <!--Include ElasticLunr on the page-->
+<script> <!-- Index all posts. -->
     var index = elasticlunr(
         function () {
             this.addField('title');
@@ -23,7 +18,7 @@
         }
     );
     var id = 0;
-    {% for post in site.tags[page.tag] %}
+    {% for post in site.posts %}
         var postToIndex = {
           "id": id++,
           "title": "{{ post.title | replace: '"', '\"' }}",
