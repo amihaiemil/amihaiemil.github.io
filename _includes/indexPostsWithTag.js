@@ -8,7 +8,7 @@
     longer, it won't affect the displaying of the page.
 -->
 
-<script src="js/elasticlunr.min.js"></script>
+<script src="/js/elasticlunr.min.js"></script>
 <script>
     var index = elasticlunr(
         function () {
