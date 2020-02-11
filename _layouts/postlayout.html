@@ -48,13 +48,6 @@
         {% endif %}
       </div>
     </div>
-    <script
-      type="text/javascript"
-      id="charlesscript"
-      repo="amihaiemil/amihaiemil.github.io"
-      placeholder="Enter keywords"
-      src="https://www.amihaiemil.com/js/charles/charles.min.js">
-    </script>
 {% if page.comments %}
     <div class="wrapper centered">
           <p>
@@ -82,6 +75,13 @@
     {% include footer.html %}
     <script id="dsq-count-scr" src="//amihaiemil.disqus.com/count.js" async></script>
     {% include indexPosts.js %}
+    <script
+        type="text/javascript"
+        id = "elnr-sw-script"
+        size="3"
+        placeholder="Enter keywords"
+        src="/js/elasticlunr/elasticlunr-search-widget.min.js"> <!--ElasticLunr Search Widget-->
+    </script>
   </body>
 
 </html>
