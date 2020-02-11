@@ -9,8 +9,7 @@ paginate_path: "/page:num/"
 title: amihaiemil.com | Programming blog
 email: amihaiemil@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  This is a blog about programming. Posts will cover various topics,
-  and open source projects.
+  This is a blog about programming. Posts will cover various topics and open source projects.
 url: https://www.amihaiemil.com # the base hostname & protocol for your site
 twitter_username: amihaiemil
 github_username:  amihaiemil
