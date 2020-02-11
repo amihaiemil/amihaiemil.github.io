@@ -77,9 +77,10 @@ li {
 
 
 /**
- * Headings
+ * Headings. Leave h3 out. That's being used in the search widget,
+ * where we want the font to be thicker.
  */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
     font-weight: 300;
 }
 
