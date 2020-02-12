@@ -26,7 +26,7 @@
           "title": "{{ post.title | replace: '"', '\"' }}",
           "link": "{{ post.url | prepend: site.url }}",
           "preview": "{{ post.preview | replace: '"', '\"' }}",
-          "content": "";                       <!--Firgure out how to index the Markdown content (before Jekyll renders it to HTML)-->
+          "content": "",                       <!--Firgure out how to index the Markdown content (before Jekyll renders it to HTML)-->
           "date": "{{ post.date }}"
         }
         index.addDoc(postToIndex);
