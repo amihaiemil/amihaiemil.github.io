@@ -25,7 +25,7 @@ and some imagination. Yes, I believe that, in order to be good OOP programmers, 
  </figcaption>
 </figure>
 
-<figure class="badge"><img src="/illustrations/puppet.png" style="width:64px;max-width:100%;" alt="Dolls and Maquettes"></figure>
+<figure class="badge-right"><img src="/illustrations/puppet.png" style="width:64px;max-width:100%;" alt="Dolls and Maquettes"></figure>
 
 One more way we can look at model objects is the following: they are either **dolls** (``User``, ``Student``, ``Partner`` etc) or **maquettes** (``Car``, ``Phone``, ``Book`` etc). Question is, how can we work with them, how do they help us solve any problem? The answer is simple: we can do nothing with them and they don't help us in any way other than offering some readability! They just sit around, waiting for some helper method or WhateverService class to do something with them, our job being to design that method and that service, procedural code that hopefully will work (because we all know, in enterprise, a decent test coverage is max 40%). We are the ones working to accommodate the models.
 
@@ -35,7 +35,7 @@ Here is how I see it: a software developer and an engineer are given the same ta
 
 The comparison may sound crazy but that's what it is: mainstream OOP just gave people the tools necessary to put a label on their data while letting them maintain their procedural way of thinking. Instead, real object orientation is a complete switch of mindset: you go from the position of the manual worker to the position of the engineer who designs objects that actually solve issues, automate things.
 
-<figure class="badge"><img src="/illustrations/robots.png" style="width:64px;max-width:100%;" alt="Robots"></figure>
+<figure class="badge-right"><img src="/illustrations/robots.png" style="width:64px;max-width:100%;" alt="Robots"></figure>
 
 So how can we begin writing such code? Well, the first step is to understand that any proper object must have an interface. I've written about that as well, but let me reiterate a few reasons:
 
