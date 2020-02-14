@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hire me
+title: Hire Mihai
 header: Hire me
 permalink: /hireme/hire.html
 ---
