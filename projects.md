@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Projects
+title: Mihai's Projects
 header: Projects
 permalink: /projects.html
 ---
