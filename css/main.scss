@@ -64,15 +64,18 @@ figure.articleimg figcaption {
     line-height:1em;
     padding-top: 4px;
 }
-.badge {
+.badge-right {
     float: right;
     margin: 9.5px 20px 19px 10px;
-    box-shadow: 2px 2px 2px 2px grey;
 }
 
-figure.badge {
-    float: right;
+.badge-left {
+    float: left;
     margin: 9.5px 20px 19px 10px;
+}
+
+.shadow {
+    box-shadow: 2px 2px 2px 2px grey;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
