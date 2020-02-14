@@ -69,6 +69,12 @@ figure.articleimg figcaption {
     margin: 9.5px 20px 19px 10px;
     box-shadow: 2px 2px 2px 2px grey;
 }
+
+figure.badge {
+    float: right;
+    margin: 9.5px 20px 19px 10px;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
