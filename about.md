@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About me
+title: About Mihai
 header: About me
 permalink: /aboutme/about.html
 ---
