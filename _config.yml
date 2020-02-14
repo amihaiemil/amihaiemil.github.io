@@ -6,7 +6,7 @@ paginate: 10
 paginate_path: "/page:num/"
 
 # Site settings
-title: amihaiemil.com | Programming blog
+title: Mihai's Programming Blog
 email: amihaiemil@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   This is a blog about programming. Posts will cover various topics and open source projects.
