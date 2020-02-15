@@ -7,7 +7,7 @@ author: amihaiemil
 comments: true
 shareable: true
 preview: I am putting out bounties for Issues in my various opensource projects.
- Solve this Issues and get cash in PayPal right away.
+ Solve Issues and get cash in PayPal right away.
 image: https://amihaiemil.github.io/images/a_mouse_in_the_house2.png
 ---
 
