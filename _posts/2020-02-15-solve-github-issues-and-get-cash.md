@@ -53,6 +53,6 @@ What about estimations? At the moment each Issue will have a fixed price simply 
 
 My projects are mostly **Java SE 7 and 8**, and **Java EE 7**, but I also have one in **ReactJS** and one in **Jekyll/Ruby** (this blog).
 
-Here is the very first Bounty I am publishing (Node/NPM/Webpack): [amihaiemil/elasticlunr-search-widget#20](https://github.com/amihaiemil/elasticlunr-search-widget/issues/20).
+Here is the very first Bounty I am publishing (Node/NPM/Webpack): [amihaiemil/elasticlunr-search-widget#20](https://github.com/amihaiemil/elasticlunr-search-widget/issues/20). Check other open bounties [here](/bounties.html).
 
 **Follow me** on Twitter and Github in order to be notified of new bounties! Looking forward to working with you.
