@@ -55,4 +55,4 @@ My projects are mostly **Java SE 7 and 8**, and **Java EE 7**, but I also have o
 
 Here is the very first Bounty I am publishing (Node/NPM/Webpack): [amihaiemil/elasticlunr-search-widget#20](https://github.com/amihaiemil/elasticlunr-search-widget/issues/20).
 
-Follow me on Twitter and Github in order to be notified of new bounties! Looking forward to working with you.
+**Follow me** on Twitter and Github in order to be notified of new bounties! Looking forward to working with you.
