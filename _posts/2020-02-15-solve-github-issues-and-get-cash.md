@@ -44,7 +44,8 @@ How do you know I'll deliver the money? Well... you don't. I can only promise yo
 3. As a rule of thumb, your PRs should not decrease Code Coverage;
 4. If the 10 days passed and I take the Issue away from you, you will not be paid, no matter how much time you already spent on it;
 5. You can (and should!) use [Puzzle Driven Development](https://www.yegor256.com/2010/03/04/pdd.html), with one condition: if you solve the task only partially, you have to leave the codebase in a consistent state: build has to pass etc;
-6. I'll perform a more or less strict Code Review. Your PR should not break the project's architecture (obviously). I might also reject your PR if I don't like its design or if you don't perform the modifications I asked you to. **Rejected PRs are NOT going to be paid.**
+6. Second rule of thumb, as a consequence of using PDD: if you're spending more than 30min-1h on a ticket, you're probably doing something wrong;
+7. I'll perform a more or less strict Code Review. Your PR should not break the project's architecture (obviously). I might also reject your PR if I don't like its design or if you don't perform the modifications I asked you to. **Rejected PRs are NOT going to be paid.**
 
 Why these strict rules? Because **we will not have any meetings or Skype calls**. We will work in a 100% distributed manner. Naturally, strict discipline has to be enforced. I'm not going to lie,
 it might be frustrating in the beginning, until you get used to it.
