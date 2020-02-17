@@ -40,7 +40,7 @@ How do you know I'll deliver the money? Well... you don't. I can only promise yo
 
 **Pay attention**:
 
-1. **We are not going to discuss estimations.** How much time you spend on the ticket is your business. You'll get exactly the amount specified in the bounty, regardless of how much time you spent working;
+1. **We are not going to discuss estimations.** How much time you spend on the ticket is your business. You'll get exactly the amount specified in the bounty, regardless of how much time you spent working (please don't freak out, keep reading);
 2. My projects usually have strict Code Quality rules: the build will fail if you don't respect them;
 3. As a rule of thumb, your PRs should not decrease Code Coverage;
 4. If the 10 days passed and I take the Issue away from you, you will not be paid, no matter how much time you already spent on it;
