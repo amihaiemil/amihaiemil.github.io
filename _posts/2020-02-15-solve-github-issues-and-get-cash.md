@@ -42,7 +42,7 @@ How do you know I'll deliver the money? Well... you don't. I can only promise yo
 
 1. **We are not going to discuss estimations.** How much time you spend on the ticket is your business. You'll get exactly the amount specified in the bounty, regardless of how much time you spent working (please, don't freak out, keep reading);
 2. My projects usually have strict Code Quality rules: the build will fail if you don't respect them;
-3. As a rule of thumb, your PRs should not decrease Code Coverage;
+3. As a rule of thumb, your PRs should not decrease Code Coverage and should have 3-5 Changed Files (including the tests);
 4. If the 10 days passed and I take the Issue away from you, you will not be paid, no matter how much time you already spent on it;
 5. You can (and should!) use [Puzzle Driven Development](https://www.yegor256.com/2010/03/04/pdd.html), with one condition: if you solve the task only partially, you have to leave the codebase in a consistent state: build has to pass etc;
 6. Second rule of thumb, as a consequence of using PDD: **if you're spending more than 30min-1h on a ticket, you're probably doing something wrong;**
