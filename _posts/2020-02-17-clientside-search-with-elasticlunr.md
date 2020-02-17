@@ -7,7 +7,7 @@ author: amihaiemil
 comments: true
 shareable: true
 preview: If you have a static blog built with Jekyll or Hugo,
- ElasticLunr.js might be the perfect options for implementing Search.
+ ElasticLunr.js might be the perfect option for implementing Search.
 image: https://amihaiemil.github.io/images/the_truce_hurts3.PNG
 ---
 
