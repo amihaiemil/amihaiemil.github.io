@@ -9,6 +9,7 @@ shareable: true
 preview: I am putting out bounties for Issues in my various opensource projects.
  Solve Issues and get cash in PayPal right away.
 image: https://amihaiemil.github.io/images/a_mouse_in_the_house2.png
+embeddedTweet: <blockquote class="twitter-tweet"><p lang="en" dir="ltr">How much do you earn from doing OSS, yearly? Please vote only if you&#39;re doing OSS besides your full-time job/in your free time. <a href="https://twitter.com/github?ref_src=twsrc%5Etfw">@github</a> <a href="https://twitter.com/gitlab?ref_src=twsrc%5Etfw">@gitlab</a> <a href="https://twitter.com/hashtag/opensource?src=hash&amp;ref_src=twsrc%5Etfw">#opensource</a> <a href="https://twitter.com/hashtag/money?src=hash&amp;ref_src=twsrc%5Etfw">#money</a></p>&mdash; Mihai 🌵 (@amihaiemil) <a href="https://twitter.com/amihaiemil/status/1229409923085283329?ref_src=twsrc%5Etfw">February 17, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ---
 
 As you probably know, I'm an active opensource contributor. I work mostly on my
