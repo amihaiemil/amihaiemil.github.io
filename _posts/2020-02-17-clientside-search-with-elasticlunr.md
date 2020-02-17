@@ -8,7 +8,7 @@ comments: true
 shareable: true
 preview: If you have a static blog built with Jekyll or Hugo,
  ElasticLunr.js might be the perfect options for implementing Search.
-image: https://amihaiemil.github.io/images/a_mouse_in_the_house2.png
+image: https://amihaiemil.github.io/images/the_truce_hurts3.PNG
 ---
 
 Any blog or documentation website needs Search functionality. You can achieve this in many ways, and most likely a server-side solution will be chosen. However, if you don't want to deal with any backend, you can implement it all on the clientside, thanks to [lunr.js](https://github.com/olivernn/lunr.js). 
@@ -16,9 +16,9 @@ Any blog or documentation website needs Search functionality. You can achieve th
 I first discovered Lunr.js a few years ago, but I didn't use it since I decided to go with a server-side option (I needed the dynamic content to be intexed as well). A few weeks ago, however, I've decided to go with the client-side approach and I found [ElasticLunr.JS](http://elasticlunr.com/) which is basically a wrapper over Lunr.js, to make things easier.
 
 <figure class="articleimg">
- <img src="{{page.image}}" alt="A Mouse In The House">
+ <img src="{{page.image}}" alt="The Truce Hurts">
  <figcaption>
- Tom & Jerry - A Mouse In The House, by  William Hanna and Joseph Barbera
+ Tom & Jerry - The Truce Hurts, by  William Hanna and Joseph Barbera
  </figcaption>
 </figure>
 
