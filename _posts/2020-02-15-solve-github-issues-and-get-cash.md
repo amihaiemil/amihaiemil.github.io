@@ -51,7 +51,7 @@ How do you know I'll deliver the money? Well... you don't. I can only promise yo
 Why these strict rules? Because **we will not have any meetings or Skype calls**. We will work in a 100% distributed manner. Naturally, strict discipline has to be enforced. I'm not going to lie,
 it might be frustrating in the beginning, until you get used to it.
 
-What about estimations? At the moment each Issue will have a fixed price simply because the budget I have for this thing is limited. If/when the budget will grow, we'll be able to discuss more detailed and accurate payment methods.
+What about estimations? At the moment each Issue will have a fixed price simply because the budget I have for this thing is limited. Nevertheless, I try to give reasonable bounties (I assume you are an experienced developer with the environment already setup). If/when the budget will grow, we'll be able to discuss more detailed and accurate payment methods.
 
 My projects are mostly **Java SE 7 and 8**, and **Java EE 7**, but I also have one in **ReactJS** and one in **Jekyll/Ruby** (this blog).
 
