@@ -18,7 +18,7 @@ are paid so, I am making some money out of it. However, the amount of money I ma
 
 Instead of spending it, I've decided to invest it in my own projects. Why? Because
 I have a lot of projects that I would like to keep alive and I would also like to possibly
-build a network of distributed developers I can call if/when a paid project happens to show up.
+build a network of distributed developers I can call when a paid project happens to show up.
 
 <figure class="articleimg">
  <img src="{{page.image}}" alt="A Mouse In The House">
