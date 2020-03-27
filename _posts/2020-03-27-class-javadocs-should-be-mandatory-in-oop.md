@@ -37,8 +37,8 @@ Here is an example:
 /**
  * This is an abstract JsonObject you can extend if you want
  * to make your object Json-Polymorphic. Just give it the original
- * JsonObject body and you won't have to implement all the methods
- * yourself everywhere. E.g.
+ * JsonObject body and you won't have to implement all of JsonObject's
+ * methods anymore. E.g.
  * <pre>
  *  public final class CarFromJson
  *      extends AbstractJsonObject implements Car {
