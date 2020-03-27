@@ -52,7 +52,7 @@ Here is an example:
  * @author amihaiemil
  * @since 0.0.1
  */
-abstract AbstractJsonObject implement JsonObject{
+abstract AbstractJsonObject implements JsonObject {
 
     private final JsonObject delegate;
 
@@ -63,14 +63,14 @@ abstract AbstractJsonObject implement JsonObject{
 }
 {% endhighlight %}
 
-How can it be an indicator of code quality? Well, I believe if you cannot write a JavaDoc like the one above; if it's hard to find your words or clearly explain the purpose of a class in a few lines of text, then clearly the design is not ok: the scope of the class is too big or it may do too many things or it may be very hard to instantiate use etc. Furthermore, if you cannot write a simple code example in ``<pre></pre>`` tags, that's a read flag as well.
+How can it be an indicator of code quality? Well, I believe if you cannot write a JavaDoc like the one above; if it's hard to find your words or clearly explain the purpose of a class in a few lines of text, then clearly the design is not ok: the scope of the class is too big, or it may do too many things, or it may be very hard to instantiate use etc. Furthermore, if you cannot write a simple code example in ``<pre></pre>`` tags, that's a read flag as well.
 
 By the way, the ``<pre>`` tag is the HTML tag which preserves encapsulated text exactly as it is, it doesn't change its indentation or anything. It's perfect for snippets of code. More about it [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre).
 
 Still, none of what I said above really makes them "mandatory". There's one more very good reason to have them: naming of the classes. Classes should be components with a clear purpose and usability guideline in mind. Therefore, the name may not be trivial. Take a look at the following class:
 
 {% highlight java %}
-final class AssertRequest implement HttpClient {
+final class AssertRequest implements HttpClient {
     AssertRequest(
         final HttpResponse response,
         final Condition... conditions
