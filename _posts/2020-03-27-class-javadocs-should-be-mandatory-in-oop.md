@@ -8,7 +8,7 @@ comments: true
 shareable: true
 preview: In proper object-oriented software, where each class is supposed to be a component used in a certain place,
   class JavaDocs are crucial for maintenance and proper usage of the objects.
-image: https://amihaiemil.github.io/images/the_truce_hurts3.PNG
+image: https://amihaiemil.github.io/images/the_two_mouseketeers.PNG
 ---
 
 I'll admit, the title is a bit of a lie. I actually believe JavaDocs are necessary everywhere: methods, attributes and classes. But let's focus on classes for now. I should also mention that this idea applies to all object-oriented programming languages. I suppose there must be an equivalent to JavaDocs in most languages.
@@ -17,15 +17,15 @@ There are many different opinions about the importance of JavaDocs. Some find th
 They are important in order for objects to be used correctly and they are also an indicator of the code's quality.
 
 <figure class="articleimg">
- <img src="{{page.image}}" alt="The Truce Hurts">
+ <img src="{{page.image}}" alt="The Two Mouseketeers">
  <figcaption>
- Tom & Jerry - The Truce Hurts, by  William Hanna and Joseph Barbera
+ Tom & Jerry - The Two Mouseketeers, by  William Hanna and Joseph Barbera
  </figcaption>
 </figure>
 
 First of all, how should a class JavaDoc look? I suggest the following three points:
   - explain what the class is;
-  - explain where it should be used and/or by whom;
+  - explain why/where it should be used;
   - offer a small code snippet exemplifying its usage;
 
 It should also mention at least the author and the ``@since`` annotation,
@@ -63,7 +63,7 @@ abstract AbstractJsonObject implement JsonObject{
 }
 {% endhighlight %}
 
-How can it be an indicator of code quality? Well, I believe if you cannot write a JavaDoc like the one above; if it's hard to find your words or clearly explain the purpose of a class in a few lines of text, then clearly the design is not ok: the scope of the class is too big, it may do too many things, it may be very hard to instantiate it etc. Furthermore, if you cannot write a simple snippet of code in ``<pre></pre>`` tags, that's a read flag as well.
+How can it be an indicator of code quality? Well, I believe if you cannot write a JavaDoc like the one above; if it's hard to find your words or clearly explain the purpose of a class in a few lines of text, then clearly the design is not ok: the scope of the class is too big or it may do too many things or it may be very hard to instantiate use etc. Furthermore, if you cannot write a simple code example in ``<pre></pre>`` tags, that's a read flag as well.
 
 By the way, the ``<pre>`` tag is the HTML tag which preserves encapsulated text exactly as it is, it doesn't change its indentation or anything. It's perfect for snippets of code. More about it [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre).
 
