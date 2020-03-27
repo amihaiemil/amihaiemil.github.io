@@ -12,7 +12,7 @@ image: https://amihaiemil.github.io/images/zoot_cat.png
 ---
 
 Almost everytime I discuss OOP and code design with someone, right after I tell them
-that I do not like POJOs and the concept of get/set "objects", I see wide eyes accompanied
+that I do not like the concept of get/set "model objects", I see wide eyes accompanied
 by the question: "But how do you work without a model?"
 
 A fair question. We must have a "model" in our code, we must represent objects and their data
