@@ -7,7 +7,7 @@ author: amihaiemil
 comments: true
 shareable: true
 preview: If you have a static blog built with Jekyll or Hugo,
- ElasticLunr.js might be the perfect options for implementing Search.
+ ElasticLunr.js might be the perfect option for implementing Search.
 image: https://amihaiemil.github.io/images/the_truce_hurts3.PNG
 ---
 
@@ -44,7 +44,7 @@ index.addDoc(documentToIndex);
 Searching is as easy as follows:
 
 {% highlight javascript %}
-var resultsJsonArray = index.search("test");
+var resultsJsonArray = index.search("oracle");
 //this will return a JsonArray with the following format:
 
 [
@@ -52,12 +52,9 @@ var resultsJsonArray = index.search("test");
       ref: "4"
       score: 3.4764451146882474
       doc: {
-          id: 4
-          title: "Polymorphic Input/Output Data"
-          link: "https://www.amihaiemil.com/2019/03/31/polymorphic-input-output-data.html"
-          preview: "Using polymorphism for input/output data, as an alternative to model classes"
-          content: "Lorem Ipsum Content"
-          date: "2019-03-31 00:00:00 +0000"
+          id: 1
+          title: "Oracle released its latest database Oracle 12g"
+          body: "Yestaday Oracle has released its new database Oracle 12g, this would make more money for this company and lead to a nice profit report of annual year."
           }
      }
 ]

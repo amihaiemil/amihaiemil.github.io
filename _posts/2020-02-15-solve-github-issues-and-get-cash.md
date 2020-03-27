@@ -9,6 +9,7 @@ shareable: true
 preview: I am putting out bounties for Issues in my various opensource projects.
  Solve Issues and get cash in PayPal right away.
 image: https://amihaiemil.github.io/images/a_mouse_in_the_house2.png
+embeddedTweet: <blockquote class="twitter-tweet"><p lang="en" dir="ltr">How much do you earn from doing OSS, yearly? Please vote only if you&#39;re doing OSS besides your full-time job/in your free time. <a href="https://twitter.com/github?ref_src=twsrc%5Etfw">@github</a> <a href="https://twitter.com/gitlab?ref_src=twsrc%5Etfw">@gitlab</a> <a href="https://twitter.com/hashtag/opensource?src=hash&amp;ref_src=twsrc%5Etfw">#opensource</a> <a href="https://twitter.com/hashtag/money?src=hash&amp;ref_src=twsrc%5Etfw">#money</a></p>&mdash; Mihai 🌵 (@amihaiemil) <a href="https://twitter.com/amihaiemil/status/1229409923085283329?ref_src=twsrc%5Etfw">February 17, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ---
 
 As you probably know, I'm an active opensource contributor. I work mostly on my
@@ -17,7 +18,7 @@ are paid so, I am making some money out of it. However, the amount of money I ma
 
 Instead of spending it, I've decided to invest it in my own projects. Why? Because
 I have a lot of projects that I would like to keep alive and I would also like to possibly
-build a network of distributed developers I can call if/when a paid project happens to show up.
+build a network of distributed developers I can call when a paid project happens to show up.
 
 <figure class="articleimg">
  <img src="{{page.image}}" alt="A Mouse In The House">
@@ -39,17 +40,18 @@ How do you know I'll deliver the money? Well... you don't. I can only promise yo
 
 **Pay attention**:
 
-1. **We are not going to discuss estimations.** How much time you spend on the ticket is your business. You'll get exactly the amount specified in the bounty, regardless of how much time you spent working;
+1. **We are not going to discuss estimations.** How much time you spend on the ticket is your business. You'll get exactly the amount specified in the bounty, regardless of how much time you spent working (please, don't freak out, keep reading);
 2. My projects usually have strict Code Quality rules: the build will fail if you don't respect them;
-3. As a rule of thumb, your PRs should not decrease Code Coverage;
+3. As a rule of thumb, your PRs should not decrease Code Coverage and should have 3-5 Changed Files (including the tests);
 4. If the 10 days passed and I take the Issue away from you, you will not be paid, no matter how much time you already spent on it;
 5. You can (and should!) use [Puzzle Driven Development](https://www.yegor256.com/2010/03/04/pdd.html), with one condition: if you solve the task only partially, you have to leave the codebase in a consistent state: build has to pass etc;
-6. I'll perform a more or less strict Code Review. Your PR should not break the project's architecture (obviously). I might also reject your PR if I don't like its design or if you don't perform the modifications I asked you to. **Rejected PRs are NOT going to be paid.**
+6. Second rule of thumb, as a consequence of using PDD: **if you're spending more than 30min-1h on a ticket, you're probably doing something wrong;**
+7. I'll perform a more or less strict Code Review. Your PR should not break the project's architecture (obviously). I might also reject your PR if I don't like its design or if you don't perform the modifications I asked you to. **Rejected PRs are NOT going to be paid.**
 
 Why these strict rules? Because **we will not have any meetings or Skype calls**. We will work in a 100% distributed manner. Naturally, strict discipline has to be enforced. I'm not going to lie,
 it might be frustrating in the beginning, until you get used to it.
 
-What about estimations? At the moment each Issue will have a fixed price simply because the budget I have for this thing is limited. If/when the budget will grow, we'll be able to discuss more detailed and accurate payment methods.
+What about estimations? At the moment each Issue will have a fixed price simply because the budget I have for this thing is limited. Nevertheless, I try to give reasonable bounties (I assume you are an experienced developer with the environment already setup). If/when the budget will grow, we'll be able to discuss more detailed and accurate payment methods.
 
 My projects are mostly **Java SE 7 and 8**, and **Java EE 7**, but I also have one in **ReactJS** and one in **Jekyll/Ruby** (this blog).
 
