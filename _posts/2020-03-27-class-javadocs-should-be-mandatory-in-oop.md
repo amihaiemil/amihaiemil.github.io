@@ -63,7 +63,7 @@ abstract AbstractJsonObject implements JsonObject {
 }
 {% endhighlight %}
 
-How can it be an indicator of code quality? Well, I believe if you cannot write a JavaDoc like the one above; if it's hard to find your words or clearly explain the purpose of a class in a few lines of text, then clearly the design is not ok: the scope of the class is too big, or it may do too many things, or it may be very hard to instantiate use etc. Furthermore, if you cannot write a simple code example in ``<pre></pre>`` tags, that's a read flag as well.
+How can it be an indicator of code quality? Well, I believe if you cannot write a JavaDoc like the one above; if it's hard to find your words or clearly explain the purpose of a class in a few lines of text, then clearly the design is not ok: the scope of the class is too big, or it may do too many things, or it may be very hard to instantiate etc. Furthermore, if you cannot write a simple code example in ``<pre></pre>`` tags, that's a read flag as well.
 
 By the way, the ``<pre>`` tag is the HTML tag which preserves encapsulated text exactly as it is, it doesn't change its indentation or anything. It's perfect for snippets of code. More about it [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre).
 
