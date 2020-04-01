@@ -19,4 +19,4 @@ Check out my [projects](https://amihaiemil.github.io/projects.html), see how the
   * help you setup a CI/CD pipeline;
   * help you setup your opensource project.
 
-If you think the above would help you, write me an <a title="Feel free to drop me a line" href="mailto:{{site.email }}">e-mail</a>! My hourly rate is **€35**, but I am open to negotiation.
+If you think the above would help you, write me an <a title="Feel free to drop me a line" href="mailto:{{site.email }}">e-mail</a>!
