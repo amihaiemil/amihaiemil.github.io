@@ -27,7 +27,7 @@ Let's illustrate this methodology by following the key steps of building a piece
  </figcaption>
 </figure>
 
-# Project Setup And Configuration
+# Project Setup
 
 Java is a world of specifications and interfaces, which means your project should run on any
 platform which is implementing the specs that you are using. But **fuck it**: right off the bat,
@@ -54,6 +54,20 @@ Validating the Input proves to be a bit difficult since Java's Bean Validation A
 
 You need to call a third-party HTTP endpoint to read some data about your ``User``. Naturally,
 you should encapsulate this part in a mockable module and only expose the necessary interfaces to your own code. You decide to **fuck it**: just pull in [Jersey Web Client](https://eclipse-ee4j.github.io/jersey.github.io/documentation/latest/client.html) and start making HTTP Requests right there, right away. Of course, you didn't really need Jersey because there are already a few other HTTP Client libraries in your classpath (see "Dependencies") -- again, **fuck it**. Don't forget to catch and silently swallow any annoying ``IOException``.
+
+# Exceptions
+
+As suggested just above, in the FDD methodology exception handling is as straight-forward as it can be. Instead of bothering everyone with checked exceptions, just **fuck it**, catch them and deal with them yourself. In this regard, the following construct is quite common:
+
+{% highlight java %}
+try {
+    this.service.execute();
+} catch (Exception ex) {
+    //nothing to do
+}
+{% endhighlight %}
+
+Clean code, easily understandable, no headaches.
 
 # DI and Persistence
 
