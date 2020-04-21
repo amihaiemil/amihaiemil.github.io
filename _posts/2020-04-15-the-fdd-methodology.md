@@ -31,7 +31,7 @@ Let's illustrate this methodology by following the key steps of building a piece
 
 Java is a world of specifications and interfaces, which means your project should run on any
 platform which is implementing the specs that you are using. But **fuck it**: right off the bat,
-you should start by adding proprietary configuration files so your project will
+you should start by adding proprietary configuration files. This way, your project will
 not even deploy (let alone run) on a different platform than the one your company is paying a licence for.
 
 Moreover, said configuration files should be as cryptic as possible so nobody can mess with them and ruin your application. Ideally, you also have no clue what those files are doing, you just copied them from an older project.
