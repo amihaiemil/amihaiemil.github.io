@@ -68,7 +68,7 @@ The first two are naive solutions, obviously. The third and fourth seem ok but t
 
 So, you have just one tiny requirement besides the basic CRUD and you already injected methods here and there. There is also only one entity so far. Is this really clean and scalable? What will you do when more logic will be needed about these poor books? Same thing: add a method or a processor somewhere, until you won't know what's being used and by whom. Not to mention, how those procedures will be modified over time (``if/else`` blocks based on dubious flags, maybe?) to satisfy each client's edge cases.
 
-But pay attention: there are also quite a few developers who will see no problem with the first two options. Your ``BooksService`` will grow beautifully with private methods calling each other with all sorts of  different flags and null values for missing parameters.
+But pay attention: there are also quite a few developers who will see no problem with the first two options. Your ``BooksService`` will grow beautifully with private methods calling each other with all sorts of different flags and null values for missing parameters.
 
 What's worse, you also lack the tools necessary to come up with an elegant solution: you have no interface to decorate, no constructors for composition (because we use DI annotations), nothing. The ``new`` operator, which is the father of any proper object, is nowhere to be seen.
 
@@ -80,6 +80,6 @@ On top of all this, where are the unit tests? Or at least some shady integration
 
 Please, be honest: does the above sound familiar or not?
 
-To summarize, I hope the above example shed more light on why this type of architecture is actually procedural and so damaging to code quality on the long run.
+To summarize, I hope the above example shed more light on why this type of architecture is actually procedural and so damaging to code quality in the long run.
 
-If you have other ideas on how to stick in that ISBN verification please, leave a comment bellow!
+If you have other ideas on how to stick in that ISBN verification please, leave a comment below!
