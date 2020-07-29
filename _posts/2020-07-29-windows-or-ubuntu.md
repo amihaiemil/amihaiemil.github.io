@@ -7,7 +7,7 @@ author: amihaiemil
 comments: true
 shareable: true
 preview: Just a few thoughts on why a linux OS is better for developers.
-image: https://amihaiemil.github.io/images/texas_tom.PNG
+image: https://amihaiemil.github.io/images/texas-tom.PNG
 ---
 
 A few days ago, a friend who wants to become a Java Developer asked me whether he should
