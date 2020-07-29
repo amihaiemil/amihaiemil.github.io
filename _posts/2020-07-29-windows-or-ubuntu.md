@@ -30,7 +30,7 @@ Ubuntu than I did on Windows. Just download the ZIP, unpack it and edit the ``$P
 variable to point to the binary. That's it. Somehow, on Windows, I always encountered
 all sorts of annoying issues: installer that requires restart, missing admin rights and so on.
 Not to mention, packages that don't work out of the box because they're made primarily for linux and
-you may be forced install add-ins in order for it to work.
+you may be forced install add-ons in order for it to work.
 
 **It's more "manual"**. As I said above, you usually have to edit system variables and do things that a Windows Installer usually does on your behalf. I found this tricky at first, but I ended up understanding how it works and now it comes very natural to me. I know where everything is installed and how stuff is linked together, I know how to update my tools properly and how to clean up what I don't need anymore. I truly feel that I am in total control of my machine -- I never had this feeling on Windows.
 
