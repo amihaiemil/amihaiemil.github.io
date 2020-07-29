@@ -6,7 +6,7 @@ tags: thoughts
 author: amihaiemil
 comments: true
 shareable: true
-preview: Just a few thoughts about why you should be using the terminal more often.
+preview: Just a few thoughts on why a linux OS is better for developers.
 image: https://amihaiemil.github.io/images/texas_tom.PNG
 ---
 
