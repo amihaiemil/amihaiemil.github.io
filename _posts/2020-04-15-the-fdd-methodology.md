@@ -57,7 +57,7 @@ you should encapsulate this part in a mockable module and only expose the necess
 
 # Exceptions
 
-As suggested just above, in the FDD methodology exception handling is as straight-forward as it can be. Instead of bothering everyone with checked exceptions, just **fuck it**, catch them and deal with them yourself. In this regard, the following construct is quite common:
+As suggested just above, in the FDD methodology, exception handling is as straight-forward as it can be. Instead of bothering everyone with checked exceptions, just **fuck it**, catch them and deal with them yourself. In this regard, the following construct is quite common:
 
 {% highlight java %}
 try {
