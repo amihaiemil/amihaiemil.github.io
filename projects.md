@@ -13,7 +13,7 @@ You can find them under my [Github profile](https://github.com/amihaiemil) or in
 
 Some worth mentioning are:
 
-  * Project Management automation for distributed projects hosted on GitHub or GitLab (https://self-xdsd.com)
+  * Automated Project Management for repositories hosted on GitHub or GitLab (https://self-xdsd.com)
   * ReactJS search widget for ElasticLunr.Js ([elasticlunr-search-widget](https://github.com/amihaiemil/elasticlunr-search-widget))
   * Java OOP web crawler (see [Project Charles](https://amihaiemil.github.io/2016/12/05/project-charles.html))
   * Github chatbot for indexing and searching [Github Pages](https://pages.github.com/) websites ([charles-rest](https://github.com/opencharles/charles-rest))
