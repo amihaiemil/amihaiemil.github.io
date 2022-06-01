@@ -19,7 +19,6 @@ Some worth mentioning are:
   * Github chatbot for indexing and searching [Github Pages](https://pages.github.com/) websites ([charles-rest](https://github.com/opencharles/charles-rest))
   * Java OOP YAML parser ([eo-yaml](https://github.com/decorators-squad/eo-yaml))
   * Java 8 Wrapper of Docker's API ([docker-java-api](https://github.com/amihaiemil/docker-java-api))
-  * Github chatbot for DevOps/CI/CD automations ([comdor](https://github.com/amihaiemil/comdor))
 
 If you find one of these projects interesting, feel free to contribute
 either by filing Issues or by providing a Pull Request (ideally no more than 5 changed files, including tests).
