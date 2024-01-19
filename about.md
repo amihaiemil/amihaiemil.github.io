@@ -24,12 +24,15 @@ REST apis or CI/CD automations. Here are the articles most interesting to read:
     navigable. In the end, ideally, we should have a *single set of tests* for both the UI Automation and the RESTful API, and also a Java client library which could
     be delivered to any 3rd party who wants to integrate with our web services.
 
-* [Jakarta EE 8: JsonCollectors And The OOP Alternative](https://www.amihaiemil.com/2017/10/16/javaee8-jsoncollectors-oop-alternative.html)
-  * This is a very specific article about JSON-P 1.1. However, it reveals the most important principle I've learned about OOP:
-  never try to transform object A into B, but rather add a new implementation of B based on A.
+* [Dolls and Maquettes](https://amihaiemil.com/2018/04/17/dolls-and-maquettes.html)
+  * A visual metaphor about what proper objects should look like.
 
 * [Logic Should Hide In Plain Sight](https://www.amihaiemil.com/2018/07/22/logic-should-hide-in-plain-sight.html)
   * An article in which I explained where should the "business logic" find its place in an object-oriented codebase.
+
+* [Jakarta EE 8: JsonCollectors And The OOP Alternative](https://www.amihaiemil.com/2017/10/16/javaee8-jsoncollectors-oop-alternative.html)
+  * This is a very specific article about JSON-P 1.1. However, it reveals the most important principle I've learned about OOP:
+  never try to transform object A into B, but rather add a new implementation of B based on A.
 
 * [Java API For Docker](https://www.amihaiemil.com/2018/03/10/java-api-for-docker.html)
   * Another targeted article, but which explains the difference between an SDK and an API.
