@@ -146,7 +146,8 @@ so it makes sense to always have them updated, to respect the market. How do we 
 {% highlight java %}
 List<Car> cars = ...;//a list of cars;
 List<Car> cheaper = cars.filter(
-  car -> car.price().value().compareTo(BigDecimal.valueOf(10.000)) > 0 
+  car -> car.price().value().compareTo(BigDecimal.valueOf(10.000)) > 0
+);
 {% endhighlight %}
 
 You see, after the creation of the ``cheaper`` cars List, the price of a Car may change and become > 10.000. Yet it is still in the list. How do we fix this?
