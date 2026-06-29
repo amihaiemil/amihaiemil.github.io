@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="339px" height="200px" viewBox="0 0 339 367" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>scut</title>
+    <defs>
+        <filter x="-6.3%" y="-6.4%" width="113.0%" height="112.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M0.180851064,-0.0227272727 L228.180851,181.655459 C220.482864,191.513308 214.580917,198.686355 210.475009,203.174597 C206.369101,207.66284 199.962709,214.171168 191.255832,222.699581 C182.486701,230.873499 175.733353,236.996586 170.995787,241.06884 C166.258222,245.141094 158.943364,251.110571 149.051212,258.977273 C128.541416,241.353312 114.763441,229.260748 107.717287,222.699581 C99.1127155,214.687263 93.3763977,208.251222 88.6046559,203.174597 C65.5005217,178.594263 52.1538006,157.323623 42.2719974,140.131571 C30.8715695,120.297463 19.6029945,92.2986621 10.6930158,56.0134979 C8.63053156,47.6141983 5.71847737,35.1195503 2.83028235,18.4446746 C2.17623069,14.6685341 1.29308693,8.51273347 0.180851064,-0.0227272727 Z" id="path-2"></path>
+        <filter x="-4.9%" y="-5.3%" width="109.7%" height="110.9%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M236.731596,265 L7.47825468,83.0612297 L0,0 L90.3630798,0 L288,165.380478 C287.178937,168.493811 286.553454,170.774728 286.123551,172.223231 C284.41019,177.99617 282.603625,183.112006 280.76823,187.728118 C278.242048,194.081591 273.961617,203.46063 267.926937,215.865238 C262.860438,225.37158 258.417512,233.13262 254.598159,239.148358 C250.778806,245.164096 244.823285,253.78131 236.731596,265 Z" id="path-5"></path>
+        <filter x="-7.7%" y="-8.5%" width="114.1%" height="117.8%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M0.287234043,0 L222.287234,0 C220.170643,36.8655166 217.608965,64.672293 214.6022,83.4203293 C212.81602,94.5576687 210.537073,110.006372 206.493136,126.869053 C204.650854,134.551125 201.148244,146.928107 195.985308,164 L0.287234043,0 Z" id="path-8"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="scut" transform="translate(12.000000, 11.000000)">
+            <g id="Group-3" filter="url(#filter-1)" transform="translate(7.819149, 85.022727)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Path-6" stroke="#979797" stroke-width="4" xlink:href="#path-2"></use>
+                <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" mask="url(#mask-3)" x="-173.319149" y="-18.5227273" width="585" height="336"></rect>
+            </g>
+            <g id="Group2" filter="url(#filter-4)">
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <use id="Path-5" stroke="#979797" stroke-width="4" xlink:href="#path-5"></use>
+                <rect id="Rectangle" stroke="#979797" fill="#F4D347" mask="url(#mask-6)" x="-58.5" y="-71.5" width="382" height="362"></rect>
+            </g>
+            <g id="Group-1" filter="url(#filter-7)" transform="translate(92.712766, 0.000000)">
+                <mask id="mask-9" fill="white">
+                    <use xlink:href="#path-8"></use>
+                </mask>
+                <use id="Path-4" stroke="#979797" stroke-width="4" xlink:href="#path-8"></use>
+                <rect id="Rectangle" stroke="#979797" fill="#67001A" mask="url(#mask-9)" x="-45.212766" y="-87.5" width="313" height="338"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

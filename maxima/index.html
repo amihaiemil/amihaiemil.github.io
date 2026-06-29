@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="./css/maxima.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="./img/scut.png" type="image/x-icon">
+
+<title>Silvia Maxima</title>
+
+<meta name="description" content="Landing page of Silvia Maxima">
+
+<link rel="canonical" href="https://silviamaxima.eu/">
+
+<meta property="og:title" content="Silvia Maxima">
+<meta property="og:description" content="Landing page of Silvia Maxima">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://silviamaxima.eu/">
+
+<meta name="robots" content="index,follow">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"Silvia Maxima",
+  "description":"Landing page of Silvia Maxima"
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <button
+        class="language-btn"
+        id="languageBtn"
+        aria-label="Change language">
+        EN
+    </button>
+</header>
+
+<main>
+
+<section class="timeline-wrapper" aria-labelledby="main-title">
+    <div class="logo">
+        <img src="./img/scut.svg"/>
+    </div>
+    <div class="title">
+        <h1 id="main-title">
+            Silvia Maxima
+        </h1>
+    </div>
+    <div class="timeline">
+
+        <article class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <h2>13.04.2013 - Foundation</h2>
+                <p>
+                    Since 2013, we have been working closely with some of the biggest names in the DACH financial sector,
+                    among which one can be reminded of: <a href="https://www.uniqagroup.com">UNIQA AG</a>, <a href="https://www.raiffeisen.at" target="_blank">Raiffeisen Bankengruppe Österreich</a>, <a href="https://www.datev.de" target="_blank">DATEV</a> and <a href="https://ing.com" target="_blank">ING Bank</a>
+                </p>
+            </div>
+        </article>
+
+        <article class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <h2>27.01.2021 - Inception</h2>
+                <p>
+                    <b>Extremely Distributed Technologies SRL (RO43621869)</b> is founded with the goal of providing software development services,
+                    with a particular focus on companies in the financial and insurance sectors, in the DACH area.
+                </p>
+                <p>
+                    The company operates primarily and comfortably in german-speaking environments.
+                </p>
+            </div>
+        </article>
+
+        <article class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <h2>17.08.2023 - The Queen Programming language</h2>
+                <p class="justify">
+                    Extremely Distributed releases the very first version of <a href="https://queenlang.org/" target="_blank">Queenlang</a>,
+                    an R&D project designed to provide high code and application maintainability in the accounting, insurance and banking sectors.
+                </p>
+                <br>
+                <p class="justify">
+                    Our R&D efforts deepen into Mathematics, particularly a subject we call Object-Oriented Mathematics, and theoretical Physics.
+                </p>
+            </div>
+        </article>
+
+        <article class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <h2>15.03.2026 - The brand 'Silvia Maxima' is born</h2>
+                <p>
+                    With the pledge of <b>never</b> to use AI in any of the products delivered to our clients. Having already seen, in practice, the damage that AI can do
+                    in financial software, we make a pledge to our clients to not deliver a single line of code written by AI.
+                </p>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
+</main>
+
+<script>
+const button = document.getElementById('languageBtn');
+
+const languages = ['EN', 'RO'];
+let current = 0;
+
+button.addEventListener('click', () => {
+    current = (current + 1) % languages.length;
+    button.textContent = languages[current];
+
+    document.documentElement.lang =
+        languages[current].toLowerCase();
+});
+</script>
+
+</body>
+</html>
+
