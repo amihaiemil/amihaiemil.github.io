@@ -21,10 +21,8 @@ body{
 }
 
 header{
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-    padding:1rem 1.5rem;
+    border-bottom: 2px solid #ccc;
+    background-color: var(--timelinebg);
 }
 
 .language-btn{
@@ -53,13 +51,9 @@ main{
     max-width:800px;
 }
 
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-height: 100px;
-    margin-top: 3rem;
-    margin-bottom: 5rem;
+footer {
+    border-top: 2px solid #ccc;
+    background-color: var(--timelinebg);
 }
 
 .title {

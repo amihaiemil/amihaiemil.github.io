@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <link rel="stylesheet" type="text/css" href="./css/maxima.css">
+<link rel="stylesheet" type="text/css" href="./css/primeflex.min.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="./img/scut.png" type="image/x-icon">
@@ -32,26 +33,23 @@
 
 <body>
 
-<header>
-    <button
-        class="language-btn"
-        id="languageBtn"
-        aria-label="Change language">
-        EN
-    </button>
+<header class="flex flex-row justify-content-center">
+    <div class="flex flex-column gap-2 align-items-center mt-7 mb-2" >
+        <div>
+            <img src="./img/scut.svg" alt="Shiled of Silvia Maxima"/>
+        </div>
+        <div>
+            <h2>Silvia Maxima</h2>
+        </div>
+        <div>
+            <h3>A company formed of computer scientists, mathematicians, writers and artists.</h3>
+        </div>
+    </div>
 </header>
 
 <main>
 
 <section class="timeline-wrapper" aria-labelledby="main-title">
-    <div class="logo">
-        <img src="./img/scut.svg"/>
-    </div>
-    <div class="title">
-        <h1 id="main-title">
-            Silvia Maxima
-        </h1>
-    </div>
     <div class="timeline">
 
         <article class="timeline-item">
@@ -109,27 +107,24 @@
             </div>
         </article>
 
+        <article class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <h2>01.10.2026 - To be Continued</h2>
+            </div>
+        </article>
+
     </div>
 
 </section>
 
 </main>
-
-<script>
-const button = document.getElementById('languageBtn');
-
-const languages = ['EN', 'RO'];
-let current = 0;
-
-button.addEventListener('click', () => {
-    current = (current + 1) % languages.length;
-    button.textContent = languages[current];
-
-    document.documentElement.lang =
-        languages[current].toLowerCase();
-});
-</script>
-
+<footer class="flex flex-row justify-content-center">
+    <div class="flex flex-column gap-2 align-items-center mb-2 mt-2">
+        <div> © All rights reserved for Extremely Distributed Technologies SRL (RO43621869).</div>
+    </div>
+</footer>
 </body>
 </html>
 
