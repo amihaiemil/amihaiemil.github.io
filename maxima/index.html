@@ -33,19 +33,19 @@
 
 <body>
 
-<header class="flex flex-row justify-content-center">
-    <div class="flex flex-column gap-2 align-items-center mt-2 mb-2" >
+<div class="header">
+    <div class="flex flex-column gap-2 align-items-center sm:mb-2 sm:mt-2" >
         <div>
             <img src="./img/scut.svg" alt="Shiled of Silvia Maxima"/>
         </div>
-        <div>
-            <h2>Silvia Maxima</h2>
+        <div class="text-center md:text-center sm:text-left">
+            <h2 class="title-header">Silvia Maxima</h2>
         </div>
-        <div>
-            <h3>A company formed of computer scientists, mathematicians, writers and artists.</h3>
+        <div class="text-center md:text-center sm:text-left">
+            <h3 class="title-subheader">A company formed of computer scientists, mathematicians, writers and artists.</h3>
         </div>
     </div>
-</header>
+</div>
 
 <main>
 
@@ -121,15 +121,19 @@
 </section>
 
 </main>
-<footer class="flex flex-row justify-content-center">
-    <div class="flex flex-column gap-1 align-items-center mb-2 mt-2">
-        <div> © All rights reserved for Extremely Distributed Technologies SRL (RO43621869), a european company.</div>
-        <div>Contact us at amihaiemil@gmail.com. We speak german, english, french and romanian.</div>
+<div class="footer">
+    <div class="flex flex-column align-items-center gap-2 sm:mb-4 sm:mt-1">
+        <div class="text-center md:text-center sm:text-left">
+            © All rights reserved for Extremely Distributed Technologies SRL (RO43621869), a European company.
+        </div>
+        <div class="text-center md:text-center sm:text-left">
+            Contact us at <b>amihaiemil@gmail.com</b>. We speak German, English, French and Romanian.
+        </div>
         <div class="flex flex-row">
-            <div><img class="flag" src="./img/eu_flag.jpg"/></div>
+            <img class="flag" src="./img/eu_flag.jpg" alt="EU flag">
         </div>
     </div>
-</footer>
+</div>
 </body>
 </html>
 

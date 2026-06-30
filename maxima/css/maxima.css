@@ -17,10 +17,11 @@ body{
     font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
     background:var(--bg);
     color:var(--text);
-    min-height:100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-header{
+.header{
     border-bottom: 2px solid #ccc;
     background-color: var(--timelinebg);
 }
@@ -51,7 +52,7 @@ main{
     max-width:800px;
 }
 
-footer {
+.footer {
     border-top: 2px solid #ccc;
     background-color: var(--timelinebg);
 }
