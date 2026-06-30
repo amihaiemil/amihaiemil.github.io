@@ -55,7 +55,9 @@ footer {
     border-top: 2px solid #ccc;
     background-color: var(--timelinebg);
 }
-
+.flag {
+    max-height: 35px;
+}
 .title {
     margin-top: 3rem;
 }
