@@ -161,4 +161,15 @@ h1{
     h1{
         margin-bottom:2rem;
     }
+
+    .header{
+        border-bottom: 2px solid #ccc;
+        background-color: var(--timelinebg);
+    }
+
+    .footer {
+        border-top: 2px solid #ccc;
+        background-color: var(--timelinebg);
+    }
+
 }
